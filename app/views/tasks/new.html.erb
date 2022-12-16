@@ -11,6 +11,14 @@
         <%= f.label :content ,class:"text-white"%>
         <%= f.text_area :content, class:"w-full px-2 py-2 text-gray-700 bg-gray-200 rounded", rows: "10" %>
       </div>
+      <div>
+        <%= f.label :start_date ,class:"text-white"%>
+        <%= f.date_field :start_date, class:"w-full px-2 py-2 text-gray-700 bg-gray-200 rounded"%>
+      </div>
+       <div>
+        <%= f.label :end_date ,class:"text-white"%>
+        <%= f.date_field :end_date, class:"w-full px-2 py-2 text-gray-700 bg-gray-200 rounded"%>
+      </div>
     <div class="flex justify-center mt-6">
       <%= f.submit "Create item", class:"px-4 py-2 text-gray-200 bg-gray-800 rounded-md hover:bg-gray-700 focus:outline-none focus:bg-gray-700" %>
     </div>

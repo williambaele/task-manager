@@ -5253,3 +5253,977 @@ Processing by PagesController#index as HTML
 Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.2ms | Allocations: 7493)
 
 
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5796706365260502195)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddDatasToTasks (20221216093709)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.1ms)[0m  [1m[35mALTER TABLE "tasks" ADD "start_date" date[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "tasks" ADD "end_date" date[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221216093709"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (4.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5796706365260502195)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/new-task" for ::1 at 2022-12-16 17:42:26 +0800
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TasksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 3602)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 3690)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms | Allocations: 6502)
+
+
+  
+ActionView::Template::Error (undefined method `date' for #<ActionView::Helpers::FormBuilder:0x000000010b8ba7e8 @nested_child_index={}, @options={:allow_method_names_outside_object=>false, :skip_default_ids=>false, :html=>{:class=>"new_task", :id=>"new_task"}, :local=>true}, @template=#<ActionView::Base:0x0000000005d3b8>, @object=#<Task id: nil, created_at: nil, updated_at: nil, title: nil, content: nil>, @object_name="task", @default_options={:skip_default_ids=>false, :allow_method_names_outside_object=>false}, @default_html_options={}, @multipart=nil, @index=nil>
+
+        '.freeze;@output_buffer.append=( f.date :start_date, class:"w-full px-2 py-2 text-gray-700 bg-gray-200 rounded");@output_buffer.safe_append='
+                                          ^^^^^):
+    13:       </div>
+    14:       <div>
+    15:         <%= f.label :start_date ,class:"text-white"%>
+    16:         <%= f.date :start_date, class:"w-full px-2 py-2 text-gray-700 bg-gray-200 rounded"%>
+    17:       </div>
+    18:        <div>
+    19:         <%= f.label :end_date ,class:"text-white"%>
+  
+app/views/tasks/new.html.erb:16
+app/views/tasks/new.html.erb:4
+Started GET "/new-task" for ::1 at 2022-12-16 17:44:20 +0800
+Processing by TasksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (Duration: 30.8ms | Allocations: 11835)
+  Rendered layout layouts/application.html.erb (Duration: 31.1ms | Allocations: 11932)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.0ms | Allocations: 12730)
+
+
+  
+ActionView::Template::Error (undefined method `start_date' for #<Task id: nil, created_at: nil, updated_at: nil, title: nil, content: nil>):
+    13:       </div>
+    14:       <div>
+    15:         <%= f.label :start_date ,class:"text-white"%>
+    16:         <%= f.date_field :start_date, class:"w-full px-2 py-2 text-gray-700 bg-gray-200 rounded"%>
+    17:       </div>
+    18:        <div>
+    19:         <%= f.label :end_date ,class:"text-white"%>
+  
+app/views/tasks/new.html.erb:16
+app/views/tasks/new.html.erb:4
+Started GET "/new-task" for ::1 at 2022-12-16 17:45:36 +0800
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TasksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (Duration: 444.1ms | Allocations: 279203)
+  Rendered shared/_navar.html.erb (Duration: 0.9ms | Allocations: 139)
+  Rendered layout layouts/application.html.erb (Duration: 499.8ms | Allocations: 299139)
+Completed 200 OK in 536ms (Views: 505.9ms | ActiveRecord: 4.8ms | Allocations: 307740)
+
+
+Started POST "/tasks" for ::1 at 2022-12-16 17:46:17 +0800
+Processing by TasksController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"title"=>"I’m going back in a few more times ", "content"=>"Lorem ipsum your phone 📞 has been updated for this month so far as we are still in our prayers for a while back to ", "start_date"=>"2022-12-16", "end_date"=>"2022-12-23"}, "commit"=>"Create item"}
+[31mUnpermitted parameters: :start_date, :end_date. Context: { controller: TasksController, action: create, request: #<ActionDispatch::Request:0x000000011543bb18>, params: {"authenticity_token"=>"[FILTERED]", "task"=>{"title"=>"I’m going back in a few more times ", "content"=>"Lorem ipsum your phone 📞 has been updated for this month so far as we are still in our prayers for a while back to ", "start_date"=>"2022-12-16", "end_date"=>"2022-12-23"}, "commit"=>"Create item", "controller"=>"tasks", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:16:in `create'
+  [1m[36mTask Create (0.6ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 09:46:17.620372"], ["updated_at", "2022-12-16 09:46:17.620372"], ["title", "I’m going back in a few more times "], ["content", "Lorem ipsum your phone 📞 has been updated for this month so far as we are still in our prayers for a while back to "], ["start_date", nil], ["end_date", nil]]
+  ↳ app/controllers/tasks_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:16:in `create'
+Redirected to http://localhost:3000/tasks/53
+Completed 302 Found in 7ms (ActiveRecord: 2.0ms | Allocations: 4392)
+
+
+Started GET "/tasks/53" for ::1 at 2022-12-16 17:46:17 +0800
+Processing by TasksController#show as TURBO_STREAM
+  Parameters: {"id"=>"53"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 383)
+  Rendered shared/_navar.html.erb (Duration: 0.0ms | Allocations: 10)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 2683)
+Completed 200 OK in 9ms (Views: 4.9ms | ActiveRecord: 0.5ms | Allocations: 5599)
+
+
+Started GET "/" for ::1 at 2022-12-16 17:46:23 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.8ms | Allocations: 100)
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:27
+  Rendered shared/_all-tasks.html.erb (Duration: 9.6ms | Allocations: 3643)
+  Rendered pages/index.html.erb within layouts/application (Duration: 13.1ms | Allocations: 4134)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 6470)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.4ms | Allocations: 7221)
+
+
+Started GET "/tasks/53" for ::1 at 2022-12-16 17:46:31 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 125)
+  Rendered shared/_navar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 2210)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.2ms | Allocations: 3020)
+
+
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+Started GET "/new-task" for ::1 at 2022-12-16 17:50:18 +0800
+Processing by TasksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1589)
+  Rendered shared/_navar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 3428)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 3689)
+
+
+Started POST "/tasks" for ::1 at 2022-12-16 17:50:35 +0800
+Processing by TasksController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"title"=>"Super giga mega test", "content"=>"Super giga mega test Super giga mega test Super giga mega test Super giga mega test Super giga mega test", "start_date"=>"2022-12-20", "end_date"=>"2022-12-28"}, "commit"=>"Create item"}
+[31mUnpermitted parameters: :start_date, :end_date. Context: { controller: TasksController, action: create, request: #<ActionDispatch::Request:0x00000001157009e8>, params: {"authenticity_token"=>"[FILTERED]", "task"=>{"title"=>"Super giga mega test", "content"=>"Super giga mega test Super giga mega test Super giga mega test Super giga mega test Super giga mega test", "start_date"=>"2022-12-20", "end_date"=>"2022-12-28"}, "commit"=>"Create item", "controller"=>"tasks", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:16:in `create'
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 09:50:35.846647"], ["updated_at", "2022-12-16 09:50:35.846647"], ["title", "Super giga mega test"], ["content", "Super giga mega test Super giga mega test Super giga mega test Super giga mega test Super giga mega test"], ["start_date", nil], ["end_date", nil]]
+  ↳ app/controllers/tasks_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:16:in `create'
+Redirected to http://localhost:3000/tasks/54
+Completed 302 Found in 5ms (ActiveRecord: 0.9ms | Allocations: 2479)
+
+
+Started GET "/tasks/54" for ::1 at 2022-12-16 17:50:35 +0800
+Processing by TasksController#show as TURBO_STREAM
+  Parameters: {"id"=>"54"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 54], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 118)
+  Rendered shared/_navar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2194)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.3ms | Allocations: 2943)
+
+
+  [1m[36mTask Load (1.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.4ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 5]]
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 7]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 8]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 9]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 10]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 11]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 12]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 13]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 14]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 15]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 16]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.1ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 17]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.1ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 18]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 19]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.1ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 20]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.1ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 21]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.1ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 22]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 23]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 24]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.1ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 25]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.1ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 26]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.1ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 27]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.1ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 28]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 29]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 30]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 31]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 32]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 33]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.1ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 34]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.1ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 35]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.1ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 36]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.7ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 37]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 38]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.1ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 39]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 40]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 41]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 42]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.1ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 43]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.1ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 44]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.1ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 4]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.1ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 6]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.1ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 53]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 54]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (8.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:28.332495"], ["updated_at", "2022-12-16 10:08:28.332495"], ["title", "Yoga"], ["content", "Itaque in nihil odio facilis aut rerum corporis voluptates esse quo maxime nihil aperiam ut veritatis."], ["start_date", 2002], ["end_date", 1998]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.677674"], ["updated_at", "2022-12-16 10:08:53.677674"], ["title", "Sport"], ["content", "Nemo ut provident fuga ducimus est consequatur totam autem quia ullam fugiat dolorum ea et saepe."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.682389"], ["updated_at", "2022-12-16 10:08:53.682389"], ["title", "Laundry"], ["content", "Necessitatibus velit aut non laborum aut vel ut voluptatibus est maxime et voluptate harum qui ea."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.685652"], ["updated_at", "2022-12-16 10:08:53.685652"], ["title", "Yoga"], ["content", "Quas doloremque ducimus a optio id inventore ad alias voluptas ut suscipit et sint quo cumque."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.688863"], ["updated_at", "2022-12-16 10:08:53.688863"], ["title", "Yoga"], ["content", "Enim magni qui doloribus laborum non quia ullam voluptas totam minima nam eveniet inventore dicta rerum."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (2.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.692200"], ["updated_at", "2022-12-16 10:08:53.692200"], ["title", "Laundry"], ["content", "Repellendus voluptates provident ea iure possimus omnis quis voluptatem iste alias velit excepturi nam sed quos."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.697507"], ["updated_at", "2022-12-16 10:08:53.697507"], ["title", "Laundry"], ["content", "A minus et laboriosam sint veritatis repudiandae fugiat dolores iusto maxime deleniti enim qui molestiae officia."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.700686"], ["updated_at", "2022-12-16 10:08:53.700686"], ["title", "Yoga"], ["content", "Ratione qui quo sunt enim atque quia error sequi aut esse ipsum tempore quis ea blanditiis."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.703817"], ["updated_at", "2022-12-16 10:08:53.703817"], ["title", "Laundry"], ["content", "Inventore ut non aut doloribus velit magni aliquam aperiam neque et eum consequatur enim quo animi."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.706927"], ["updated_at", "2022-12-16 10:08:53.706927"], ["title", "Laundry"], ["content", "Voluptatem veritatis ea ut earum quia autem quae delectus eligendi ex facilis iure nihil illum et."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.710183"], ["updated_at", "2022-12-16 10:08:53.710183"], ["title", "Laundry"], ["content", "Quia facilis inventore illum sit rerum ipsa delectus et et quisquam in odit dolor reprehenderit cupiditate."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.713216"], ["updated_at", "2022-12-16 10:08:53.713216"], ["title", "Yoga"], ["content", "Enim ut iure nesciunt aut itaque voluptatibus ut ut in beatae velit sit dignissimos vitae consequatur."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.716360"], ["updated_at", "2022-12-16 10:08:53.716360"], ["title", "Sport"], ["content", "Nihil dolor voluptatum vitae ratione vel tempora quia rem aliquid error fugiat deleniti harum et dolores."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.719912"], ["updated_at", "2022-12-16 10:08:53.719912"], ["title", "Yoga"], ["content", "Cum deserunt perferendis labore pariatur incidunt non architecto non fugit est voluptatum recusandae cumque et id."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.723757"], ["updated_at", "2022-12-16 10:08:53.723757"], ["title", "Yoga"], ["content", "Provident corporis quia ut ipsa quod commodi et nesciunt dolorem dolor nisi porro quia voluptatem omnis."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.727512"], ["updated_at", "2022-12-16 10:08:53.727512"], ["title", "Sport"], ["content", "Dolorem molestiae reprehenderit aliquam quis voluptatibus et maiores rerum quas reiciendis magnam odit velit dolor et."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.730757"], ["updated_at", "2022-12-16 10:08:53.730757"], ["title", "Laundry"], ["content", "Totam veniam dolorem ad eligendi aut repudiandae sint atque officiis repellat non nesciunt recusandae voluptatem in."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.734942"], ["updated_at", "2022-12-16 10:08:53.734942"], ["title", "Yoga"], ["content", "Quo doloremque eum nemo cupiditate dolorem sit distinctio perferendis eos ea aut deserunt praesentium alias laboriosam."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.738475"], ["updated_at", "2022-12-16 10:08:53.738475"], ["title", "Sport"], ["content", "Minima aspernatur sed dolor est architecto exercitationem minus delectus culpa corporis aut voluptatum enim consequatur perferendis."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.741805"], ["updated_at", "2022-12-16 10:08:53.741805"], ["title", "Laundry"], ["content", "Fugit consequatur ut veniam ullam aut error rerum nostrum dolores rerum cupiditate eveniet sunt minus tenetur."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.745496"], ["updated_at", "2022-12-16 10:08:53.745496"], ["title", "Sport"], ["content", "Delectus repellat eos dolorem odio nam distinctio eius voluptas magnam omnis molestiae et quos quaerat ut."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.748569"], ["updated_at", "2022-12-16 10:08:53.748569"], ["title", "Yoga"], ["content", "Nulla sit doloremque rerum voluptas sunt ex dolorem aut error aut minima sed nesciunt ipsam sit."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.752310"], ["updated_at", "2022-12-16 10:08:53.752310"], ["title", "Laundry"], ["content", "Distinctio enim provident voluptas dolorem ea aliquid unde ullam ratione numquam molestiae molestias aut et et."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.755590"], ["updated_at", "2022-12-16 10:08:53.755590"], ["title", "Laundry"], ["content", "Illum distinctio eum in accusamus qui odio minima quod et perspiciatis impedit ipsam aliquam voluptatem expedita."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.759501"], ["updated_at", "2022-12-16 10:08:53.759501"], ["title", "Sport"], ["content", "Et dolor adipisci et sed est magni aut unde quae officiis ut ipsam tempore magnam excepturi."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.762688"], ["updated_at", "2022-12-16 10:08:53.762688"], ["title", "Sport"], ["content", "Velit ratione illum et eum quaerat qui rerum sunt molestias sed aut voluptatibus veniam dolorem numquam."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.765866"], ["updated_at", "2022-12-16 10:08:53.765866"], ["title", "Yoga"], ["content", "Est tenetur illum vitae explicabo eligendi quidem qui earum adipisci nam tempora id sequi omnis et."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.769024"], ["updated_at", "2022-12-16 10:08:53.769024"], ["title", "Sport"], ["content", "Quia voluptatem nostrum recusandae esse dolorum sed temporibus numquam sapiente id delectus itaque hic adipisci cupiditate."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.772083"], ["updated_at", "2022-12-16 10:08:53.772083"], ["title", "Yoga"], ["content", "Quod qui beatae voluptates laborum et nam est placeat dolorum qui vitae repellendus cupiditate accusantium consequuntur."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.775284"], ["updated_at", "2022-12-16 10:08:53.775284"], ["title", "Yoga"], ["content", "Et consequatur minima iusto similique accusantium hic aliquam explicabo id veniam neque sed quis quia molestiae."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.778939"], ["updated_at", "2022-12-16 10:08:53.778939"], ["title", "Yoga"], ["content", "Sed inventore velit nihil earum error qui nemo ea delectus numquam placeat animi assumenda harum asperiores."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.783030"], ["updated_at", "2022-12-16 10:08:53.783030"], ["title", "Yoga"], ["content", "Ut modi sit sed deserunt accusamus quia vel voluptatem tempora doloribus enim laborum veritatis et voluptate."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.786839"], ["updated_at", "2022-12-16 10:08:53.786839"], ["title", "Yoga"], ["content", "Odit fugiat sed temporibus est et laboriosam fugit fuga ab quibusdam et quos delectus eum earum."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.790537"], ["updated_at", "2022-12-16 10:08:53.790537"], ["title", "Sport"], ["content", "Vel est mollitia tempora consequatur doloribus eius deserunt numquam in modi accusantium quis est voluptatem totam."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.793600"], ["updated_at", "2022-12-16 10:08:53.793600"], ["title", "Laundry"], ["content", "Et quas omnis voluptatem numquam impedit autem odio excepturi autem delectus fuga quisquam quasi laboriosam voluptatem."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.796848"], ["updated_at", "2022-12-16 10:08:53.796848"], ["title", "Laundry"], ["content", "Error sit qui asperiores occaecati pariatur autem consequatur officia officiis cupiditate in tempora qui accusantium aspernatur."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.799923"], ["updated_at", "2022-12-16 10:08:53.799923"], ["title", "Yoga"], ["content", "Sed sit illo dolorum est et magni veritatis sint error nihil quos odit voluptatum impedit dolores."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.803389"], ["updated_at", "2022-12-16 10:08:53.803389"], ["title", "Laundry"], ["content", "Assumenda doloribus minima ab aspernatur et porro ut est omnis eligendi nihil accusantium vel et recusandae."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.807150"], ["updated_at", "2022-12-16 10:08:53.807150"], ["title", "Yoga"], ["content", "Autem quas maxime omnis ut quo ut non dolorum voluptatem distinctio quae laborum et unde aut."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.810716"], ["updated_at", "2022-12-16 10:08:53.810716"], ["title", "Sport"], ["content", "Est earum in iste incidunt ullam sit corporis aut culpa velit iure ut occaecati eligendi recusandae."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:08:53.813989"], ["updated_at", "2022-12-16 10:08:53.813989"], ["title", "Yoga"], ["content", "Mollitia eum ab non dolor culpa ex qui nobis totam illo minus voluptatem est sunt eius."], ["start_date", "2022-10-10"], ["end_date", "2022-12-12"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+Started GET "/new-task" for ::1 at 2022-12-16 18:10:11 +0800
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TasksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (Duration: 370.4ms | Allocations: 279310)
+  Rendered shared/_navar.html.erb (Duration: 0.9ms | Allocations: 139)
+  Rendered layout layouts/application.html.erb (Duration: 418.1ms | Allocations: 299364)
+Completed 200 OK in 443ms (Views: 423.4ms | ActiveRecord: 3.9ms | Allocations: 307963)
+
+
+Started GET "/" for ::1 at 2022-12-16 18:10:16 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 1.1ms | Allocations: 99)
+  [1m[36mTask Load (0.9ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:27
+  Rendered shared/_all-tasks.html.erb (Duration: 10.1ms | Allocations: 4199)
+  Rendered pages/index.html.erb within layouts/application (Duration: 12.8ms | Allocations: 4689)
+  Rendered shared/_navar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 7028)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.9ms | Allocations: 7834)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTask Load (1.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.4ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 55]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 56]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 57]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 58]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 59]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 60]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 61]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 62]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 63]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 64]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 65]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 66]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 67]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 68]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 69]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 70]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 71]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 72]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 73]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 74]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 75]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 76]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 77]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 78]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 79]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 80]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 81]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 82]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 83]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 84]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 85]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 86]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 87]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 88]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 89]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 90]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 91]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 92]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 93]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 94]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.7ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.085887"], ["updated_at", "2022-12-16 10:10:44.085887"], ["title", "Laundry"], ["content", "Deserunt doloribus quia quas eligendi distinctio dicta ex eos nisi cum quisquam repudiandae aperiam velit nostrum."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.091478"], ["updated_at", "2022-12-16 10:10:44.091478"], ["title", "Sport"], ["content", "Nesciunt aliquam voluptate cumque dolor error ipsam impedit nihil optio neque vitae ea veniam consequatur et."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.095629"], ["updated_at", "2022-12-16 10:10:44.095629"], ["title", "Laundry"], ["content", "Adipisci labore in id ut similique et enim maxime rerum inventore nam qui sit vero molestiae."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.099026"], ["updated_at", "2022-12-16 10:10:44.099026"], ["title", "Laundry"], ["content", "Totam distinctio et eaque blanditiis incidunt non quisquam reiciendis delectus adipisci doloribus nesciunt dolores rerum cupiditate."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.102253"], ["updated_at", "2022-12-16 10:10:44.102253"], ["title", "Yoga"], ["content", "Commodi ea at ipsa ut impedit quia consequatur libero ea quo provident delectus architecto cumque mollitia."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.105985"], ["updated_at", "2022-12-16 10:10:44.105985"], ["title", "Laundry"], ["content", "Numquam rerum ducimus et nobis hic inventore assumenda aspernatur consequatur at praesentium eum occaecati in cupiditate."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.109583"], ["updated_at", "2022-12-16 10:10:44.109583"], ["title", "Sport"], ["content", "Vel eos voluptatem ut in ducimus non distinctio voluptas inventore alias ut nihil tempore magnam ut."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.113031"], ["updated_at", "2022-12-16 10:10:44.113031"], ["title", "Laundry"], ["content", "Sit enim deserunt fuga ut non hic distinctio repudiandae et ab assumenda consequuntur minima sed aliquam."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.116101"], ["updated_at", "2022-12-16 10:10:44.116101"], ["title", "Sport"], ["content", "Sint nulla occaecati aut voluptates non illo molestiae inventore vero dolorum ea aliquid amet asperiores veritatis."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.119718"], ["updated_at", "2022-12-16 10:10:44.119718"], ["title", "Laundry"], ["content", "Quo repellendus dolorum rerum iusto ratione sequi non sapiente voluptatibus voluptatum aspernatur commodi est cum placeat."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.123366"], ["updated_at", "2022-12-16 10:10:44.123366"], ["title", "Sport"], ["content", "Ut et eos voluptatibus quia quo recusandae deleniti dolorem eum eveniet sint libero et dolorem quam."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.126880"], ["updated_at", "2022-12-16 10:10:44.126880"], ["title", "Sport"], ["content", "Animi quisquam rerum deserunt aliquam sed ut omnis qui officiis praesentium quia adipisci aperiam totam blanditiis."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.130487"], ["updated_at", "2022-12-16 10:10:44.130487"], ["title", "Laundry"], ["content", "Itaque aliquid omnis in vel iusto voluptate quasi nobis consequatur tempora et neque sed voluptatem dolore."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.133644"], ["updated_at", "2022-12-16 10:10:44.133644"], ["title", "Yoga"], ["content", "Dolorem natus aliquam repellendus at ipsam explicabo quisquam reiciendis commodi laboriosam consequatur quo iure saepe reprehenderit."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.136881"], ["updated_at", "2022-12-16 10:10:44.136881"], ["title", "Laundry"], ["content", "Perferendis blanditiis temporibus aspernatur voluptas cum dolorum ipsum tenetur est adipisci quisquam voluptate nostrum reprehenderit incidunt."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.141356"], ["updated_at", "2022-12-16 10:10:44.141356"], ["title", "Sport"], ["content", "Aut qui quia sed et adipisci iste ut velit autem id voluptatem animi repellat nostrum iure."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.146314"], ["updated_at", "2022-12-16 10:10:44.146314"], ["title", "Sport"], ["content", "Reprehenderit consequatur velit ullam dolor quisquam totam dolorum harum magni quasi suscipit in perferendis non assumenda."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.150823"], ["updated_at", "2022-12-16 10:10:44.150823"], ["title", "Laundry"], ["content", "Dolorem fuga beatae veniam quam consequuntur quis qui ab voluptas nihil rerum amet et sunt iste."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.155732"], ["updated_at", "2022-12-16 10:10:44.155732"], ["title", "Sport"], ["content", "Consequatur exercitationem omnis non enim quidem accusantium tempora voluptates voluptatem quia dolore quia consequatur sed est."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.163106"], ["updated_at", "2022-12-16 10:10:44.163106"], ["title", "Sport"], ["content", "Quaerat placeat eveniet libero adipisci animi dolor ex non molestias explicabo quasi fuga provident ipsam accusamus."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.168019"], ["updated_at", "2022-12-16 10:10:44.168019"], ["title", "Laundry"], ["content", "Officia doloremque qui sint reiciendis at temporibus dolor quis nihil enim cumque dolore sed dolorum deleniti."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.173288"], ["updated_at", "2022-12-16 10:10:44.173288"], ["title", "Laundry"], ["content", "Cum numquam et harum aut dolorem eum voluptatem rerum minima totam sit ea sint quo voluptatem."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.178263"], ["updated_at", "2022-12-16 10:10:44.178263"], ["title", "Sport"], ["content", "Voluptas et officiis odit earum possimus et sit beatae ducimus numquam adipisci optio cumque delectus veniam."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.181685"], ["updated_at", "2022-12-16 10:10:44.181685"], ["title", "Sport"], ["content", "Quibusdam enim cupiditate maiores qui fuga non ut aliquid voluptatem tempore quasi saepe voluptatum incidunt ratione."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.184910"], ["updated_at", "2022-12-16 10:10:44.184910"], ["title", "Yoga"], ["content", "Ratione ut est impedit qui nisi eveniet quia adipisci repellendus est id quis fugit sit debitis."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.188516"], ["updated_at", "2022-12-16 10:10:44.188516"], ["title", "Laundry"], ["content", "Sint placeat mollitia enim autem et eaque consectetur officiis in molestiae sit sapiente illo necessitatibus in."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.191875"], ["updated_at", "2022-12-16 10:10:44.191875"], ["title", "Laundry"], ["content", "Similique optio quae consectetur dolore velit est sed eius sit numquam error molestiae ut qui tempore."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.195183"], ["updated_at", "2022-12-16 10:10:44.195183"], ["title", "Laundry"], ["content", "Repellat et aut at natus molestias quis quas aut minima ducimus dolorum enim est est consequuntur."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.198685"], ["updated_at", "2022-12-16 10:10:44.198685"], ["title", "Laundry"], ["content", "Voluptatem ut facere consequatur nostrum magnam et et asperiores reprehenderit est tenetur consequuntur ea earum doloremque."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.202100"], ["updated_at", "2022-12-16 10:10:44.202100"], ["title", "Yoga"], ["content", "Eligendi error temporibus distinctio assumenda et reiciendis suscipit debitis minima accusamus architecto eum in at cupiditate."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.206539"], ["updated_at", "2022-12-16 10:10:44.206539"], ["title", "Sport"], ["content", "Harum vel modi ut eligendi debitis nulla doloribus velit expedita nesciunt sit voluptatem reiciendis suscipit vitae."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.211109"], ["updated_at", "2022-12-16 10:10:44.211109"], ["title", "Laundry"], ["content", "Dolor dolorum recusandae soluta consequatur enim porro expedita nobis tenetur autem quia quas beatae eaque officia."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.215476"], ["updated_at", "2022-12-16 10:10:44.215476"], ["title", "Sport"], ["content", "Doloremque reprehenderit perspiciatis quis vero voluptate tempora et ut blanditiis sunt dolor ea consequatur vel est."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.5ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.220108"], ["updated_at", "2022-12-16 10:10:44.220108"], ["title", "Sport"], ["content", "Quae et voluptas veritatis qui soluta ab possimus eos ipsam quos quo officia odit est quasi."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.226089"], ["updated_at", "2022-12-16 10:10:44.226089"], ["title", "Yoga"], ["content", "Sed est ducimus atque et eligendi corrupti cumque soluta eos voluptatum corporis libero ex voluptas ab."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.230961"], ["updated_at", "2022-12-16 10:10:44.230961"], ["title", "Sport"], ["content", "Dolore ea sed ut totam necessitatibus autem vel nihil eum voluptatem aut beatae nesciunt quam nulla."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.235031"], ["updated_at", "2022-12-16 10:10:44.235031"], ["title", "Sport"], ["content", "Voluptatem nihil quae aut illum architecto rerum necessitatibus et ea sequi praesentium dolorem fuga voluptatem maxime."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.238622"], ["updated_at", "2022-12-16 10:10:44.238622"], ["title", "Sport"], ["content", "Et ut accusamus quidem illo earum quisquam itaque quis quia laudantium molestias unde error sit veritatis."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.242363"], ["updated_at", "2022-12-16 10:10:44.242363"], ["title", "Laundry"], ["content", "Eius numquam qui reprehenderit quod accusamus voluptas ad ut necessitatibus quam corporis atque est et magni."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-12-16 10:10:44.246301"], ["updated_at", "2022-12-16 10:10:44.246301"], ["title", "Sport"], ["content", "Nulla eum odio quo autem praesentium accusantium rem iure distinctio at ipsa vel sed culpa assumenda."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2022-12-16 18:10:53 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.1ms | Allocations: 9)
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:27
+  Rendered shared/_all-tasks.html.erb (Duration: 7.0ms | Allocations: 3606)
+  Rendered pages/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 3734)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 5817)
+Completed 200 OK in 14ms (Views: 12.2ms | ActiveRecord: 0.5ms | Allocations: 6099)
+
+
+Started GET "/" for ::1 at 2022-12-16 18:11:17 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 1.1ms | Allocations: 95)
+  [1m[36mTask Load (0.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:27
+  Rendered shared/_all-tasks.html.erb (Duration: 22.7ms | Allocations: 9593)
+  Rendered pages/index.html.erb within layouts/application (Duration: 26.4ms | Allocations: 10075)
+  Rendered layout layouts/application.html.erb (Duration: 26.5ms | Allocations: 10161)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.8ms | Allocations: 10966)
+
+
+  
+ActionView::Template::Error (undefined method `now' for Date:Class
+
+              <td class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap">'.freeze;@output_buffer.append=( task.end_date - Date.now);@output_buffer.safe_append='</td>
+                                                                                                                                                                    ^^^^
+Did you mean?  new):
+    27:             <% @tasks.each do |task| %>
+    28:               <td class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap"><%= task.title.truncate(20) %></td>
+    29:               <td class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap"><%= task.content.truncate(80) %></td>
+    30:               <td class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap"><%= task.end_date - Date.now%></td>
+    31:               <td class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap"><%= link_to "Check", task_path(task), class:"text-[#FF4C29] hover:text-[#ff5e3e]" %></td>
+    32:           </tr>
+    33:             <% end %>
+  
+app/views/shared/_all-tasks.html.erb:30
+app/views/shared/_all-tasks.html.erb:27
+app/views/pages/index.html.erb:2
+Started GET "/" for ::1 at 2022-12-16 18:11:22 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.3ms | Allocations: 95)
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:27
+  Rendered shared/_all-tasks.html.erb (Duration: 6.0ms | Allocations: 4070)
+  Rendered pages/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 4537)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 4623)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.4ms | Allocations: 5422)
+
+
+  
+ActionView::Template::Error (undefined method `now' for Date:Class
+
+              <td class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap">'.freeze;@output_buffer.append=( task.end_date - Date.now );@output_buffer.safe_append='</td>
+                                                                                                                                                                    ^^^^
+Did you mean?  new):
+    27:             <% @tasks.each do |task| %>
+    28:               <td class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap"><%= task.title.truncate(20) %></td>
+    29:               <td class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap"><%= task.content.truncate(80) %></td>
+    30:               <td class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap"><%= task.end_date - Date.now %></td>
+    31:               <td class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap"><%= link_to "Check", task_path(task), class:"text-[#FF4C29] hover:text-[#ff5e3e]" %></td>
+    32:           </tr>
+    33:             <% end %>
+  
+app/views/shared/_all-tasks.html.erb:30
+app/views/shared/_all-tasks.html.erb:27
+app/views/pages/index.html.erb:2
+Started GET "/" for ::1 at 2022-12-16 18:14:40 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 1.7ms | Allocations: 95)
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:27
+  Rendered shared/_all-tasks.html.erb (Duration: 18.6ms | Allocations: 5632)
+  Rendered pages/index.html.erb within layouts/application (Duration: 40.0ms | Allocations: 6097)
+  Rendered shared/_navar.html.erb (Duration: 0.8ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 47.0ms | Allocations: 8798)
+Completed 200 OK in 52ms (Views: 44.0ms | ActiveRecord: 5.9ms | Allocations: 10357)
+
+
+Started GET "/" for ::1 at 2022-12-16 18:14:57 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.2ms | Allocations: 95)
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:27
+  Rendered shared/_all-tasks.html.erb (Duration: 5.6ms | Allocations: 3966)
+  Rendered pages/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 4431)
+  Rendered shared/_navar.html.erb (Duration: 0.3ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 7116)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.3ms | Allocations: 7934)
+
+
+Started GET "/" for ::1 at 2022-12-16 18:15:07 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.3ms | Allocations: 95)
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:27
+  Rendered shared/_all-tasks.html.erb (Duration: 16.3ms | Allocations: 7235)
+  Rendered pages/index.html.erb within layouts/application (Duration: 18.0ms | Allocations: 7702)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 7787)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.4ms | Allocations: 8585)
+
+
+  
+ActionView::Template::Error (undefined method `remaining_time' for #<Task id: 95, created_at: "2022-12-16 10:10:44.085887000 +0000", updated_at: "2022-12-16 10:10:44.085887000 +0000", title: "Laundry", content: "Deserunt doloribus quia quas eligendi distinctio d...", start_date: "2022-10-10", end_date: "2022-12-21">):
+    27:             <% @tasks.each do |task| %>
+    28:               <td class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap"><%= task.title.truncate(20) %></td>
+    29:               <td class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap"><%= task.content.truncate(80) %></td>
+    30:               <td class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap"><%= task.remaining_time %></td>
+    31:               <td class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap"><%= link_to "Check", task_path(task), class:"text-[#FF4C29] hover:text-[#ff5e3e]" %></td>
+    32:           </tr>
+    33:             <% end %>
+  
+app/views/shared/_all-tasks.html.erb:30
+app/views/shared/_all-tasks.html.erb:27
+app/views/pages/index.html.erb:2
+Started GET "/" for ::1 at 2022-12-16 18:15:17 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.2ms | Allocations: 95)
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:27
+  Rendered shared/_all-tasks.html.erb (Duration: 4.7ms | Allocations: 3560)
+  Rendered pages/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 4025)
+  Rendered shared/_navar.html.erb (Duration: 0.7ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 6733)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.3ms | Allocations: 7547)
+
+
+Started GET "/" for ::1 at 2022-12-16 18:15:37 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.6ms | Allocations: 95)
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:27
+  Rendered shared/_all-tasks.html.erb (Duration: 9.2ms | Allocations: 5621)
+  Rendered pages/index.html.erb within layouts/application (Duration: 11.2ms | Allocations: 6086)
+  Rendered shared/_navar.html.erb (Duration: 0.7ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 8797)
+Completed 200 OK in 21ms (Views: 15.6ms | ActiveRecord: 2.8ms | Allocations: 10356)
+
+
+Started GET "/" for ::1 at 2022-12-16 18:15:38 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:27
+  Rendered shared/_all-tasks.html.erb (Duration: 3.6ms | Allocations: 3199)
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 3327)
+  Rendered shared/_navar.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 5421)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.2ms | Allocations: 5693)
+
+
+Started GET "/" for ::1 at 2022-12-16 18:15:52 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.0ms | Allocations: 12)
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:27
+  Rendered shared/_all-tasks.html.erb (Duration: 9.2ms | Allocations: 5352)
+  Rendered pages/index.html.erb within layouts/application (Duration: 9.5ms | Allocations: 5499)
+  Rendered shared/_navar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 7836)
+Completed 200 OK in 14ms (Views: 10.7ms | ActiveRecord: 2.5ms | Allocations: 9052)
+
+
+Started GET "/" for ::1 at 2022-12-16 18:15:53 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:27
+  Rendered shared/_all-tasks.html.erb (Duration: 10.2ms | Allocations: 3199)
+  Rendered pages/index.html.erb within layouts/application (Duration: 10.6ms | Allocations: 3327)
+  Rendered shared/_navar.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 5412)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.2ms | Allocations: 5685)
+
+
+Started GET "/" for ::1 at 2022-12-16 18:16:12 +0800
+Processing by PagesController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1793)
+
+
+  
+NoMethodError (undefined method `end_date' for nil:NilClass
+
+    @remaining_time = (DateTime.now - @task.end_date).to_i
+                                           ^^^^^^^^^):
+  
+app/controllers/pages_controller.rb:6:in `index'
+Started GET "/" for ::1 at 2022-12-16 18:16:12 +0800
+Processing by PagesController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1120)
+
+
+  
+NoMethodError (undefined method `end_date' for nil:NilClass
+
+    @remaining_time = (DateTime.now - @task.end_date).to_i
+                                           ^^^^^^^^^):
+  
+app/controllers/pages_controller.rb:6:in `index'
+Started GET "/" for ::1 at 2022-12-16 18:16:27 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.0ms | Allocations: 12)
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:27
+  Rendered shared/_all-tasks.html.erb (Duration: 15.1ms | Allocations: 5408)
+  Rendered pages/index.html.erb within layouts/application (Duration: 15.5ms | Allocations: 5555)
+  Rendered shared/_navar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 7902)
+Completed 200 OK in 22ms (Views: 17.7ms | ActiveRecord: 2.8ms | Allocations: 9116)
+
+
+Started GET "/" for ::1 at 2022-12-16 18:16:56 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.6ms | Allocations: 95)
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:27
+  Rendered shared/_all-tasks.html.erb (Duration: 6.3ms | Allocations: 3560)
+  Rendered pages/index.html.erb within layouts/application (Duration: 9.0ms | Allocations: 4028)
+  Rendered shared/_navar.html.erb (Duration: 0.7ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 6713)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.3ms | Allocations: 7550)
+
+
+Started GET "/tasks/95" for ::1 at 2022-12-16 18:16:57 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"95"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 95], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 403)
+  Rendered shared/_navar.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 2724)
+Completed 200 OK in 10ms (Views: 4.8ms | ActiveRecord: 0.4ms | Allocations: 5800)
+
+
+Started GET "/tasks/95" for ::1 at 2022-12-16 18:17:28 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"95"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 95], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 391)
+  Rendered shared/_navar.html.erb (Duration: 0.5ms | Allocations: 131)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 3101)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.2ms | Allocations: 4526)
+
+
+Started GET "/tasks/95" for ::1 at 2022-12-16 18:17:40 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"95"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 95], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 388)
+  Rendered shared/_navar.html.erb (Duration: 0.3ms | Allocations: 131)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 3104)
+Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 0.3ms | Allocations: 4514)
+
+
