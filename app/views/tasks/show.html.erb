@@ -1,0 +1,11 @@
+<div>
+  <div class="flex justify-between inline-block align-text-bottom mb-10">
+    <h1 class="text-white text-3xl"><%= @task.title %></h1>
+    <%= link_to "Edit", root_path, class:"text-[#FF4C29] hover:text-[#ff5e3e]" %>
+  </div>
+  <div>
+    <span>
+      <%= @task.content %>
+    </span>
+  </div>
+</div>

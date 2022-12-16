@@ -9,22 +9,26 @@
       <table class="min-w-full table-auto">
         <thead class="bg-[#2C394B]">
           <tr>
-            <th class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-white uppercase border-b border-[#FF4C29]">
+            <th class="px-6 py-4 text-xs font-medium leading-4 tracking-wider text-left text-white uppercase border-b border-[#FF4C29]">
               Title
             </th>
-             <th class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-white uppercase border-b border-[#FF4C29]">
+            <th class="px-6 py-4 text-xs font-medium leading-4 tracking-wider text-left text-white uppercase border-b border-[#FF4C29]">
               Content
             </th>
-            <th class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-white uppercase border-b border-[#FF4C29]">
+            <th class="px-6 py-4 text-xs font-medium leading-4 tracking-wider text-left text-white uppercase border-b border-[#FF4C29]">
+              Deadline
+            </th>
+            <th class="px-6 py-4 text-xs font-medium leading-4 tracking-wider text-left text-white uppercase border-b border-[#FF4C29]">
             </th>
           </tr>
         </thead>
         <tbody class="bg-white">
           <tr>
-            <% @tasks.each do |task| %>
+            <% @tasks.take(10).each do |task| %>
               <td class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap"><%= task.title %></td>
               <td class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap"><%= task.content %></td>
-              <td class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap"><%= link_to "Check", root_path, class:"text-[#FF4C29] hover:text-[#ff5e3e]" %></td>
+              <td class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap">2 days</td>
+              <td class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap"><%= link_to "Check", task_path(task), class:"text-[#FF4C29] hover:text-[#ff5e3e]" %></td>
           </tr>
             <% end %>
         </tbody>
