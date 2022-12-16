@@ -535,3 +535,457 @@ Processing by PagesController#index as HTML
 Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.2ms | Allocations: 4912)
 
 
+Started GET "/" for ::1 at 2022-12-16 11:07:32 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_navar.html.erb (Duration: 1.4ms | Allocations: 131)
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/pages/index.html.erb:4
+  Rendered pages/index.html.erb within layouts/application (Duration: 13.4ms | Allocations: 1624)
+  Rendered layout layouts/application.html.erb (Duration: 30.1ms | Allocations: 4087)
+Completed 200 OK in 42ms (Views: 36.1ms | ActiveRecord: 0.5ms | Allocations: 4910)
+
+
+Started GET "/" for ::1 at 2022-12-16 11:08:54 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_navar.html.erb (Duration: 0.7ms | Allocations: 131)
+  Rendered shared/_hero.html.erb (Duration: 0.3ms | Allocations: 87)
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/pages/index.html.erb:6
+  Rendered pages/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1834)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 4289)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.3ms | Allocations: 5108)
+
+
+Started GET "/" for ::1 at 2022-12-16 11:11:25 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.3ms | Allocations: 90)
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/pages/index.html.erb:5
+  Rendered pages/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1573)
+  Rendered shared/_navar.html.erb (Duration: 0.8ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 4277)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.3ms | Allocations: 5096)
+
+
+Started GET "/" for ::1 at 2022-12-16 11:11:30 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.3ms | Allocations: 89)
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/pages/index.html.erb:5
+  Rendered pages/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1572)
+  Rendered shared/_navar.html.erb (Duration: 1.0ms | Allocations: 129)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 4298)
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.6ms | Allocations: 5117)
+
+
+Started GET "/" for ::1 at 2022-12-16 11:12:00 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.3ms | Allocations: 89)
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/pages/index.html.erb:5
+  Rendered pages/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1581)
+  Rendered shared/_navar.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 4285)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.3ms | Allocations: 5105)
+
+
+Started GET "/" for ::1 at 2022-12-16 11:12:25 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 1.1ms | Allocations: 89)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/pages/index.html.erb:5
+  Rendered pages/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1572)
+  Rendered shared/_navar.html.erb (Duration: 0.3ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 4289)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.2ms | Allocations: 5108)
+
+
+Started GET "/" for ::1 at 2022-12-16 11:12:25 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/pages/index.html.erb:5
+  Rendered pages/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1151)
+  Rendered shared/_navar.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 3246)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.3ms | Allocations: 3519)
+
+
+Started GET "/" for ::1 at 2022-12-16 11:12:53 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.2ms | Allocations: 89)
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/pages/index.html.erb:5
+  Rendered pages/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1572)
+  Rendered shared/_navar.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 4280)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.3ms | Allocations: 5077)
+
+
+Started GET "/" for ::1 at 2022-12-16 11:13:34 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.2ms | Allocations: 90)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/pages/index.html.erb:4
+  Rendered pages/index.html.erb within layouts/application (Duration: 10.2ms | Allocations: 3170)
+  Rendered shared/_navar.html.erb (Duration: 0.6ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 5898)
+Completed 200 OK in 18ms (Views: 11.5ms | ActiveRecord: 4.8ms | Allocations: 7248)
+
+
+Started GET "/" for ::1 at 2022-12-16 11:13:35 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/pages/index.html.erb:4
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1151)
+  Rendered shared/_navar.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 3234)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.2ms | Allocations: 3506)
+
+
+Started GET "/" for ::1 at 2022-12-16 11:13:44 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.2ms | Allocations: 90)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/pages/index.html.erb:4
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1572)
+  Rendered shared/_navar.html.erb (Duration: 0.7ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 4287)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.2ms | Allocations: 5084)
+
+
+Started GET "/" for ::1 at 2022-12-16 11:14:00 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.2ms | Allocations: 90)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/pages/index.html.erb:4
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1573)
+  Rendered shared/_navar.html.erb (Duration: 0.3ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 4279)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.2ms | Allocations: 5098)
+
+
+Started GET "/" for ::1 at 2022-12-16 11:14:08 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.5ms | Allocations: 90)
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/pages/index.html.erb:4
+  Rendered pages/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1572)
+  Rendered shared/_navar.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 4278)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.3ms | Allocations: 5098)
+
+
+Started GET "/" for ::1 at 2022-12-16 11:14:25 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.2ms | Allocations: 89)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/pages/index.html.erb:4
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1571)
+  Rendered shared/_navar.html.erb (Duration: 0.3ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 4287)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.2ms | Allocations: 5106)
+
+
+Started GET "/" for ::1 at 2022-12-16 11:14:31 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.2ms | Allocations: 89)
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/pages/index.html.erb:4
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1571)
+  Rendered shared/_navar.html.erb (Duration: 0.5ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 4290)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.3ms | Allocations: 5109)
+
+
+Started GET "/" for ::1 at 2022-12-16 11:14:50 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.2ms | Allocations: 90)
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/pages/index.html.erb:4
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1572)
+  Rendered shared/_navar.html.erb (Duration: 0.3ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 4287)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.3ms | Allocations: 5106)
+
+
+Started GET "/" for ::1 at 2022-12-16 11:17:09 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.2ms | Allocations: 92)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/pages/index.html.erb:4
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1578)
+  Rendered shared/_navar.html.erb (Duration: 0.3ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 4301)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.2ms | Allocations: 5122)
+
+
+Started GET "/" for ::1 at 2022-12-16 11:17:10 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/pages/index.html.erb:4
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1151)
+  Rendered shared/_navar.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 3240)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.3ms | Allocations: 3513)
+
+
+Started GET "/" for ::1 at 2022-12-16 11:17:15 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.2ms | Allocations: 92)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/pages/index.html.erb:4
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1574)
+  Rendered shared/_navar.html.erb (Duration: 0.5ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 4292)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.2ms | Allocations: 5089)
+
+
+Started GET "/" for ::1 at 2022-12-16 11:17:23 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.4ms | Allocations: 92)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/pages/index.html.erb:4
+  Rendered pages/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1575)
+  Rendered shared/_navar.html.erb (Duration: 0.3ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 4286)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.2ms | Allocations: 5107)
+
+
+Started GET "/" for ::1 at 2022-12-16 11:17:24 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/pages/index.html.erb:4
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1151)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 3255)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.3ms | Allocations: 3528)
+
+
+Started GET "/" for ::1 at 2022-12-16 11:17:54 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.2ms | Allocations: 94)
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/pages/index.html.erb:4
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1576)
+  Rendered shared/_navar.html.erb (Duration: 0.5ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 4285)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.3ms | Allocations: 5082)
+
+
+Started GET "/" for ::1 at 2022-12-16 11:19:29 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.4ms | Allocations: 98)
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/pages/index.html.erb:4
+  Rendered pages/index.html.erb within layouts/application (Duration: 10.2ms | Allocations: 1581)
+  Rendered shared/_navar.html.erb (Duration: 1.0ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 24.8ms | Allocations: 4290)
+Completed 200 OK in 34ms (Views: 29.4ms | ActiveRecord: 0.5ms | Allocations: 5109)
+
+
+Started GET "/" for ::1 at 2022-12-16 11:19:47 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.2ms | Allocations: 95)
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/pages/index.html.erb:4
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1577)
+  Rendered shared/_navar.html.erb (Duration: 1.1ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 4301)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.3ms | Allocations: 5121)
+
+
+Started GET "/" for ::1 at 2022-12-16 11:19:56 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.3ms | Allocations: 95)
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/pages/index.html.erb:4
+  Rendered pages/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1577)
+  Rendered shared/_navar.html.erb (Duration: 1.0ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 4289)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.4ms | Allocations: 5108)
+
+
+Started GET "/" for ::1 at 2022-12-16 11:20:04 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.3ms | Allocations: 95)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/pages/index.html.erb:4
+  Rendered pages/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1577)
+  Rendered shared/_navar.html.erb (Duration: 0.5ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 4286)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.2ms | Allocations: 5105)
+
+
+Started GET "/" for ::1 at 2022-12-16 11:20:05 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/pages/index.html.erb:4
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1151)
+  Rendered shared/_navar.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 3243)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.2ms | Allocations: 3517)
+
+
+Started GET "/" for ::1 at 2022-12-16 11:20:37 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.4ms | Allocations: 95)
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/pages/index.html.erb:4
+  Rendered pages/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1582)
+  Rendered shared/_navar.html.erb (Duration: 1.7ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 4306)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.5ms | Allocations: 5105)
+
+
+Started GET "/" for ::1 at 2022-12-16 11:20:49 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.3ms | Allocations: 95)
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/pages/index.html.erb:4
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1577)
+  Rendered shared/_navar.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 4292)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.3ms | Allocations: 5111)
+
+
+Started GET "/" for ::1 at 2022-12-16 11:20:58 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.3ms | Allocations: 95)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/pages/index.html.erb:4
+  Rendered pages/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1578)
+  Rendered shared/_navar.html.erb (Duration: 0.3ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 4304)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.2ms | Allocations: 5124)
+
+
+Started GET "/" for ::1 at 2022-12-16 11:20:59 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/pages/index.html.erb:4
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1151)
+  Rendered shared/_navar.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 3243)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.2ms | Allocations: 3516)
+
+
+Started GET "/" for ::1 at 2022-12-16 11:21:03 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.2ms | Allocations: 95)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/pages/index.html.erb:4
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1577)
+  Rendered shared/_navar.html.erb (Duration: 0.8ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 4292)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.2ms | Allocations: 5089)
+
+
+Started GET "/" for ::1 at 2022-12-16 11:21:04 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/pages/index.html.erb:4
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1151)
+  Rendered shared/_navar.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 3243)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.4ms | Allocations: 3516)
+
+
+Started GET "/" for ::1 at 2022-12-16 11:21:25 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.3ms | Allocations: 95)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/pages/index.html.erb:4
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1577)
+  Rendered shared/_navar.html.erb (Duration: 0.3ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 4277)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.2ms | Allocations: 5075)
+
+
+Started GET "/" for ::1 at 2022-12-16 11:21:32 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.3ms | Allocations: 95)
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/pages/index.html.erb:4
+  Rendered pages/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1577)
+  Rendered shared/_navar.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 4295)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.3ms | Allocations: 5114)
+
+
