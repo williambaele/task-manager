@@ -8,8 +8,7 @@
 puts "Destroying data"
 Task.destroy_all
 title = ["Laundry", "Yoga", "Sport"]
-content = ["Lorem", "Ipsum"]
 40.times do
-  task = Task.create!(title: title.sample, content: content.sample)
+  task = Task.create!(title: title.sample, content: Faker::Lorem.sentence(word_count: 16))
   puts task.title
 end

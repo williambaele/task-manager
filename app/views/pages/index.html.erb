@@ -1,10 +1,2 @@
 <%= render "shared/hero" %>
-<div>
-  <table class="bg-white">
-    <% @tasks.each do |task| %>
-    <tr>
-      <td class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap"><%= task.title %></td>
-    </tr>
-    <% end %>
-  </table>
-</div>
+<%= render "shared/all-tasks" %>
