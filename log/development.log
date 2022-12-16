@@ -102,3 +102,153 @@ NoMethodError (undefined method `devise_for' for #<ActionDispatch::Routing::Mapp
   
 config/routes.rb:2:in `block in <main>'
 config/routes.rb:1:in `<main>'
+Started GET "/" for ::1 at 2022-12-16 10:29:32 +0800
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 281)
+  Rendered layout layouts/application.html.erb (Duration: 346.0ms | Allocations: 67073)
+Completed 200 OK in 358ms (Views: 350.4ms | ActiveRecord: 0.0ms | Allocations: 70025)
+
+
+Started GET "/" for ::1 at 2022-12-16 10:36:40 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_navar.html.erb (Duration: 0.3ms | Allocations: 143)
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 420)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 2908)
+Completed 200 OK in 12ms (Views: 11.3ms | Allocations: 3748)
+
+
+Started GET "/" for ::1 at 2022-12-16 10:36:52 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_navar.html.erb (Duration: 0.5ms | Allocations: 140)
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 383)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 2846)
+Completed 200 OK in 10ms (Views: 9.2ms | Allocations: 3654)
+
+
+Started GET "/" for ::1 at 2022-12-16 10:37:15 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_navar.html.erb (Duration: 1.0ms | Allocations: 140)
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 383)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 2840)
+Completed 200 OK in 9ms (Views: 8.5ms | Allocations: 3648)
+
+
+Started GET "/" for ::1 at 2022-12-16 10:37:16 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_navar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 71)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 2095)
+Completed 200 OK in 17ms (Views: 16.4ms | Allocations: 2355)
+
+
+Started GET "/" for ::1 at 2022-12-16 10:37:17 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 71)
+  Rendered layout layouts/application.html.erb (Duration: 26.7ms | Allocations: 2106)
+Completed 200 OK in 32ms (Views: 32.2ms | Allocations: 2342)
+
+
+Started GET "/" for ::1 at 2022-12-16 10:37:29 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_navar.html.erb (Duration: 0.3ms | Allocations: 140)
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 383)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 2836)
+Completed 200 OK in 9ms (Views: 8.7ms | Allocations: 3620)
+
+
+Started GET "/" for ::1 at 2022-12-16 10:37:43 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_navar.html.erb (Duration: 0.2ms | Allocations: 140)
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 383)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 2830)
+Completed 200 OK in 7ms (Views: 6.7ms | Allocations: 3631)
+
+
+Started GET "/" for ::1 at 2022-12-16 10:41:33 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_navar.html.erb (Duration: 0.4ms | Allocations: 140)
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 386)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 2840)
+Completed 200 OK in 20ms (Views: 16.0ms | Allocations: 3642)
+
+
+Started GET "/" for ::1 at 2022-12-16 10:41:59 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_navar.html.erb (Duration: 0.4ms | Allocations: 140)
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 383)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 2845)
+Completed 200 OK in 10ms (Views: 8.9ms | Allocations: 3647)
+
+
+Started GET "/" for ::1 at 2022-12-16 10:42:58 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_navar.html.erb (Duration: 1.2ms | Allocations: 138)
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 381)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 2822)
+Completed 200 OK in 7ms (Views: 6.6ms | Allocations: 3623)
+
+
+Started GET "/" for ::1 at 2022-12-16 10:43:11 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_navar.html.erb (Duration: 0.7ms | Allocations: 138)
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 381)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 2834)
+Completed 200 OK in 11ms (Views: 10.1ms | Allocations: 3635)
+
+
+Started GET "/" for ::1 at 2022-12-16 10:43:46 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_navar.html.erb (Duration: 1.0ms | Allocations: 138)
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 381)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 2822)
+Completed 200 OK in 14ms (Views: 12.4ms | Allocations: 3623)
+
+
+Started GET "/" for ::1 at 2022-12-16 10:43:55 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_navar.html.erb (Duration: 0.4ms | Allocations: 138)
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 381)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 2846)
+Completed 200 OK in 9ms (Views: 8.3ms | Allocations: 3647)
+
+
+Started GET "/" for ::1 at 2022-12-16 10:44:06 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_navar.html.erb (Duration: 0.3ms | Allocations: 138)
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 381)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 2847)
+Completed 200 OK in 8ms (Views: 6.9ms | Allocations: 3648)
+
+
