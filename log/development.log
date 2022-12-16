@@ -252,3 +252,286 @@ Processing by PagesController#index as HTML
 Completed 200 OK in 8ms (Views: 6.9ms | Allocations: 3648)
 
 
+Started GET "/" for ::1 at 2022-12-16 10:46:28 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_navar.html.erb (Duration: 0.3ms | Allocations: 138)
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 381)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 2843)
+Completed 200 OK in 10ms (Views: 9.4ms | Allocations: 3644)
+
+
+Started GET "/" for ::1 at 2022-12-16 10:46:28 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 71)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 2100)
+Completed 200 OK in 7ms (Views: 6.7ms | Allocations: 2353)
+
+
+Started GET "/" for ::1 at 2022-12-16 10:46:37 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_navar.html.erb (Duration: 0.3ms | Allocations: 138)
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 382)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 2823)
+Completed 200 OK in 6ms (Views: 5.1ms | Allocations: 3607)
+
+
+Started GET "/" for ::1 at 2022-12-16 10:46:37 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_navar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 71)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 2106)
+Completed 200 OK in 4ms (Views: 3.4ms | Allocations: 2359)
+
+
+Started GET "/" for ::1 at 2022-12-16 10:46:55 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_navar.html.erb (Duration: 0.3ms | Allocations: 138)
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 381)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 2831)
+Completed 200 OK in 8ms (Views: 6.8ms | Allocations: 3615)
+
+
+Started GET "/" for ::1 at 2022-12-16 10:47:18 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_navar.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 377)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 2836)
+Completed 200 OK in 6ms (Views: 5.6ms | Allocations: 3637)
+
+
+Started GET "/" for ::1 at 2022-12-16 10:47:24 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_navar.html.erb (Duration: 0.4ms | Allocations: 132)
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 375)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 2837)
+Completed 200 OK in 8ms (Views: 7.8ms | Allocations: 3638)
+
+
+Started GET "/" for ::1 at 2022-12-16 10:47:50 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_navar.html.erb (Duration: 0.3ms | Allocations: 132)
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 375)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 2819)
+Completed 200 OK in 7ms (Views: 6.3ms | Allocations: 3620)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5796706365260502195)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTasks (20221216024839)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (10.0ms)[0m  [1m[35mCREATE TABLE "tasks" ("id" bigserial primary key, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221216024839"]]
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(5796706365260502195)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5796706365260502195)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddDatasToTask (20221216024932)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.0ms)[0m  [1m[35mALTER TABLE "tasks" ADD "title" character varying[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "tasks" ADD "content" text[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221216024932"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(5796706365260502195)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2022-12-16 10:53:13 +0800
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_navar.html.erb (Duration: 0.3ms | Allocations: 132)
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 380)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 2851)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 3785)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTask Load (0.9ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.7ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.058108"], ["updated_at", "2022-12-16 02:59:14.058108"], ["title", "Sport"], ["content", "Lorem"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.062457"], ["updated_at", "2022-12-16 02:59:14.062457"], ["title", "Sport"], ["content", "Ipsum"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.065256"], ["updated_at", "2022-12-16 02:59:14.065256"], ["title", "Sport"], ["content", "Lorem"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.068116"], ["updated_at", "2022-12-16 02:59:14.068116"], ["title", "Yoga"], ["content", "Ipsum"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.070997"], ["updated_at", "2022-12-16 02:59:14.070997"], ["title", "Yoga"], ["content", "Lorem"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.074245"], ["updated_at", "2022-12-16 02:59:14.074245"], ["title", "Laundry"], ["content", "Lorem"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.077689"], ["updated_at", "2022-12-16 02:59:14.077689"], ["title", "Yoga"], ["content", "Lorem"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.081263"], ["updated_at", "2022-12-16 02:59:14.081263"], ["title", "Laundry"], ["content", "Lorem"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.084932"], ["updated_at", "2022-12-16 02:59:14.084932"], ["title", "Laundry"], ["content", "Lorem"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.088493"], ["updated_at", "2022-12-16 02:59:14.088493"], ["title", "Yoga"], ["content", "Ipsum"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (1.6ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.091966"], ["updated_at", "2022-12-16 02:59:14.091966"], ["title", "Yoga"], ["content", "Ipsum"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.097456"], ["updated_at", "2022-12-16 02:59:14.097456"], ["title", "Laundry"], ["content", "Lorem"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.100716"], ["updated_at", "2022-12-16 02:59:14.100716"], ["title", "Yoga"], ["content", "Lorem"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.104209"], ["updated_at", "2022-12-16 02:59:14.104209"], ["title", "Yoga"], ["content", "Lorem"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.106983"], ["updated_at", "2022-12-16 02:59:14.106983"], ["title", "Yoga"], ["content", "Lorem"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.109819"], ["updated_at", "2022-12-16 02:59:14.109819"], ["title", "Yoga"], ["content", "Ipsum"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.112649"], ["updated_at", "2022-12-16 02:59:14.112649"], ["title", "Sport"], ["content", "Lorem"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.116159"], ["updated_at", "2022-12-16 02:59:14.116159"], ["title", "Laundry"], ["content", "Ipsum"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.119713"], ["updated_at", "2022-12-16 02:59:14.119713"], ["title", "Sport"], ["content", "Ipsum"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.123070"], ["updated_at", "2022-12-16 02:59:14.123070"], ["title", "Laundry"], ["content", "Lorem"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.126756"], ["updated_at", "2022-12-16 02:59:14.126756"], ["title", "Yoga"], ["content", "Lorem"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (1.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.129713"], ["updated_at", "2022-12-16 02:59:14.129713"], ["title", "Sport"], ["content", "Ipsum"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.133669"], ["updated_at", "2022-12-16 02:59:14.133669"], ["title", "Yoga"], ["content", "Lorem"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.136766"], ["updated_at", "2022-12-16 02:59:14.136766"], ["title", "Yoga"], ["content", "Ipsum"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.139905"], ["updated_at", "2022-12-16 02:59:14.139905"], ["title", "Yoga"], ["content", "Ipsum"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.143263"], ["updated_at", "2022-12-16 02:59:14.143263"], ["title", "Sport"], ["content", "Lorem"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.146777"], ["updated_at", "2022-12-16 02:59:14.146777"], ["title", "Sport"], ["content", "Lorem"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.152522"], ["updated_at", "2022-12-16 02:59:14.152522"], ["title", "Yoga"], ["content", "Lorem"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.157693"], ["updated_at", "2022-12-16 02:59:14.157693"], ["title", "Laundry"], ["content", "Ipsum"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.160821"], ["updated_at", "2022-12-16 02:59:14.160821"], ["title", "Laundry"], ["content", "Ipsum"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.163769"], ["updated_at", "2022-12-16 02:59:14.163769"], ["title", "Sport"], ["content", "Ipsum"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.168157"], ["updated_at", "2022-12-16 02:59:14.168157"], ["title", "Yoga"], ["content", "Lorem"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.171119"], ["updated_at", "2022-12-16 02:59:14.171119"], ["title", "Yoga"], ["content", "Ipsum"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.174251"], ["updated_at", "2022-12-16 02:59:14.174251"], ["title", "Laundry"], ["content", "Lorem"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.176770"], ["updated_at", "2022-12-16 02:59:14.176770"], ["title", "Sport"], ["content", "Lorem"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.179348"], ["updated_at", "2022-12-16 02:59:14.179348"], ["title", "Sport"], ["content", "Lorem"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.182168"], ["updated_at", "2022-12-16 02:59:14.182168"], ["title", "Laundry"], ["content", "Lorem"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.184958"], ["updated_at", "2022-12-16 02:59:14.184958"], ["title", "Sport"], ["content", "Lorem"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.187637"], ["updated_at", "2022-12-16 02:59:14.187637"], ["title", "Yoga"], ["content", "Ipsum"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-12-16 02:59:14.190376"], ["updated_at", "2022-12-16 02:59:14.190376"], ["title", "Yoga"], ["content", "Ipsum"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2022-12-16 11:01:52 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_navar.html.erb (Duration: 0.9ms | Allocations: 131)
+  Rendered pages/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 2458)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 2555)
+Completed 500 Internal Server Error in 10ms (Allocations: 3459)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass
+
+'.freeze;     @tasks.each do |task| 
+                    ^^^^^):
+    1: <%= render "shared/navar" %>
+    2:   <table class="bg-white">
+    3:     <% @tasks.each do |task| %>
+    4:       <tr class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap"><%= task.title %></tr>
+    5:     <% end %>
+    6:   </table>
+  
+app/views/pages/index.html.erb:3
+Started GET "/" for ::1 at 2022-12-16 11:02:27 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_navar.html.erb (Duration: 0.7ms | Allocations: 131)
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/pages/index.html.erb:3
+  Rendered pages/index.html.erb within layouts/application (Duration: 29.9ms | Allocations: 8612)
+  Rendered layout layouts/application.html.erb (Duration: 34.6ms | Allocations: 11111)
+Completed 200 OK in 38ms (Views: 36.2ms | ActiveRecord: 9.9ms | Allocations: 12497)
+
+
+Started GET "/" for ::1 at 2022-12-16 11:03:18 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_navar.html.erb (Duration: 0.5ms | Allocations: 131)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/pages/index.html.erb:3
+  Rendered pages/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1623)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 4062)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.2ms | Allocations: 4912)
+
+
