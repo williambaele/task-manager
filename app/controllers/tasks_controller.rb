@@ -13,8 +13,8 @@ class TasksController < ApplicationController
 
   def create
     @task = Task.new(task_params)
-    if @task.save
-      redirect_to tasks_path
+    if @task.save!
+      redirect_to task_path(@task)
     end
   end
   # UPDATE
@@ -32,8 +32,8 @@ class TasksController < ApplicationController
 
   def destroy
     @task = Task.find(params[:id])
-    if @task.destroy
-      redirect_to tasks_path
+    if @task.destroy!
+      redirect_to root_path
     end
   end
 
