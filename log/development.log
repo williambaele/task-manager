@@ -18649,3 +18649,179 @@ Processing by TasksController#edit as HTML
 Completed 200 OK in 22ms (Views: 18.2ms | ActiveRecord: 0.2ms | Allocations: 6467)
 
 
+Started GET "/" for ::1 at 2022-12-18 07:21:45 +0800
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 1.0ms | Allocations: 112)
+  [1m[36mTask Load (6.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:27
+  Rendered shared/_all-tasks.html.erb (Duration: 27.7ms | Allocations: 11164)
+  Rendered pages/index.html.erb within layouts/application (Duration: 33.4ms | Allocations: 11901)
+  Rendered shared/_navar.html.erb (Duration: 1.2ms | Allocations: 242)
+  Rendered shared/_footer.html.erb (Duration: 0.8ms | Allocations: 102)
+  Rendered layout layouts/application.html.erb (Duration: 140.0ms | Allocations: 38001)
+Completed 200 OK in 164ms (Views: 136.8ms | ActiveRecord: 11.3ms | Allocations: 41782)
+
+
+Started GET "/" for ::1 at 2022-12-18 07:21:55 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.0ms | Allocations: 10)
+  [1m[36mTask Load (0.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:27
+  Rendered shared/_all-tasks.html.erb (Duration: 7.0ms | Allocations: 4481)
+  Rendered pages/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 4618)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 46)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 6896)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.8ms | Allocations: 7219)
+
+
+Started GET "/tasks/465" for ::1 at 2022-12-18 07:21:56 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"465"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 465], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 757)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 57)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 3203)
+Completed 200 OK in 13ms (Views: 6.4ms | ActiveRecord: 0.4ms | Allocations: 6350)
+
+
+Started GET "/tasks/465" for ::1 at 2022-12-18 07:22:00 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"465"}
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 465], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 195)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 2373)
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.4ms | Allocations: 3245)
+
+
+Started GET "/tasks/465/edit" for ::1 at 2022-12-18 07:22:02 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"465"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 465], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 458.5ms | Allocations: 280210)
+  Rendered shared/_navar.html.erb (Duration: 0.2ms | Allocations: 53)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 462.9ms | Allocations: 282282)
+Completed 200 OK in 466ms (Views: 463.7ms | ActiveRecord: 0.2ms | Allocations: 283133)
+
+
+Started PATCH "/tasks/465" for ::1 at 2022-12-18 07:22:15 +0800
+Processing by TasksController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"title"=>"Sport", "content"=>"Est illo molestiae corrupti hic quibusdam iusto a similique eos eius ratione quaerat nihil voluptates nemo sit ut soluta excepturi pariatur consequuntur facere neque veritatis totam ex impedit voluptate quia quo esse ipsum praesentium deserunt qui odit omnis repudiandae ea quasi et et fuga delectus ex aut consequatur porro autem perferendis reprehenderit voluptas necessitatibus quam optio dolores vel quia dignissimos qui eum tempora beatae quis ut dignissimos aut voluptatem ab placeat sed adipisci aut quia vel fugiat quaerat voluptatum et rerum exercitationem omnis provident aut dolor sit eos est facilis similique rem quis sunt ducimus voluptatem ad quia ipsa eligendi et architecto porro voluptatibus atque sed et et non aut saepe nulla mollitia autem odio qui ipsum officiis ea quis aut occaecati enim debitis repellat rem vero possimus tenetur repellendus accusantium incidunt at dolore illum nobis laudantium eveniet non sint delectus nam incidunt quisquam nulla quae deserunt aut perspiciatis et amet quos ea vitae expedita quo officia qui velit sapiente ut minus et ab quod eum blanditiis unde neque voluptates aut dolorem maxime et consequatur expedita dicta quibusdam cupiditate dolorem numquam dolorem explicabo non et voluptatem veniam eaque dolor id vitae recusandae aliquid magni nihil libero molestiae ut quidem nihil blanditiis cum facilis rerum totam corporis id quo quod reprehenderit qui possimus soluta doloribus quisquam rerum ipsam laborum dolor animi aliquam dolore laudantium alias et eum ut doloremque iste omnis numquam aut amet in cumque omnis iure alias sit maiores sed aspernatur nostrum consequatur consequatur tempore dolores laboriosam sequi quae optio deleniti assumenda esse accusamus perferendis officiis velit culpa asperiores consequatur ut veritatis mollitia et quas sit id repellat perspiciatis repellendus molestias sapiente eum itaque vel est et dolor quam non est est tenetur minus molestiae commodi ad eos saepe veniam ut doloribus culpa eos pariatur aut voluptas et eaque.", "todo"=>{"0"=>"Task 1", "1"=>"Task 2", "2"=>"Task 3"}, "difficulty"=>"9", "start_date"=>"2022-10-10", "end_date"=>"2022-12-20"}, "commit"=>"Submit", "id"=>"465"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 465], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:31:in `update'
+[31mUnpermitted parameter: :todo. Context: { controller: TasksController, action: update, request: #<ActionDispatch::Request:0x000000010e14fd70>, params: {"_method"=>"patch", "authenticity_token"=>"[FILTERED]", "task"=>{"title"=>"Sport", "content"=>"Est illo molestiae corrupti hic quibusdam iusto a similique eos eius ratione quaerat nihil voluptates nemo sit ut soluta excepturi pariatur consequuntur facere neque veritatis totam ex impedit voluptate quia quo esse ipsum praesentium deserunt qui odit omnis repudiandae ea quasi et et fuga delectus ex aut consequatur porro autem perferendis reprehenderit voluptas necessitatibus quam optio dolores vel quia dignissimos qui eum tempora beatae quis ut dignissimos aut voluptatem ab placeat sed adipisci aut quia vel fugiat quaerat voluptatum et rerum exercitationem omnis provident aut dolor sit eos est facilis similique rem quis sunt ducimus voluptatem ad quia ipsa eligendi et architecto porro voluptatibus atque sed et et non aut saepe nulla mollitia autem odio qui ipsum officiis ea quis aut occaecati enim debitis repellat rem vero possimus tenetur repellendus accusantium incidunt at dolore illum nobis laudantium eveniet non sint delectus nam incidunt quisquam nulla quae deserunt aut perspiciatis et amet quos ea vitae expedita quo officia qui velit sapiente ut minus et ab quod eum blanditiis unde neque voluptates aut dolorem maxime et consequatur expedita dicta quibusdam cupiditate dolorem numquam dolorem explicabo non et voluptatem veniam eaque dolor id vitae recusandae aliquid magni nihil libero molestiae ut quidem nihil blanditiis cum facilis rerum totam corporis id quo quod reprehenderit qui possimus soluta doloribus quisquam rerum ipsam laborum dolor animi aliquam dolore laudantium alias et eum ut doloremque iste omnis numquam aut amet in cumque omnis iure alias sit maiores sed aspernatur nostrum consequatur consequatur tempore dolores laboriosam sequi quae optio deleniti assumenda esse accusamus perferendis officiis velit culpa asperiores consequatur ut veritatis mollitia et quas sit id repellat perspiciatis repellendus molestias sapiente eum itaque vel est et dolor quam non est est tenetur minus molestiae commodi ad eos saepe veniam ut doloribus culpa eos pariatur aut voluptas et eaque.", "todo"=>{"0"=>"Task 1", "1"=>"Task 2", "2"=>"Task 3"}, "difficulty"=>"9", "start_date"=>"2022-10-10", "end_date"=>"2022-12-20"}, "commit"=>"Submit", "controller"=>"tasks", "action"=>"update", "id"=>"465"} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:32:in `update'
+  [1m[36mTask Update (5.6ms)[0m  [1m[33mUPDATE "tasks" SET "updated_at" = $1, "end_date" = $2 WHERE "tasks"."id" = $3[0m  [["updated_at", "2022-12-17 23:22:15.072825"], ["end_date", "2022-12-20"], ["id", 465]]
+  ↳ app/controllers/tasks_controller.rb:32:in `update'
+  [1m[36mTRANSACTION (5.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:32:in `update'
+Redirected to http://localhost:3000/tasks/465
+Completed 302 Found in 25ms (ActiveRecord: 11.6ms | Allocations: 4890)
+
+
+Started GET "/tasks/465" for ::1 at 2022-12-18 07:22:15 +0800
+Processing by TasksController#show as TURBO_STREAM
+  Parameters: {"id"=>"465"}
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 465], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 220)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 2543)
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.4ms | Allocations: 3405)
+
+
+Started GET "/tasks/465/edit" for ::1 at 2022-12-18 07:22:17 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"465"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 465], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2411)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 4341)
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.3ms | Allocations: 5093)
+
+
+Started GET "/" for ::1 at 2022-12-18 07:22:19 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:27
+  Rendered shared/_all-tasks.html.erb (Duration: 6.0ms | Allocations: 4397)
+  Rendered pages/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 4525)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 6706)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.7ms | Allocations: 6962)
+
+
+Started GET "/" for ::1 at 2022-12-18 07:22:20 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.1ms | Allocations: 9)
+  [1m[36mTask Load (0.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:27
+  Rendered shared/_all-tasks.html.erb (Duration: 6.6ms | Allocations: 4372)
+  Rendered pages/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 4500)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 6690)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.8ms | Allocations: 6941)
+
+
+Started GET "/tasks/466" for ::1 at 2022-12-18 07:23:40 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"466"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 466], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 197)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 2386)
+Completed 200 OK in 9ms (Views: 6.1ms | ActiveRecord: 0.2ms | Allocations: 3155)
+
+
+Started GET "/" for ::1 at 2022-12-18 07:23:49 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mTask Load (1.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:27
+  Rendered shared/_all-tasks.html.erb (Duration: 9.8ms | Allocations: 4372)
+  Rendered pages/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 4500)
+  Rendered shared/_navar.html.erb (Duration: 0.3ms | Allocations: 42)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 6693)
+Completed 200 OK in 19ms (Views: 17.5ms | ActiveRecord: 1.1ms | Allocations: 6946)
+
+
