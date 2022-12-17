@@ -4,7 +4,6 @@ class TasksController < ApplicationController
   def index
     @tasks = Task.all
     @remaining_time = (@task.end_date - DateTime.now).to_i
-
   end
 
   def show
@@ -31,7 +30,7 @@ class TasksController < ApplicationController
   def update
     @task = Task.find(params[:id])
     if @task.update(task_params)
-      redirect_to root_path
+      redirect_to task_path(@task)
     end
   end
 
