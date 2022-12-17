@@ -14276,3 +14276,678 @@ Processing by TasksController#show as HTML
 Completed 200 OK in 14ms (Views: 11.4ms | ActiveRecord: 0.2ms | Allocations: 4984)
 
 
+Started GET "/tasks/302" for ::1 at 2022-12-17 12:22:24 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"302"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 302], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 572)
+  Rendered shared/_navar.html.erb (Duration: 0.9ms | Allocations: 221)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 3585)
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 0.1ms | Allocations: 4993)
+
+
+Started GET "/tasks/302" for ::1 at 2022-12-17 12:22:56 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"302"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 302], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 572)
+  Rendered shared/_navar.html.erb (Duration: 0.6ms | Allocations: 221)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 3585)
+Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 0.2ms | Allocations: 4993)
+
+
+Started GET "/tasks/302" for ::1 at 2022-12-17 12:23:00 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"302"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 302], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 572)
+  Rendered shared/_navar.html.erb (Duration: 0.5ms | Allocations: 221)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 3582)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.1ms | Allocations: 4990)
+
+
+Started GET "/tasks/302" for ::1 at 2022-12-17 12:23:23 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"302"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 302], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 572)
+  Rendered shared/_navar.html.erb (Duration: 0.6ms | Allocations: 221)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 3588)
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.2ms | Allocations: 4996)
+
+
+Started GET "/tasks/302" for ::1 at 2022-12-17 12:24:19 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"302"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 302], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 573)
+  Rendered shared/_navar.html.erb (Duration: 0.5ms | Allocations: 221)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 3583)
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.2ms | Allocations: 4991)
+
+
+Started GET "/tasks/302" for ::1 at 2022-12-17 12:24:27 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"302"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 302], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 573)
+  Rendered shared/_navar.html.erb (Duration: 0.6ms | Allocations: 221)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3595)
+Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 0.3ms | Allocations: 5003)
+
+
+Started GET "/tasks/302" for ::1 at 2022-12-17 12:25:20 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"302"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 302], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 573)
+  Rendered shared/_navar.html.erb (Duration: 1.3ms | Allocations: 221)
+  Rendered shared/_footer.html.erb (Duration: 0.9ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 3580)
+Completed 200 OK in 18ms (Views: 15.3ms | ActiveRecord: 0.2ms | Allocations: 4993)
+
+
+Started GET "/tasks/302" for ::1 at 2022-12-17 12:25:31 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"302"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 302], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 575)
+  Rendered shared/_navar.html.erb (Duration: 0.4ms | Allocations: 221)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 3580)
+Completed 200 OK in 11ms (Views: 8.1ms | ActiveRecord: 0.3ms | Allocations: 4989)
+
+
+Started GET "/" for ::1 at 2022-12-17 12:30:15 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 1.9ms | Allocations: 95)
+  [1m[36mTask Load (0.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:27
+  Rendered shared/_all-tasks.html.erb (Duration: 9.7ms | Allocations: 4790)
+  Rendered pages/index.html.erb within layouts/application (Duration: 13.6ms | Allocations: 5255)
+  Rendered shared/_navar.html.erb (Duration: 0.9ms | Allocations: 218)
+  Rendered shared/_footer.html.erb (Duration: 0.7ms | Allocations: 102)
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 8264)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.8ms | Allocations: 9086)
+
+
+Started GET "/" for ::1 at 2022-12-17 12:31:20 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mTask Load (1.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:27
+  Rendered shared/_all-tasks.html.erb (Duration: 10.1ms | Allocations: 4323)
+  Rendered pages/index.html.erb within layouts/application (Duration: 10.6ms | Allocations: 4451)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 6644)
+Completed 200 OK in 18ms (Views: 16.1ms | ActiveRecord: 1.1ms | Allocations: 6919)
+
+
+Started GET "/new-task" for ::1 at 2022-12-17 12:31:21 +0800
+Processing by TasksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 2386)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 59)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 4510)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 5132)
+
+
+Started POST "/tasks" for ::1 at 2022-12-17 12:32:24 +0800
+Processing by TasksController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"title"=>"LectureLectureLectureLecture", "content"=>"LectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLecture", "difficulty"=>"2", "start_date"=>"2022-12-20", "end_date"=>"2022-12-24"}, "commit"=>"Submit"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:20:in `create'
+  [1m[36mTask Create (1.0ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 04:32:24.198869"], ["updated_at", "2022-12-17 04:32:24.198869"], ["title", "LectureLectureLectureLecture"], ["content", "LectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLectureLecture"], ["start_date", "2022-12-20"], ["end_date", "2022-12-24"], ["todo", nil], ["difficulty", 2]]
+  ↳ app/controllers/tasks_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:20:in `create'
+Redirected to http://localhost:3000/tasks/342
+Completed 302 Found in 8ms (ActiveRecord: 1.9ms | Allocations: 2530)
+
+
+Started GET "/tasks/342" for ::1 at 2022-12-17 12:32:24 +0800
+Processing by TasksController#show as TURBO_STREAM
+  Parameters: {"id"=>"342"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 342], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 472)
+  Rendered shared/_navar.html.erb (Duration: 0.2ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 2695)
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.2ms | Allocations: 3618)
+
+
+Started GET "/tasks/342" for ::1 at 2022-12-17 12:32:41 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"342"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 342], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 567)
+  Rendered shared/_navar.html.erb (Duration: 1.6ms | Allocations: 221)
+  Rendered shared/_footer.html.erb (Duration: 0.9ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 3589)
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 0.2ms | Allocations: 4909)
+
+
+Started GET "/tasks/342" for ::1 at 2022-12-17 12:32:41 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"342"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 342], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 140)
+  Rendered shared/_navar.html.erb (Duration: 0.2ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 2317)
+Completed 200 OK in 9ms (Views: 6.4ms | ActiveRecord: 0.2ms | Allocations: 3170)
+
+
+Started GET "/tasks/342" for ::1 at 2022-12-17 12:32:51 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"342"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 342], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 568)
+  Rendered shared/_navar.html.erb (Duration: 0.5ms | Allocations: 221)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 3593)
+Completed 200 OK in 13ms (Views: 10.6ms | ActiveRecord: 0.3ms | Allocations: 4914)
+
+
+Started GET "/tasks/342" for ::1 at 2022-12-17 12:32:52 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"342"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 342], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 140)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 2350)
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.1ms | Allocations: 3203)
+
+
+Started GET "/tasks/342" for ::1 at 2022-12-17 12:33:15 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"342"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 342], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 569)
+  Rendered shared/_navar.html.erb (Duration: 0.5ms | Allocations: 221)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3588)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.1ms | Allocations: 4909)
+
+
+Started GET "/tasks/342" for ::1 at 2022-12-17 12:33:26 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"342"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 342], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 565)
+  Rendered shared/_navar.html.erb (Duration: 0.5ms | Allocations: 221)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 3566)
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 0.2ms | Allocations: 4974)
+
+
+Started GET "/" for ::1 at 2022-12-17 12:33:31 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.6ms | Allocations: 95)
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:27
+  Rendered shared/_all-tasks.html.erb (Duration: 7.8ms | Allocations: 4885)
+  Rendered pages/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 5350)
+  Rendered shared/_navar.html.erb (Duration: 0.4ms | Allocations: 218)
+  Rendered shared/_footer.html.erb (Duration: 0.9ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 8371)
+Completed 200 OK in 19ms (Views: 16.4ms | ActiveRecord: 0.6ms | Allocations: 9192)
+
+
+Started GET "/tasks/305" for ::1 at 2022-12-17 12:33:32 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"305"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 305], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 576)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 57)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 2999)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.2ms | Allocations: 4172)
+
+
+Started GET "/tasks/342" for ::1 at 2022-12-17 12:33:41 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"342"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 342], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 140)
+  Rendered shared/_navar.html.erb (Duration: 0.4ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 2349)
+Completed 200 OK in 11ms (Views: 7.8ms | ActiveRecord: 0.3ms | Allocations: 3205)
+
+
+Started GET "/tasks/342" for ::1 at 2022-12-17 12:33:53 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"342"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 342], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 570)
+  Rendered shared/_navar.html.erb (Duration: 0.5ms | Allocations: 221)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 3609)
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.3ms | Allocations: 4947)
+
+
+Started GET "/tasks/342" for ::1 at 2022-12-17 12:33:59 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"342"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 342], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 566)
+  Rendered shared/_navar.html.erb (Duration: 0.5ms | Allocations: 221)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 3579)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.1ms | Allocations: 4987)
+
+
+Started GET "/tasks/342/edit" for ::1 at 2022-12-17 12:34:11 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"342"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 342], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2212)
+  Rendered shared/_navar.html.erb (Duration: 0.4ms | Allocations: 223)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 4914)
+Completed 200 OK in 14ms (Views: 11.2ms | ActiveRecord: 0.2ms | Allocations: 6305)
+
+
+Started GET "/tasks/342/edit" for ::1 at 2022-12-17 12:34:24 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"342"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 342], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2529)
+  Rendered shared/_navar.html.erb (Duration: 0.6ms | Allocations: 223)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 5226)
+Completed 200 OK in 15ms (Views: 12.4ms | ActiveRecord: 0.2ms | Allocations: 6614)
+
+
+Started GET "/tasks/342/edit" for ::1 at 2022-12-17 12:36:00 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"342"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 342], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2545)
+  Rendered shared/_navar.html.erb (Duration: 1.1ms | Allocations: 223)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 6723)
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 0.1ms | Allocations: 8111)
+
+
+Started GET "/tasks/342/edit" for ::1 at 2022-12-17 12:36:01 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"342"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 342], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1893)
+  Rendered shared/_navar.html.erb (Duration: 0.2ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 3862)
+Completed 200 OK in 9ms (Views: 6.6ms | ActiveRecord: 0.2ms | Allocations: 4695)
+
+
+Started GET "/tasks/342/edit" for ::1 at 2022-12-17 12:36:27 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"342"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 342], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1902)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 5249)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.1ms | Allocations: 5996)
+
+
+Started GET "/tasks/342/edit" for ::1 at 2022-12-17 12:36:33 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"342"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 342], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1905)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 5255)
+Completed 200 OK in 17ms (Views: 13.7ms | ActiveRecord: 0.2ms | Allocations: 6002)
+
+
+Started GET "/tasks/342/edit" for ::1 at 2022-12-17 12:36:34 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"342"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 342], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1890)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 3820)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.2ms | Allocations: 4567)
+
+
+Started GET "/tasks/342/edit" for ::1 at 2022-12-17 12:36:35 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"342"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 342], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1908)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 3838)
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.3ms | Allocations: 4585)
+
+
+Started GET "/tasks/342/edit" for ::1 at 2022-12-17 12:36:41 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"342"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 342], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1893)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 5250)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.3ms | Allocations: 5997)
+
+
+Started GET "/tasks/342/edit" for ::1 at 2022-12-17 12:37:32 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"342"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 342], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2531)
+  Rendered shared/_navar.html.erb (Duration: 1.0ms | Allocations: 223)
+  Rendered shared/_footer.html.erb (Duration: 1.0ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 20.8ms | Allocations: 6743)
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.2ms | Allocations: 8045)
+
+
+Started GET "/tasks/342/edit" for ::1 at 2022-12-17 12:37:33 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"342"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 342], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2532)
+  Rendered shared/_navar.html.erb (Duration: 0.5ms | Allocations: 223)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 5229)
+Completed 200 OK in 14ms (Views: 11.0ms | ActiveRecord: 0.2ms | Allocations: 6617)
+
+
+Started GET "/tasks/342/edit" for ::1 at 2022-12-17 12:37:33 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"342"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 342], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1893)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 3823)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.3ms | Allocations: 4656)
+
+
+Started GET "/tasks/342/edit" for ::1 at 2022-12-17 12:37:40 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"342"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 342], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1893)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 5336)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.2ms | Allocations: 6083)
+
+
+Started GET "/" for ::1 at 2022-12-17 12:37:56 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.7ms | Allocations: 95)
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:27
+  Rendered shared/_all-tasks.html.erb (Duration: 7.4ms | Allocations: 4885)
+  Rendered pages/index.html.erb within layouts/application (Duration: 9.5ms | Allocations: 5350)
+  Rendered shared/_navar.html.erb (Duration: 0.5ms | Allocations: 218)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 8452)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.7ms | Allocations: 9255)
+
+
+Started GET "/" for ::1 at 2022-12-17 12:37:57 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:27
+  Rendered shared/_all-tasks.html.erb (Duration: 5.8ms | Allocations: 4418)
+  Rendered pages/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 4546)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 6730)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.7ms | Allocations: 7003)
+
+
+Started GET "/tasks/341" for ::1 at 2022-12-17 12:38:00 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"341"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 341], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 576)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 57)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 3029)
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 0.3ms | Allocations: 4182)
+
+
+Started GET "/tasks/341" for ::1 at 2022-12-17 12:38:21 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"341"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 341], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 579)
+  Rendered shared/_navar.html.erb (Duration: 0.5ms | Allocations: 221)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 3583)
+Completed 200 OK in 12ms (Views: 8.7ms | ActiveRecord: 0.2ms | Allocations: 5007)
+
+
+Started GET "/" for ::1 at 2022-12-17 12:38:22 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.3ms | Allocations: 95)
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:27
+  Rendered shared/_all-tasks.html.erb (Duration: 6.3ms | Allocations: 4885)
+  Rendered pages/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 5365)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 54)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 7790)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.7ms | Allocations: 8411)
+
+
+Started GET "/tasks/342" for ::1 at 2022-12-17 12:38:24 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"342"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 342], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 567)
+  Rendered shared/_navar.html.erb (Duration: 0.6ms | Allocations: 221)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 3606)
+Completed 200 OK in 16ms (Views: 8.9ms | ActiveRecord: 0.2ms | Allocations: 4979)
+
+
+Started GET "/tasks/342" for ::1 at 2022-12-17 12:38:32 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"342"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 342], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 567)
+  Rendered shared/_navar.html.erb (Duration: 0.5ms | Allocations: 221)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 3609)
+Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 0.2ms | Allocations: 5018)
+
+
+Started GET "/tasks/342" for ::1 at 2022-12-17 12:38:39 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"342"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 342], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 565)
+  Rendered shared/_navar.html.erb (Duration: 0.7ms | Allocations: 221)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 3593)
+Completed 200 OK in 16ms (Views: 12.1ms | ActiveRecord: 0.2ms | Allocations: 5001)
+
+
+Started GET "/tasks/342" for ::1 at 2022-12-17 12:39:09 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"342"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 342], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 565)
+  Rendered shared/_navar.html.erb (Duration: 1.2ms | Allocations: 221)
+  Rendered shared/_footer.html.erb (Duration: 0.8ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 3595)
+Completed 200 OK in 13ms (Views: 10.9ms | ActiveRecord: 0.1ms | Allocations: 5004)
+
+
+Started GET "/tasks/342" for ::1 at 2022-12-17 12:39:28 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"342"}
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 342], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 565)
+  Rendered shared/_navar.html.erb (Duration: 0.7ms | Allocations: 221)
+  Rendered shared/_footer.html.erb (Duration: 1.0ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 3575)
+Completed 200 OK in 16ms (Views: 12.4ms | ActiveRecord: 0.4ms | Allocations: 4983)
+
+
+Started GET "/" for ::1 at 2022-12-17 12:40:09 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.7ms | Allocations: 95)
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:27
+  Rendered shared/_all-tasks.html.erb (Duration: 7.1ms | Allocations: 4885)
+  Rendered pages/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 5365)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 54)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 7808)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.6ms | Allocations: 8431)
+
+

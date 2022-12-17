@@ -21,7 +21,7 @@
   </div>
   <div class="grid sm:grid-cols-1 lg:grid-cols-3 gap-4">
     <!-- CARD 1 -->
-    <div class="bg-[#2C394B] rounded p-4 flex justify-center">
+    <div class="bg-[#2C394B] rounded p-4 flex justify-center shadow">
       <div class="grid my-4">
         <div class="mb-6">
         <h2 class="text-center text-white text-2xl font-medium">Difficulty</h2>
@@ -38,7 +38,7 @@
         </div>
     </div>
     <!-- CARD 2 -->
-    <div class="bg-[#2C394B] rounded p-4 flex justify-center">
+    <div class="bg-[#2C394B] rounded p-4 flex justify-center shadow">
       <div class="grid my-4">
         <div class="mb-6">
           <h2 class="text-center text-white text-2xl font-medium">Task length</h2>
@@ -49,7 +49,7 @@
       </div>
     </div>
     <!-- CARD 3 -->
-     <div class="bg-[#2C394B] rounded p-4 flex justify-center">
+     <div class="bg-[#2C394B] rounded p-4 flex justify-center shadow">
       <div class="grid my-4">
         <div class="mb-6">
           <h2 class="text-center text-white text-2xl font-medium">Remaining time</h2>
@@ -62,20 +62,32 @@
   </div>
   <!-- TO DO LIST PART-->
   <div class="my-10">
-    <h2 class="text-white text-3xl mb-6">To do list</h2>
+    <h2 class="text-white text-3xl mb-6 bg-[#2C394B] rounded p-2">To do list</h2>
     <div class="flex items-center mb-4">
         <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-[#FF4C29] bg-gray-100 rounded border-gray-300">
-        <label for="default-checkbox" class="ml-2 text-sm font-medium text-white">Default checkbox</label>
+        <label for="default-checkbox" class="ml-2 text-sm font-medium text-white">Laundry</label>
+    </div>
+    <div class="flex items-center mb-4">
+        <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-[#FF4C29] bg-gray-100 rounded border-gray-300">
+        <label for="default-checkbox" class="ml-2 text-sm font-medium text-white">Reading book</label>
+    </div>
+    <div class="flex items-center mb-4">
+        <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-[#FF4C29] bg-gray-100 rounded border-gray-300">
+        <label for="default-checkbox" class="ml-2 text-sm font-medium text-white">Write my essay</label>
+    </div>
+    <div class="flex items-center mb-4">
+        <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-[#FF4C29] bg-gray-100 rounded border-gray-300">
+        <label for="default-checkbox" class="ml-2 text-sm font-medium text-white">Dog sitting</label>
     </div>
     <div class="flex items-center">
         <input checked id="checked-checkbox" type="checkbox" value="" class="w-4 h-4 text-[#FF4C29] bg-gray-100 rounded border-gray-300">
-        <label for="checked-checkbox" class="ml-2 text-sm font-medium text-white">Checked state</label>
+        <label for="checked-checkbox" class="ml-2 text-sm font-medium text-white">Finish my homework</label>
     </div>
   </div>
   <!-- CONTENT PART -->
   <div class="py-10">
-    <span>
+    <h2 class="text-white text-3xl mb-6 bg-[#2C394B] rounded p-2">Comment</h2>
+    <p style="word-wrap: break-word">
       <%= @task.content %>
-    </span>
+    </p>
   </div>
-</div>
