@@ -6227,3 +6227,122 @@ Processing by TasksController#show as HTML
 Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 0.3ms | Allocations: 4514)
 
 
+Started GET "/" for ::1 at 2022-12-17 08:30:37 +0800
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.7ms | Allocations: 112)
+  [1m[36mTask Load (5.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:27
+  Rendered shared/_all-tasks.html.erb (Duration: 32.1ms | Allocations: 8804)
+  Rendered pages/index.html.erb within layouts/application (Duration: 35.1ms | Allocations: 9544)
+  Rendered shared/_navar.html.erb (Duration: 1.0ms | Allocations: 131)
+  Rendered layout layouts/application.html.erb (Duration: 99.1ms | Allocations: 30005)
+Completed 200 OK in 116ms (Views: 86.7ms | ActiveRecord: 18.5ms | Allocations: 33634)
+
+
+Started GET "/tasks/95" for ::1 at 2022-12-17 08:30:41 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"95"}
+  [1m[36mTask Load (0.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 95], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 403)
+  Rendered shared/_navar.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 2752)
+Completed 200 OK in 17ms (Views: 6.2ms | ActiveRecord: 0.9ms | Allocations: 5974)
+
+
+Started GET "/tasks/95" for ::1 at 2022-12-17 08:31:12 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"95"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 95], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 204)
+  Rendered shared/_navar.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 2535)
+Completed 200 OK in 13ms (Views: 4.0ms | ActiveRecord: 2.2ms | Allocations: 6978)
+
+
+Started GET "/tasks/95" for ::1 at 2022-12-17 08:31:13 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"95"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 95], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 120)
+  Rendered shared/_navar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 2213)
+Completed 200 OK in 18ms (Views: 3.7ms | ActiveRecord: 0.2ms | Allocations: 3071)
+
+
+Started GET "/tasks/95" for ::1 at 2022-12-17 08:31:41 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"95"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 95], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 390)
+  Rendered shared/_navar.html.erb (Duration: 1.0ms | Allocations: 131)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 3089)
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.2ms | Allocations: 4448)
+
+
+Started GET "/tasks/95" for ::1 at 2022-12-17 08:31:42 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"95"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 95], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 120)
+  Rendered shared/_navar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 2186)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 3041)
+
+
+Started GET "/tasks/95" for ::1 at 2022-12-17 08:32:11 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"95"}
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 95], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 207)
+  Rendered shared/_navar.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 2538)
+Completed 200 OK in 12ms (Views: 3.7ms | ActiveRecord: 2.5ms | Allocations: 7035)
+
+
+Started GET "/tasks/95" for ::1 at 2022-12-17 08:32:14 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"95"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 95], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 204)
+  Rendered shared/_navar.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 2540)
+Completed 200 OK in 13ms (Views: 4.8ms | ActiveRecord: 2.1ms | Allocations: 7003)
+
+
+Started GET "/tasks/95" for ::1 at 2022-12-17 08:32:28 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"95"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 95], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 204)
+  Rendered shared/_navar.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 2561)
+Completed 200 OK in 13ms (Views: 4.4ms | ActiveRecord: 2.5ms | Allocations: 7047)
+
+

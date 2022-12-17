@@ -3,14 +3,13 @@ class TasksController < ApplicationController
 
   def index
     @tasks = Task.all
-    @remaining_time = (DateTime.now - @task.end_date).to_i
+    @remaining_time = (@task.end_date - DateTime.now).to_i
 
   end
 
   def show
     @task = Task.find(params[:id])
-    @remaining_time = (DateTime.now - @task.end_date).to_i
-
+    @remaining_time = (@task.end_date - DateTime.now).to_i
   end
   # CREATE
   def new
