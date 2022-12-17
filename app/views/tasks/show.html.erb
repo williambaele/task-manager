@@ -62,27 +62,16 @@
   </div>
   <!-- TO DO LIST PART-->
   <div class="my-10">
-    <h2 class="text-white text-3xl mb-6 bg-[#2C394B] rounded p-2">To do list</h2>
+  <div class="mb-6 bg-[#2C394B] rounded p-2 flex justify-between">
+    <h2 class="text-white text-3xl">To do list</h2>
+    <h2 class="text-[#FF4C29] text-3xl">70%</h2>
+  </div>
+    <% @task.todo.each do |todo_item| %>
     <div class="flex items-center mb-4">
         <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-[#FF4C29] bg-gray-100 rounded border-gray-300">
-        <label for="default-checkbox" class="ml-2 text-sm font-medium text-white">Laundry</label>
+        <label for="default-checkbox" class="ml-2 text-md font-medium text-white"><%= todo_item %></label>
     </div>
-    <div class="flex items-center mb-4">
-        <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-[#FF4C29] bg-gray-100 rounded border-gray-300">
-        <label for="default-checkbox" class="ml-2 text-sm font-medium text-white">Reading book</label>
-    </div>
-    <div class="flex items-center mb-4">
-        <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-[#FF4C29] bg-gray-100 rounded border-gray-300">
-        <label for="default-checkbox" class="ml-2 text-sm font-medium text-white">Write my essay</label>
-    </div>
-    <div class="flex items-center mb-4">
-        <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-[#FF4C29] bg-gray-100 rounded border-gray-300">
-        <label for="default-checkbox" class="ml-2 text-sm font-medium text-white">Dog sitting</label>
-    </div>
-    <div class="flex items-center">
-        <input checked id="checked-checkbox" type="checkbox" value="" class="w-4 h-4 text-[#FF4C29] bg-gray-100 rounded border-gray-300">
-        <label for="checked-checkbox" class="ml-2 text-sm font-medium text-white">Finish my homework</label>
-    </div>
+    <% end %>
   </div>
   <!-- CONTENT PART -->
   <div class="py-10">

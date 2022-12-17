@@ -14,9 +14,9 @@
       </div>
       <div id="todo-fields">
         <%= f.label :todo ,class:"text-white"%>
-        <% @task.todo.each do |todo_item| %>
+        <% @task.todo.each_with_index do |todo_item, index| %>
           <div>
-            <%= f.text_field :todo, value: todo_item, class:"w-full px-2 py-2 text-gray-700 bg-gray-200 rounded my-1" %>
+            <%= f.text_field "todo[#{index}]", value: todo_item, class:"w-full px-2 py-2 text-gray-700 bg-gray-200 rounded my-1" %>
           </div>
         <% end %>
       </div>

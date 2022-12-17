@@ -16769,3 +16769,972 @@ Processing by PagesController#index as HTML
 Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.7ms | Allocations: 8339)
 
 
+Started GET "/tasks/443" for ::1 at 2022-12-17 13:55:12 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"443"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 443], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 152)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 2329)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 3147)
+
+
+Started GET "/tasks/443" for ::1 at 2022-12-17 14:01:31 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"443"}
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 443], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 677)
+  Rendered shared/_navar.html.erb (Duration: 0.5ms | Allocations: 221)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 3693)
+Completed 200 OK in 27ms (Views: 8.7ms | ActiveRecord: 8.3ms | Allocations: 8068)
+
+
+Started GET "/tasks/443" for ::1 at 2022-12-17 14:01:43 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"443"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 443], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 189)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 2390)
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.2ms | Allocations: 3244)
+
+
+Started GET "/tasks/443" for ::1 at 2022-12-17 14:01:54 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"443"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 443], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 674)
+  Rendered shared/_navar.html.erb (Duration: 0.5ms | Allocations: 221)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 3687)
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.2ms | Allocations: 5009)
+
+
+Started GET "/tasks/443" for ::1 at 2022-12-17 14:01:55 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"443"}
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 443], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 189)
+  Rendered shared/_navar.html.erb (Duration: 0.2ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 2399)
+Completed 200 OK in 9ms (Views: 5.4ms | ActiveRecord: 0.5ms | Allocations: 3253)
+
+
+Started GET "/tasks/443" for ::1 at 2022-12-17 14:02:07 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"443"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 443], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 675)
+  Rendered shared/_navar.html.erb (Duration: 0.4ms | Allocations: 221)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 3697)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.2ms | Allocations: 5019)
+
+
+Started GET "/tasks/443" for ::1 at 2022-12-17 14:02:07 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"443"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 443], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 189)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 2363)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.2ms | Allocations: 3217)
+
+
+Started GET "/tasks/443" for ::1 at 2022-12-17 14:02:17 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"443"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 443], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 674)
+  Rendered shared/_navar.html.erb (Duration: 0.4ms | Allocations: 221)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 3704)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.2ms | Allocations: 5026)
+
+
+Started GET "/tasks/443" for ::1 at 2022-12-17 14:03:42 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"443"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 443], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 673)
+  Rendered shared/_navar.html.erb (Duration: 0.5ms | Allocations: 221)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 3690)
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.2ms | Allocations: 5100)
+
+
+Started GET "/tasks/443" for ::1 at 2022-12-17 14:03:43 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"443"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 443], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 189)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 2381)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.2ms | Allocations: 3235)
+
+
+Started GET "/tasks/443/edit" for ::1 at 2022-12-17 14:03:46 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"443"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 443], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2916)
+  Rendered shared/_navar.html.erb (Duration: 0.4ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 4846)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.2ms | Allocations: 5650)
+
+
+Started GET "/" for ::1 at 2022-12-17 14:04:21 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.2ms | Allocations: 95)
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:27
+  Rendered shared/_all-tasks.html.erb (Duration: 6.2ms | Allocations: 4830)
+  Rendered pages/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 5310)
+  Rendered shared/_navar.html.erb (Duration: 0.4ms | Allocations: 54)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 7735)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.7ms | Allocations: 8339)
+
+
+Started GET "/tasks/425" for ::1 at 2022-12-17 14:04:23 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"425"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 425], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 205)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 2400)
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.2ms | Allocations: 3218)
+
+
+Started GET "/tasks/425" for ::1 at 2022-12-17 14:04:37 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"425"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 425], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 179)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 2372)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.2ms | Allocations: 3140)
+
+
+  [1m[36mTask Load (0.9ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+Started GET "/new-task" for ::1 at 2022-12-17 14:06:48 +0800
+Processing by TasksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (Duration: 21.8ms | Allocations: 8108)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 53)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 25.1ms | Allocations: 10191)
+Completed 200 OK in 26ms (Views: 25.8ms | ActiveRecord: 0.0ms | Allocations: 10545)
+
+
+Started GET "/tasks/425" for ::1 at 2022-12-17 14:06:56 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"425"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 425], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 208)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 2386)
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.2ms | Allocations: 3263)
+
+
+Started GET "/tasks/425/edit" for ::1 at 2022-12-17 14:06:57 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"425"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 425], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2369)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 4300)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.2ms | Allocations: 5051)
+
+
+Started PATCH "/tasks/425" for ::1 at 2022-12-17 14:07:05 +0800
+Processing by TasksController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"title"=>"Sport", "content"=>"Voluptatem ut fugit dignissimos labore rem eos quia assumenda repellat deleniti ut omnis nulla ab ut eveniet odio vitae dolore quas possimus ut sint sint velit ut dolorem architecto aut est voluptatem amet perferendis quia maiores expedita asperiores nostrum esse incidunt omnis in dolorum culpa velit repellat et in et modi et aliquid maxime tenetur ipsum id rerum quis cum neque nobis consequatur quas officiis sed consequatur earum ipsa et et quia error enim earum veritatis neque delectus sunt quia dolor harum dicta ut non accusantium enim reiciendis maxime totam quis soluta voluptas quod reprehenderit enim repellendus ea sed saepe voluptatem corporis adipisci voluptas est consequuntur excepturi dolorem soluta sequi quidem totam dignissimos deserunt distinctio et molestiae perspiciatis aut consequuntur et ut pariatur consequatur autem est nobis et ut assumenda quis excepturi sapiente voluptate rerum odit occaecati sint sequi voluptatum voluptas eaque ratione sapiente eum magni voluptas rerum iusto aliquid eligendi aperiam ut mollitia laborum quo qui molestias inventore similique voluptas deserunt ab id qui necessitatibus ducimus aspernatur in tempora sed sit officia nisi quibusdam odit aut laboriosam officiis nemo ea quia minima quisquam rerum accusamus debitis labore veniam fuga aut aperiam similique aut ipsum consequatur voluptatem nihil quae illo vero dolor eaque id voluptate quam rem repudiandae magni natus et ipsam saepe praesentium suscipit ea adipisci qui et consectetur nesciunt molestiae aut nam illum consequatur unde dolore veritatis quidem molestias culpa et id fugiat tempora quis cum autem exercitationem omnis harum veniam explicabo ipsa alias voluptates beatae ea fugit quasi eligendi vel quam autem blanditiis amet iste consectetur est ratione et rerum non aut at vel sit sed dolores animi qui at placeat eum ad explicabo cumque praesentium temporibus quaerat dolores voluptatem non magnam qui et commodi doloribus eos commodi porro incidunt odio est officia non qui unde iusto.", "todo"=>"Task 3", "difficulty"=>"10", "start_date"=>"2022-10-10", "end_date"=>"2022-12-21"}, "commit"=>"Submit", "id"=>"425"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 425], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:31:in `update'
+[31mUnpermitted parameter: :todo. Context: { controller: TasksController, action: update, request: #<ActionDispatch::Request:0x000000010ebff900>, params: {"_method"=>"patch", "authenticity_token"=>"[FILTERED]", "task"=>{"title"=>"Sport", "content"=>"Voluptatem ut fugit dignissimos labore rem eos quia assumenda repellat deleniti ut omnis nulla ab ut eveniet odio vitae dolore quas possimus ut sint sint velit ut dolorem architecto aut est voluptatem amet perferendis quia maiores expedita asperiores nostrum esse incidunt omnis in dolorum culpa velit repellat et in et modi et aliquid maxime tenetur ipsum id rerum quis cum neque nobis consequatur quas officiis sed consequatur earum ipsa et et quia error enim earum veritatis neque delectus sunt quia dolor harum dicta ut non accusantium enim reiciendis maxime totam quis soluta voluptas quod reprehenderit enim repellendus ea sed saepe voluptatem corporis adipisci voluptas est consequuntur excepturi dolorem soluta sequi quidem totam dignissimos deserunt distinctio et molestiae perspiciatis aut consequuntur et ut pariatur consequatur autem est nobis et ut assumenda quis excepturi sapiente voluptate rerum odit occaecati sint sequi voluptatum voluptas eaque ratione sapiente eum magni voluptas rerum iusto aliquid eligendi aperiam ut mollitia laborum quo qui molestias inventore similique voluptas deserunt ab id qui necessitatibus ducimus aspernatur in tempora sed sit officia nisi quibusdam odit aut laboriosam officiis nemo ea quia minima quisquam rerum accusamus debitis labore veniam fuga aut aperiam similique aut ipsum consequatur voluptatem nihil quae illo vero dolor eaque id voluptate quam rem repudiandae magni natus et ipsam saepe praesentium suscipit ea adipisci qui et consectetur nesciunt molestiae aut nam illum consequatur unde dolore veritatis quidem molestias culpa et id fugiat tempora quis cum autem exercitationem omnis harum veniam explicabo ipsa alias voluptates beatae ea fugit quasi eligendi vel quam autem blanditiis amet iste consectetur est ratione et rerum non aut at vel sit sed dolores animi qui at placeat eum ad explicabo cumque praesentium temporibus quaerat dolores voluptatem non magnam qui et commodi doloribus eos commodi porro incidunt odio est officia non qui unde iusto.", "todo"=>"Task 3", "difficulty"=>"10", "start_date"=>"2022-10-10", "end_date"=>"2022-12-21"}, "commit"=>"Submit", "controller"=>"tasks", "action"=>"update", "id"=>"425"} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:32:in `update'
+  [1m[36mTask Update (0.4ms)[0m  [1m[33mUPDATE "tasks" SET "updated_at" = $1, "difficulty" = $2 WHERE "tasks"."id" = $3[0m  [["updated_at", "2022-12-17 06:07:05.736133"], ["difficulty", 10], ["id", 425]]
+  ↳ app/controllers/tasks_controller.rb:32:in `update'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:32:in `update'
+Redirected to http://localhost:3000/tasks/425
+Completed 302 Found in 8ms (ActiveRecord: 2.2ms | Allocations: 3275)
+
+
+Started GET "/tasks/425" for ::1 at 2022-12-17 14:07:05 +0800
+Processing by TasksController#show as TURBO_STREAM
+  Parameters: {"id"=>"425"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 425], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 197)
+  Rendered shared/_navar.html.erb (Duration: 0.3ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 2423)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.2ms | Allocations: 3239)
+
+
+Started GET "/tasks/425" for ::1 at 2022-12-17 14:07:10 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"425"}
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 425], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 197)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 2365)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.4ms | Allocations: 3132)
+
+
+Started GET "/tasks/425/edit" for ::1 at 2022-12-17 14:07:11 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"425"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 425], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2340)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 4270)
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.2ms | Allocations: 5020)
+
+
+Started PATCH "/tasks/425" for ::1 at 2022-12-17 14:07:17 +0800
+Processing by TasksController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"title"=>"Sport", "content"=>"Voluptatem ut fugit dignissimos labore rem eos quia assumenda repellat deleniti ut omnis nulla ab ut eveniet odio vitae dolore quas possimus ut sint sint velit ut dolorem architecto aut est voluptatem amet perferendis quia maiores expedita asperiores nostrum esse incidunt omnis in dolorum culpa velit repellat et in et modi et aliquid maxime tenetur ipsum id rerum quis cum neque nobis consequatur quas officiis sed consequatur earum ipsa et et quia error enim earum veritatis neque delectus sunt quia dolor harum dicta ut non accusantium enim reiciendis maxime totam quis soluta voluptas quod reprehenderit enim repellendus ea sed saepe voluptatem corporis adipisci voluptas est consequuntur excepturi dolorem soluta sequi quidem totam dignissimos deserunt distinctio et molestiae perspiciatis aut consequuntur et ut pariatur consequatur autem est nobis et ut assumenda quis excepturi sapiente voluptate rerum odit occaecati sint sequi voluptatum voluptas eaque ratione sapiente eum magni voluptas rerum iusto aliquid eligendi aperiam ut mollitia laborum quo qui molestias inventore similique voluptas deserunt ab id qui necessitatibus ducimus aspernatur in tempora sed sit officia nisi quibusdam odit aut laboriosam officiis nemo ea quia minima quisquam rerum accusamus debitis labore veniam fuga aut aperiam similique aut ipsum consequatur voluptatem nihil quae illo vero dolor eaque id voluptate quam rem repudiandae magni natus et ipsam saepe praesentium suscipit ea adipisci qui et consectetur nesciunt molestiae aut nam illum consequatur unde dolore veritatis quidem molestias culpa et id fugiat tempora quis cum autem exercitationem omnis harum veniam explicabo ipsa alias voluptates beatae ea fugit quasi eligendi vel quam autem blanditiis amet iste consectetur est ratione et rerum non aut at vel sit sed dolores animi qui at placeat eum ad explicabo cumque praesentium temporibus quaerat dolores voluptatem non magnam qui et commodi doloribus eos commodi porro incidunt odio est officia non qui unde iusto.", "todo"=>"Task 3", "difficulty"=>"10", "start_date"=>"2022-10-10", "end_date"=>"2022-12-21"}, "model"=>{"todo"=>["Task 3Task 3Task 3"]}, "commit"=>"Submit", "id"=>"425"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 425], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:31:in `update'
+[31mUnpermitted parameter: :todo. Context: { controller: TasksController, action: update, request: #<ActionDispatch::Request:0x000000010eefce78>, params: {"_method"=>"patch", "authenticity_token"=>"[FILTERED]", "task"=>{"title"=>"Sport", "content"=>"Voluptatem ut fugit dignissimos labore rem eos quia assumenda repellat deleniti ut omnis nulla ab ut eveniet odio vitae dolore quas possimus ut sint sint velit ut dolorem architecto aut est voluptatem amet perferendis quia maiores expedita asperiores nostrum esse incidunt omnis in dolorum culpa velit repellat et in et modi et aliquid maxime tenetur ipsum id rerum quis cum neque nobis consequatur quas officiis sed consequatur earum ipsa et et quia error enim earum veritatis neque delectus sunt quia dolor harum dicta ut non accusantium enim reiciendis maxime totam quis soluta voluptas quod reprehenderit enim repellendus ea sed saepe voluptatem corporis adipisci voluptas est consequuntur excepturi dolorem soluta sequi quidem totam dignissimos deserunt distinctio et molestiae perspiciatis aut consequuntur et ut pariatur consequatur autem est nobis et ut assumenda quis excepturi sapiente voluptate rerum odit occaecati sint sequi voluptatum voluptas eaque ratione sapiente eum magni voluptas rerum iusto aliquid eligendi aperiam ut mollitia laborum quo qui molestias inventore similique voluptas deserunt ab id qui necessitatibus ducimus aspernatur in tempora sed sit officia nisi quibusdam odit aut laboriosam officiis nemo ea quia minima quisquam rerum accusamus debitis labore veniam fuga aut aperiam similique aut ipsum consequatur voluptatem nihil quae illo vero dolor eaque id voluptate quam rem repudiandae magni natus et ipsam saepe praesentium suscipit ea adipisci qui et consectetur nesciunt molestiae aut nam illum consequatur unde dolore veritatis quidem molestias culpa et id fugiat tempora quis cum autem exercitationem omnis harum veniam explicabo ipsa alias voluptates beatae ea fugit quasi eligendi vel quam autem blanditiis amet iste consectetur est ratione et rerum non aut at vel sit sed dolores animi qui at placeat eum ad explicabo cumque praesentium temporibus quaerat dolores voluptatem non magnam qui et commodi doloribus eos commodi porro incidunt odio est officia non qui unde iusto.", "todo"=>"Task 3", "difficulty"=>"10", "start_date"=>"2022-10-10", "end_date"=>"2022-12-21"}, "model"=>{"todo"=>["Task 3Task 3Task 3"]}, "commit"=>"Submit", "controller"=>"tasks", "action"=>"update", "id"=>"425"} }[0m
+Redirected to http://localhost:3000/tasks/425
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 1407)
+
+
+Started GET "/tasks/425" for ::1 at 2022-12-17 14:07:17 +0800
+Processing by TasksController#show as TURBO_STREAM
+  Parameters: {"id"=>"425"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 425], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 197)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 2391)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.2ms | Allocations: 3165)
+
+
+Started GET "/tasks/425" for ::1 at 2022-12-17 14:07:22 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"425"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 425], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 197)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 2383)
+Completed 200 OK in 8ms (Views: 5.2ms | ActiveRecord: 0.2ms | Allocations: 3150)
+
+
+Started GET "/tasks/425" for ::1 at 2022-12-17 14:08:13 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"425"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 425], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 315)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 57)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 2766)
+Completed 200 OK in 17ms (Views: 5.4ms | ActiveRecord: 5.2ms | Allocations: 7898)
+
+
+Started GET "/tasks/425/edit" for ::1 at 2022-12-17 14:08:14 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"425"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 425], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2479)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 4409)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.2ms | Allocations: 5245)
+
+
+Started PATCH "/tasks/425" for ::1 at 2022-12-17 14:08:20 +0800
+Processing by TasksController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"title"=>"Sport", "content"=>"Voluptatem ut fugit dignissimos labore rem eos quia assumenda repellat deleniti ut omnis nulla ab ut eveniet odio vitae dolore quas possimus ut sint sint velit ut dolorem architecto aut est voluptatem amet perferendis quia maiores expedita asperiores nostrum esse incidunt omnis in dolorum culpa velit repellat et in et modi et aliquid maxime tenetur ipsum id rerum quis cum neque nobis consequatur quas officiis sed consequatur earum ipsa et et quia error enim earum veritatis neque delectus sunt quia dolor harum dicta ut non accusantium enim reiciendis maxime totam quis soluta voluptas quod reprehenderit enim repellendus ea sed saepe voluptatem corporis adipisci voluptas est consequuntur excepturi dolorem soluta sequi quidem totam dignissimos deserunt distinctio et molestiae perspiciatis aut consequuntur et ut pariatur consequatur autem est nobis et ut assumenda quis excepturi sapiente voluptate rerum odit occaecati sint sequi voluptatum voluptas eaque ratione sapiente eum magni voluptas rerum iusto aliquid eligendi aperiam ut mollitia laborum quo qui molestias inventore similique voluptas deserunt ab id qui necessitatibus ducimus aspernatur in tempora sed sit officia nisi quibusdam odit aut laboriosam officiis nemo ea quia minima quisquam rerum accusamus debitis labore veniam fuga aut aperiam similique aut ipsum consequatur voluptatem nihil quae illo vero dolor eaque id voluptate quam rem repudiandae magni natus et ipsam saepe praesentium suscipit ea adipisci qui et consectetur nesciunt molestiae aut nam illum consequatur unde dolore veritatis quidem molestias culpa et id fugiat tempora quis cum autem exercitationem omnis harum veniam explicabo ipsa alias voluptates beatae ea fugit quasi eligendi vel quam autem blanditiis amet iste consectetur est ratione et rerum non aut at vel sit sed dolores animi qui at placeat eum ad explicabo cumque praesentium temporibus quaerat dolores voluptatem non magnam qui et commodi doloribus eos commodi porro incidunt odio est officia non qui unde iusto.", "todo"=>"Task 3", "difficulty"=>"10", "start_date"=>"2022-10-10", "end_date"=>"2022-12-21"}, "model"=>{"todo"=>["dkokdz"]}, "commit"=>"Submit", "id"=>"425"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 425], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:31:in `update'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 1683)
+
+
+  
+ActiveRecord::SerializationTypeMismatch (can't serialize `todo`: was supposed to be a Array, but was a String. -- "Task 3"):
+  
+app/controllers/tasks_controller.rb:32:in `update'
+Started GET "/tasks/425/edit" for ::1 at 2022-12-17 14:13:22 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"425"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 425], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 10.2ms | Allocations: 2685)
+  Rendered shared/_navar.html.erb (Duration: 0.3ms | Allocations: 61)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 29.2ms | Allocations: 4811)
+Completed 200 OK in 85ms (Views: 37.5ms | ActiveRecord: 2.4ms | Allocations: 9789)
+
+
+Started PATCH "/tasks/425" for ::1 at 2022-12-17 14:13:28 +0800
+Processing by TasksController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"title"=>"Sport", "content"=>"Voluptatem ut fugit dignissimos labore rem eos quia assumenda repellat deleniti ut omnis nulla ab ut eveniet odio vitae dolore quas possimus ut sint sint velit ut dolorem architecto aut est voluptatem amet perferendis quia maiores expedita asperiores nostrum esse incidunt omnis in dolorum culpa velit repellat et in et modi et aliquid maxime tenetur ipsum id rerum quis cum neque nobis consequatur quas officiis sed consequatur earum ipsa et et quia error enim earum veritatis neque delectus sunt quia dolor harum dicta ut non accusantium enim reiciendis maxime totam quis soluta voluptas quod reprehenderit enim repellendus ea sed saepe voluptatem corporis adipisci voluptas est consequuntur excepturi dolorem soluta sequi quidem totam dignissimos deserunt distinctio et molestiae perspiciatis aut consequuntur et ut pariatur consequatur autem est nobis et ut assumenda quis excepturi sapiente voluptate rerum odit occaecati sint sequi voluptatum voluptas eaque ratione sapiente eum magni voluptas rerum iusto aliquid eligendi aperiam ut mollitia laborum quo qui molestias inventore similique voluptas deserunt ab id qui necessitatibus ducimus aspernatur in tempora sed sit officia nisi quibusdam odit aut laboriosam officiis nemo ea quia minima quisquam rerum accusamus debitis labore veniam fuga aut aperiam similique aut ipsum consequatur voluptatem nihil quae illo vero dolor eaque id voluptate quam rem repudiandae magni natus et ipsam saepe praesentium suscipit ea adipisci qui et consectetur nesciunt molestiae aut nam illum consequatur unde dolore veritatis quidem molestias culpa et id fugiat tempora quis cum autem exercitationem omnis harum veniam explicabo ipsa alias voluptates beatae ea fugit quasi eligendi vel quam autem blanditiis amet iste consectetur est ratione et rerum non aut at vel sit sed dolores animi qui at placeat eum ad explicabo cumque praesentium temporibus quaerat dolores voluptatem non magnam qui et commodi doloribus eos commodi porro incidunt odio est officia non qui unde iusto.", "todo"=>"Task 3", "difficulty"=>"10", "start_date"=>"2022-10-10", "end_date"=>"2022-12-21"}, "model"=>{"todo"=>["okokokok"]}, "commit"=>"Submit", "id"=>"425"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 425], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:31:in `update'
+[31mUnpermitted parameter: :todo. Context: { controller: TasksController, action: update, request: #<ActionDispatch::Request:0x000000010c58b0f8>, params: {"_method"=>"patch", "authenticity_token"=>"[FILTERED]", "task"=>{"title"=>"Sport", "content"=>"Voluptatem ut fugit dignissimos labore rem eos quia assumenda repellat deleniti ut omnis nulla ab ut eveniet odio vitae dolore quas possimus ut sint sint velit ut dolorem architecto aut est voluptatem amet perferendis quia maiores expedita asperiores nostrum esse incidunt omnis in dolorum culpa velit repellat et in et modi et aliquid maxime tenetur ipsum id rerum quis cum neque nobis consequatur quas officiis sed consequatur earum ipsa et et quia error enim earum veritatis neque delectus sunt quia dolor harum dicta ut non accusantium enim reiciendis maxime totam quis soluta voluptas quod reprehenderit enim repellendus ea sed saepe voluptatem corporis adipisci voluptas est consequuntur excepturi dolorem soluta sequi quidem totam dignissimos deserunt distinctio et molestiae perspiciatis aut consequuntur et ut pariatur consequatur autem est nobis et ut assumenda quis excepturi sapiente voluptate rerum odit occaecati sint sequi voluptatum voluptas eaque ratione sapiente eum magni voluptas rerum iusto aliquid eligendi aperiam ut mollitia laborum quo qui molestias inventore similique voluptas deserunt ab id qui necessitatibus ducimus aspernatur in tempora sed sit officia nisi quibusdam odit aut laboriosam officiis nemo ea quia minima quisquam rerum accusamus debitis labore veniam fuga aut aperiam similique aut ipsum consequatur voluptatem nihil quae illo vero dolor eaque id voluptate quam rem repudiandae magni natus et ipsam saepe praesentium suscipit ea adipisci qui et consectetur nesciunt molestiae aut nam illum consequatur unde dolore veritatis quidem molestias culpa et id fugiat tempora quis cum autem exercitationem omnis harum veniam explicabo ipsa alias voluptates beatae ea fugit quasi eligendi vel quam autem blanditiis amet iste consectetur est ratione et rerum non aut at vel sit sed dolores animi qui at placeat eum ad explicabo cumque praesentium temporibus quaerat dolores voluptatem non magnam qui et commodi doloribus eos commodi porro incidunt odio est officia non qui unde iusto.", "todo"=>"Task 3", "difficulty"=>"10", "start_date"=>"2022-10-10", "end_date"=>"2022-12-21"}, "model"=>{"todo"=>["okokokok"]}, "commit"=>"Submit", "controller"=>"tasks", "action"=>"update", "id"=>"425"} }[0m
+Redirected to http://localhost:3000/tasks/425
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 1756)
+
+
+Started GET "/tasks/425" for ::1 at 2022-12-17 14:13:28 +0800
+Processing by TasksController#show as TURBO_STREAM
+  Parameters: {"id"=>"425"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 425], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 211)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 2408)
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 0.1ms | Allocations: 3200)
+
+
+Started GET "/tasks/425" for ::1 at 2022-12-17 14:15:35 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"425"}
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 425], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 315)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 57)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 2781)
+Completed 200 OK in 21ms (Views: 6.6ms | ActiveRecord: 5.1ms | Allocations: 7747)
+
+
+Started GET "/tasks/425/edit" for ::1 at 2022-12-17 14:15:37 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"425"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 425], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2494)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 4429)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.2ms | Allocations: 5265)
+
+
+Started PATCH "/tasks/425" for ::1 at 2022-12-17 14:15:41 +0800
+Processing by TasksController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"title"=>"Sport", "content"=>"Voluptatem ut fugit dignissimos labore rem eos quia assumenda repellat deleniti ut omnis nulla ab ut eveniet odio vitae dolore quas possimus ut sint sint velit ut dolorem architecto aut est voluptatem amet perferendis quia maiores expedita asperiores nostrum esse incidunt omnis in dolorum culpa velit repellat et in et modi et aliquid maxime tenetur ipsum id rerum quis cum neque nobis consequatur quas officiis sed consequatur earum ipsa et et quia error enim earum veritatis neque delectus sunt quia dolor harum dicta ut non accusantium enim reiciendis maxime totam quis soluta voluptas quod reprehenderit enim repellendus ea sed saepe voluptatem corporis adipisci voluptas est consequuntur excepturi dolorem soluta sequi quidem totam dignissimos deserunt distinctio et molestiae perspiciatis aut consequuntur et ut pariatur consequatur autem est nobis et ut assumenda quis excepturi sapiente voluptate rerum odit occaecati sint sequi voluptatum voluptas eaque ratione sapiente eum magni voluptas rerum iusto aliquid eligendi aperiam ut mollitia laborum quo qui molestias inventore similique voluptas deserunt ab id qui necessitatibus ducimus aspernatur in tempora sed sit officia nisi quibusdam odit aut laboriosam officiis nemo ea quia minima quisquam rerum accusamus debitis labore veniam fuga aut aperiam similique aut ipsum consequatur voluptatem nihil quae illo vero dolor eaque id voluptate quam rem repudiandae magni natus et ipsam saepe praesentium suscipit ea adipisci qui et consectetur nesciunt molestiae aut nam illum consequatur unde dolore veritatis quidem molestias culpa et id fugiat tempora quis cum autem exercitationem omnis harum veniam explicabo ipsa alias voluptates beatae ea fugit quasi eligendi vel quam autem blanditiis amet iste consectetur est ratione et rerum non aut at vel sit sed dolores animi qui at placeat eum ad explicabo cumque praesentium temporibus quaerat dolores voluptatem non magnam qui et commodi doloribus eos commodi porro incidunt odio est officia non qui unde iusto.", "todo"=>"Task 3", "difficulty"=>"10", "start_date"=>"2022-10-10", "end_date"=>"2022-12-21"}, "model"=>{"todo"=>["dzdzdzdzdz"]}, "commit"=>"Submit", "id"=>"425"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 425], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:31:in `update'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms | Allocations: 1634)
+
+
+  
+ActiveRecord::SerializationTypeMismatch (can't serialize `todo`: was supposed to be a Array, but was a String. -- "Task 3"):
+  
+app/controllers/tasks_controller.rb:32:in `update'
+Started GET "/tasks/425/edit" for ::1 at 2022-12-17 14:16:00 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"425"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 425], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 3.8ms | Allocations: 3730)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 3818)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 2.3ms | Allocations: 8774)
+
+
+  
+ActionView::Template::Error (undefined method `each' for "---\n- Task 1\n- Task 2\n- Task 3\n":String
+
+'.freeze;         @task.todo.each do |todo_item| 
+                            ^^^^^):
+    14:       </div>
+    15:       <div id="todo-fields">
+    16:         <%= f.label :todo ,class:"text-white"%>
+    17:         <% @task.todo.each do |todo_item| %>
+    18:           <div>
+    19:             <%= f.text_field :todo, value: todo_item, class:"w-full px-2 py-2 text-gray-700 bg-gray-200 rounded my-1" %>
+    20:           </div>
+  
+app/views/tasks/edit.html.erb:17
+app/views/tasks/edit.html.erb:5
+Started GET "/tasks/425/edit" for ::1 at 2022-12-17 14:16:02 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"425"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 425], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 3.3ms | Allocations: 3596)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 3675)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms | Allocations: 4481)
+
+
+  
+ActionView::Template::Error (undefined method `each' for "---\n- Task 1\n- Task 2\n- Task 3\n":String
+
+'.freeze;         @task.todo.each do |todo_item| 
+                            ^^^^^):
+    14:       </div>
+    15:       <div id="todo-fields">
+    16:         <%= f.label :todo ,class:"text-white"%>
+    17:         <% @task.todo.each do |todo_item| %>
+    18:           <div>
+    19:             <%= f.text_field :todo, value: todo_item, class:"w-full px-2 py-2 text-gray-700 bg-gray-200 rounded my-1" %>
+    20:           </div>
+  
+app/views/tasks/edit.html.erb:17
+app/views/tasks/edit.html.erb:5
+Started GET "/tasks/425/edit" for ::1 at 2022-12-17 14:25:26 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"425"}
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 425], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 4.1ms | Allocations: 3166)
+  Rendered shared/_navar.html.erb (Duration: 1.3ms | Allocations: 225)
+  Rendered shared/_footer.html.erb (Duration: 0.8ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 5881)
+Completed 200 OK in 46ms (Views: 13.9ms | ActiveRecord: 12.0ms | Allocations: 13953)
+
+
+Started PATCH "/tasks/425" for ::1 at 2022-12-17 14:25:31 +0800
+Processing by TasksController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"title"=>"Sport", "content"=>"Voluptatem ut fugit dignissimos labore rem eos quia assumenda repellat deleniti ut omnis nulla ab ut eveniet odio vitae dolore quas possimus ut sint sint velit ut dolorem architecto aut est voluptatem amet perferendis quia maiores expedita asperiores nostrum esse incidunt omnis in dolorum culpa velit repellat et in et modi et aliquid maxime tenetur ipsum id rerum quis cum neque nobis consequatur quas officiis sed consequatur earum ipsa et et quia error enim earum veritatis neque delectus sunt quia dolor harum dicta ut non accusantium enim reiciendis maxime totam quis soluta voluptas quod reprehenderit enim repellendus ea sed saepe voluptatem corporis adipisci voluptas est consequuntur excepturi dolorem soluta sequi quidem totam dignissimos deserunt distinctio et molestiae perspiciatis aut consequuntur et ut pariatur consequatur autem est nobis et ut assumenda quis excepturi sapiente voluptate rerum odit occaecati sint sequi voluptatum voluptas eaque ratione sapiente eum magni voluptas rerum iusto aliquid eligendi aperiam ut mollitia laborum quo qui molestias inventore similique voluptas deserunt ab id qui necessitatibus ducimus aspernatur in tempora sed sit officia nisi quibusdam odit aut laboriosam officiis nemo ea quia minima quisquam rerum accusamus debitis labore veniam fuga aut aperiam similique aut ipsum consequatur voluptatem nihil quae illo vero dolor eaque id voluptate quam rem repudiandae magni natus et ipsam saepe praesentium suscipit ea adipisci qui et consectetur nesciunt molestiae aut nam illum consequatur unde dolore veritatis quidem molestias culpa et id fugiat tempora quis cum autem exercitationem omnis harum veniam explicabo ipsa alias voluptates beatae ea fugit quasi eligendi vel quam autem blanditiis amet iste consectetur est ratione et rerum non aut at vel sit sed dolores animi qui at placeat eum ad explicabo cumque praesentium temporibus quaerat dolores voluptatem non magnam qui et commodi doloribus eos commodi porro incidunt odio est officia non qui unde iusto.", "todo"=>{"0"=>"Task 1", "1"=>"Task 2", "2"=>"Task 3"}, "difficulty"=>"10", "start_date"=>"2022-10-10", "end_date"=>"2022-12-21"}, "model"=>{"todo"=>["dzdz"]}, "commit"=>"Submit", "id"=>"425"}
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 425], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:31:in `update'
+[31mUnpermitted parameter: :todo. Context: { controller: TasksController, action: update, request: #<ActionDispatch::Request:0x000000010f56eef0>, params: {"_method"=>"patch", "authenticity_token"=>"[FILTERED]", "task"=>{"title"=>"Sport", "content"=>"Voluptatem ut fugit dignissimos labore rem eos quia assumenda repellat deleniti ut omnis nulla ab ut eveniet odio vitae dolore quas possimus ut sint sint velit ut dolorem architecto aut est voluptatem amet perferendis quia maiores expedita asperiores nostrum esse incidunt omnis in dolorum culpa velit repellat et in et modi et aliquid maxime tenetur ipsum id rerum quis cum neque nobis consequatur quas officiis sed consequatur earum ipsa et et quia error enim earum veritatis neque delectus sunt quia dolor harum dicta ut non accusantium enim reiciendis maxime totam quis soluta voluptas quod reprehenderit enim repellendus ea sed saepe voluptatem corporis adipisci voluptas est consequuntur excepturi dolorem soluta sequi quidem totam dignissimos deserunt distinctio et molestiae perspiciatis aut consequuntur et ut pariatur consequatur autem est nobis et ut assumenda quis excepturi sapiente voluptate rerum odit occaecati sint sequi voluptatum voluptas eaque ratione sapiente eum magni voluptas rerum iusto aliquid eligendi aperiam ut mollitia laborum quo qui molestias inventore similique voluptas deserunt ab id qui necessitatibus ducimus aspernatur in tempora sed sit officia nisi quibusdam odit aut laboriosam officiis nemo ea quia minima quisquam rerum accusamus debitis labore veniam fuga aut aperiam similique aut ipsum consequatur voluptatem nihil quae illo vero dolor eaque id voluptate quam rem repudiandae magni natus et ipsam saepe praesentium suscipit ea adipisci qui et consectetur nesciunt molestiae aut nam illum consequatur unde dolore veritatis quidem molestias culpa et id fugiat tempora quis cum autem exercitationem omnis harum veniam explicabo ipsa alias voluptates beatae ea fugit quasi eligendi vel quam autem blanditiis amet iste consectetur est ratione et rerum non aut at vel sit sed dolores animi qui at placeat eum ad explicabo cumque praesentium temporibus quaerat dolores voluptatem non magnam qui et commodi doloribus eos commodi porro incidunt odio est officia non qui unde iusto.", "todo"=>{"0"=>"Task 1", "1"=>"Task 2", "2"=>"Task 3"}, "difficulty"=>"10", "start_date"=>"2022-10-10", "end_date"=>"2022-12-21"}, "model"=>{"todo"=>["dzdz"]}, "commit"=>"Submit", "controller"=>"tasks", "action"=>"update", "id"=>"425"} }[0m
+Redirected to http://localhost:3000/tasks/425
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms | Allocations: 1798)
+
+
+Started GET "/tasks/425" for ::1 at 2022-12-17 14:25:31 +0800
+Processing by TasksController#show as TURBO_STREAM
+  Parameters: {"id"=>"425"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 425], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 571)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 2827)
+Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 0.3ms | Allocations: 3716)
+
+
+Started GET "/tasks/425" for ::1 at 2022-12-17 14:25:45 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"425"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 425], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 681)
+  Rendered shared/_navar.html.erb (Duration: 0.7ms | Allocations: 221)
+  Rendered shared/_footer.html.erb (Duration: 0.7ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 3703)
+Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 0.3ms | Allocations: 5024)
+
+
+Started GET "/tasks/425/edit" for ::1 at 2022-12-17 14:25:46 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"425"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 425], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 4.1ms | Allocations: 2915)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 4845)
+Completed 200 OK in 11ms (Views: 8.0ms | ActiveRecord: 0.3ms | Allocations: 5734)
+
+
+Started GET "/tasks/425/edit" for ::1 at 2022-12-17 14:28:00 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"425"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 425], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 5.6ms | Allocations: 3102)
+  Rendered shared/_navar.html.erb (Duration: 0.9ms | Allocations: 223)
+  Rendered shared/_footer.html.erb (Duration: 0.7ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 5799)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.3ms | Allocations: 7102)
+
+
+Started GET "/new-task" for ::1 at 2022-12-17 14:28:02 +0800
+Processing by TasksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2410)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 4349)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 4697)
+
+
+Started POST "/tasks" for ::1 at 2022-12-17 14:28:22 +0800
+Processing by TasksController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"title"=>"adadadadada", "content"=>"adadadadadaadadadadadaadadadadadaadadadadadaadadadadadaadadadadadaadadadadadaadadadadadaadadadadadaadadadadadaadadadadadaadadadadadaadadadadadaadadadadadaadadadadadaadadadadadaadadadadadaadadadadadaadadadadadaadadadadada", "difficulty"=>"4", "start_date"=>"2022-12-18", "end_date"=>"2022-12-28"}, "model"=>{"todo"=>["adadadadada"]}, "commit"=>"Submit"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:20:in `create'
+  [1m[36mTask Create (0.9ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:28:22.036921"], ["updated_at", "2022-12-17 06:28:22.036921"], ["title", "adadadadada"], ["content", "adadadadadaadadadadadaadadadadadaadadadadadaadadadadadaadadadadadaadadadadadaadadadadadaadadadadadaadadadadadaadadadadadaadadadadadaadadadadadaadadadadadaadadadadadaadadadadadaadadadadadaadadadadadaadadadadadaadadadadada"], ["start_date", "2022-12-18"], ["end_date", "2022-12-28"], ["todo", nil], ["difficulty", 4]]
+  ↳ app/controllers/tasks_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:20:in `create'
+Redirected to http://localhost:3000/tasks/464
+Completed 302 Found in 10ms (ActiveRecord: 3.1ms | Allocations: 2563)
+
+
+Started GET "/tasks/464" for ::1 at 2022-12-17 14:28:22 +0800
+Processing by TasksController#show as TURBO_STREAM
+  Parameters: {"id"=>"464"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 464], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 516)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 2739)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.2ms | Allocations: 3631)
+
+
+  [1m[36mTask Load (2.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTask Load (1.0ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 464]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 428]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 429]]
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 424]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 446]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 425]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 426]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 427]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 430]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 431]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 432]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.1ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 433]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.1ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 434]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.1ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 435]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 436]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 437]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.1ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 438]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 439]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.1ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 440]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 441]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.1ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 442]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 443]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 444]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 445]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 447]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 448]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 449]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 450]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 451]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.1ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 452]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 453]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.1ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 454]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 455]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 456]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 457]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 458]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 459]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 460]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 461]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 462]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Destroy (0.1ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 463]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (1.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.582989"], ["updated_at", "2022-12-17 06:31:00.582989"], ["title", "Sport"], ["content", "Est illo molestiae corrupti hic quibusdam iusto a similique eos eius ratione quaerat nihil voluptates nemo sit ut soluta excepturi pariatur consequuntur facere neque veritatis totam ex impedit voluptate quia quo esse ipsum praesentium deserunt qui odit omnis repudiandae ea quasi et et fuga delectus ex aut consequatur porro autem perferendis reprehenderit voluptas necessitatibus quam optio dolores vel quia dignissimos qui eum tempora beatae quis ut dignissimos aut voluptatem ab placeat sed adipisci aut quia vel fugiat quaerat voluptatum et rerum exercitationem omnis provident aut dolor sit eos est facilis similique rem quis sunt ducimus voluptatem ad quia ipsa eligendi et architecto porro voluptatibus atque sed et et non aut saepe nulla mollitia autem odio qui ipsum officiis ea quis aut occaecati enim debitis repellat rem vero possimus tenetur repellendus accusantium incidunt at dolore illum nobis laudantium eveniet non sint delectus nam incidunt quisquam nulla quae deserunt aut perspiciatis et amet quos ea vitae expedita quo officia qui velit sapiente ut minus et ab quod eum blanditiis unde neque voluptates aut dolorem maxime et consequatur expedita dicta quibusdam cupiditate dolorem numquam dolorem explicabo non et voluptatem veniam eaque dolor id vitae recusandae aliquid magni nihil libero molestiae ut quidem nihil blanditiis cum facilis rerum totam corporis id quo quod reprehenderit qui possimus soluta doloribus quisquam rerum ipsam laborum dolor animi aliquam dolore laudantium alias et eum ut doloremque iste omnis numquam aut amet in cumque omnis iure alias sit maiores sed aspernatur nostrum consequatur consequatur tempore dolores laboriosam sequi quae optio deleniti assumenda esse accusamus perferendis officiis velit culpa asperiores consequatur ut veritatis mollitia et quas sit id repellat perspiciatis repellendus molestias sapiente eum itaque vel est et dolor quam non est est tenetur minus molestiae commodi ad eos saepe veniam ut doloribus culpa eos pariatur aut voluptas et eaque."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 9]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.592406"], ["updated_at", "2022-12-17 06:31:00.592406"], ["title", "Laundry"], ["content", "Amet sed dicta dolores veritatis culpa sit iure aut sed facere cumque hic dolor temporibus esse libero quam quis sed maxime quibusdam officiis necessitatibus neque unde nemo exercitationem omnis consequatur non ut consequatur accusantium quas eos quibusdam beatae id qui ullam ut et quis rerum aliquam suscipit deleniti sed repellendus cumque officia dignissimos dolorem expedita ut vero facilis est sed quaerat perspiciatis debitis atque voluptatem provident vel laborum autem tempora ea ad adipisci cum magnam ut fugiat repellat et est quo voluptas quasi omnis placeat qui nemo quia et nobis magnam voluptatibus qui incidunt temporibus consequatur rerum aut nihil omnis eum dolorum dolor molestias non voluptate animi quo optio voluptatem at eos maxime et voluptas modi laborum ut rerum minus itaque reprehenderit alias laboriosam voluptate dolorem corporis quos est et voluptas aut est quis possimus sapiente sit accusantium iusto ut sequi quo eum repudiandae non eos totam et illo et vel numquam architecto ut asperiores earum culpa quasi nihil accusamus voluptas nisi quisquam velit non voluptas corrupti qui eaque voluptatem qui qui explicabo qui ea numquam eius dolores aut dolor eveniet non odio laudantium fuga enim ut aut sunt tempora est a necessitatibus reiciendis officia aperiam nisi consequatur dolorem error in ratione cupiditate id sed fugit quod et vitae nobis dolores dicta ipsa enim et et in et rerum sequi ut facilis pariatur id adipisci repellat saepe officiis occaecati eligendi autem repudiandae voluptates maiores doloremque molestiae sunt omnis voluptas sit ipsam cupiditate asperiores pariatur minus labore velit sit alias enim odit assumenda error molestias recusandae quia inventore impedit quae aspernatur commodi est aliquid repellendus aut soluta rerum qui beatae veritatis quam atque et blanditiis magni est in quos optio rerum ex ad et facere perspiciatis sint ullam consequatur accusamus nostrum sapiente porro aliquid voluptatibus molestiae labore quo eveniet ducimus unde."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 10]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.597761"], ["updated_at", "2022-12-17 06:31:00.597761"], ["title", "Laundry"], ["content", "Pariatur mollitia architecto voluptate omnis sunt fugit optio ut dolor doloribus in qui rerum qui magnam vel facere sit inventore cum vero labore non laboriosam minima provident quia dicta voluptatem deleniti aut quidem illo perferendis repudiandae qui porro et ut quod suscipit debitis rerum consequatur quia in soluta maiores aperiam esse nostrum aperiam molestias sint veniam aut incidunt iste saepe numquam sapiente nulla ut id nulla eos saepe dignissimos earum excepturi quia et ea omnis ab voluptates qui voluptas autem modi aut optio et sint architecto officiis velit voluptatem ratione perspiciatis voluptas laboriosam est quia ipsum quibusdam iusto vero dignissimos et eius pariatur nam non veniam rerum quaerat expedita nesciunt dolorem quis non odit voluptates est inventore atque necessitatibus commodi possimus voluptatem rerum illo dolores ullam praesentium omnis odio et qui vel aliquam quia nostrum doloremque ex sunt perferendis aut deserunt tempora deserunt ducimus voluptatum eveniet consectetur libero est eum fuga non accusantium in cumque est vitae neque minima ea amet aut recusandae alias fugiat dolores harum reiciendis ducimus adipisci magni fugit labore quis possimus deleniti qui repellat maxime voluptate eius est similique aut aut doloremque eos voluptas temporibus similique et soluta qui corporis nemo dolorem error omnis culpa eos odio ipsum quas ipsa autem consequatur impedit corporis ut enim placeat aspernatur quas enim dolor molestiae sed non ipsa rerum sint alias hic et quos laudantium velit voluptatem consectetur officia quaerat et explicabo nihil unde ex sit sed velit consequatur et et sequi qui qui laborum sunt reprehenderit et mollitia iste id voluptatem a autem dolore expedita est aliquid quo accusamus ipsam impedit molestiae animi est illum itaque eaque consequatur molestiae fuga distinctio perspiciatis nisi blanditiis reiciendis aspernatur delectus quia sed nesciunt voluptatem distinctio blanditiis amet accusamus sapiente ut odit repellat dolores aut eligendi veritatis quia sequi et cupiditate voluptatibus."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 9]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.602909"], ["updated_at", "2022-12-17 06:31:00.602909"], ["title", "Yoga"], ["content", "Ratione voluptatibus perspiciatis tenetur vitae reprehenderit sequi debitis velit reiciendis corporis fugiat nulla ipsam maiores ut nostrum facere dolores omnis et voluptatem qui velit nulla et ducimus doloribus non qui ut est et id eveniet commodi aut velit esse sit sed architecto aut voluptate omnis odio adipisci nam quod non voluptatem ut voluptatem cum minima molestiae laborum nesciunt commodi est voluptatum autem voluptas praesentium officiis eveniet minus aliquid quos sint quidem non quae labore exercitationem qui delectus ut vitae enim maxime maxime animi omnis corrupti itaque eaque itaque molestias sapiente quibusdam explicabo tempora deserunt molestiae omnis facilis aut et ut beatae vel voluptates aspernatur veniam natus quis accusantium ut at quia temporibus quia molestiae et ullam sit omnis ab corrupti quas in temporibus consequatur non ut numquam aperiam rerum recusandae odit earum quis ipsum dolor ipsam harum fugit aspernatur quo nostrum pariatur modi qui illo aut blanditiis sint omnis porro repellat est aut cupiditate ipsa placeat est eligendi porro rerum quam autem quis assumenda rem sint magnam dolore vel possimus modi aut velit unde perferendis dolorem eum accusantium ad voluptas eum rerum consequatur et neque ea quia necessitatibus et sint enim optio quam laboriosam accusamus et asperiores dolorum sunt repellendus placeat ratione est repellat vel reiciendis harum laudantium sunt minus eligendi et est tempora aut vero eaque fuga et iusto occaecati incidunt excepturi veniam suscipit voluptas alias et animi eum est quia esse amet hic eos nam qui et ut incidunt quo exercitationem sit et illum ut soluta sequi quia eius et veritatis deserunt eos tempore sit ex amet odit provident magni dolor ea delectus dicta mollitia facilis et accusamus rerum culpa iste voluptates in repellendus voluptatem qui nobis quisquam aut cum optio quod iste saepe dolorum aliquam explicabo quo fugiat soluta voluptatem qui in asperiores aut aut dolor facere."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.607784"], ["updated_at", "2022-12-17 06:31:00.607784"], ["title", "Laundry"], ["content", "Sint facilis repellat dolore reiciendis qui occaecati et omnis aut rerum sed non fuga consectetur voluptas voluptates ut tenetur tempore sapiente magni omnis atque soluta aspernatur aperiam reprehenderit tenetur sit laudantium qui consequatur dolores fugiat ea est consequatur ut ut autem harum voluptas commodi ipsa eveniet non alias enim rerum rem sit animi voluptatem sunt quia et inventore dolores id eum iure quia voluptatibus exercitationem ducimus velit ut incidunt molestiae autem odio neque asperiores possimus nihil qui repudiandae dolorem autem adipisci voluptate quam similique sunt vero dolorum repellendus unde consequuntur odit deserunt molestias saepe facere et perferendis tempore debitis expedita impedit distinctio nesciunt totam fugiat qui aliquid autem beatae recusandae possimus cupiditate quasi voluptatum aut placeat in ratione nisi consequatur deleniti quod hic minus et nemo itaque tempora et qui est ad ratione numquam maxime esse est libero nemo quo optio rerum quisquam officiis dolores perspiciatis iste temporibus eius voluptas eos praesentium necessitatibus culpa molestiae quae a impedit sapiente qui earum ex occaecati et assumenda provident in omnis quibusdam ab asperiores sunt perspiciatis itaque eligendi hic voluptatibus voluptatem nam officia numquam corrupti reiciendis nisi accusantium eius corporis quaerat dolor qui est vitae aliquam aperiam ullam sunt molestiae dolor voluptas minima et eum quos placeat in consectetur doloribus illo aliquam similique ut nobis provident porro repudiandae odit voluptates esse voluptatem laudantium dicta quo ut consequatur dolor dolorum illum quasi sequi vel exercitationem aut quae eos velit dolores qui non tempora aut magnam et vel corporis velit et vitae nulla voluptatem quia modi nam iure aspernatur minus non qui libero aut omnis blanditiis voluptatem nobis laboriosam ipsam aut excepturi voluptatem accusantium dignissimos at est non optio aut rem et suscipit est veniam rerum consequatur architecto adipisci odio et cumque nihil delectus iusto nulla incidunt illum porro quidem eveniet soluta rerum error et."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 3]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.612133"], ["updated_at", "2022-12-17 06:31:00.612133"], ["title", "Sport"], ["content", "Dolor natus et sit maxime qui error quis eligendi qui magnam atque consequatur maiores officiis tenetur esse assumenda explicabo rerum odio sunt eos dolor inventore amet eius ut quod fuga molestiae eum facere earum maxime dolorum fugit et quam sapiente dolores nostrum et dolorem nulla ipsum dolores delectus nihil porro assumenda nisi deleniti vitae id dolore possimus culpa possimus ea officia totam animi quo earum at deleniti aut necessitatibus aut odit est in est omnis sint repellendus vero voluptatibus nam quasi et nobis aliquid veritatis sed aperiam delectus cupiditate sint pariatur tenetur modi est ad sint praesentium placeat iure id alias laudantium illum reprehenderit at provident id quis consectetur aut ratione ipsam nulla dicta et quidem qui animi officia repellendus explicabo et qui velit ad veritatis minima temporibus corporis non ut ut id voluptatem eius ea autem repellat eveniet voluptas vitae eaque nemo voluptatibus voluptatum rem voluptatem libero dolor eaque exercitationem incidunt unde perspiciatis aut consequatur sint quisquam qui commodi sequi quo et nihil voluptate neque et distinctio qui eligendi suscipit ut non dolore laborum rerum autem quia ut quis in aliquam quia praesentium numquam suscipit et ut soluta dolor quidem cumque rem inventore impedit cum ipsa quia totam eum enim aut et quos reprehenderit quibusdam voluptas quaerat enim pariatur aperiam molestiae in magni rerum eveniet dolores consequatur officiis iusto est numquam perspiciatis accusamus et quia nemo asperiores distinctio accusantium blanditiis modi rerum aliquid architecto quaerat minima et ut impedit quae quia voluptates quisquam incidunt expedita sed et magni neque perferendis consectetur deserunt dolorem molestias non aut quis aut omnis voluptatem fuga et ut maiores qui similique voluptatem doloremque aut facilis omnis sed reiciendis non sunt aliquam enim est repudiandae vel saepe veniam consequuntur saepe et voluptate facere molestiae qui quia excepturi ducimus ut et laborum hic necessitatibus odio quae."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 8]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.616771"], ["updated_at", "2022-12-17 06:31:00.616771"], ["title", "Yoga"], ["content", "Odio non ea nobis placeat et consequuntur et laboriosam nisi et ut nihil placeat ut sunt recusandae libero velit non recusandae dignissimos consequuntur inventore vero aliquam enim dolor omnis earum sed excepturi iure eum et aperiam dolore dolores reiciendis consectetur ratione qui non atque sapiente soluta veniam amet tempore et delectus similique sed est qui voluptates architecto at expedita aut in et illum unde est fugit harum ut exercitationem ut in qui dolorum et quis est ad ut perferendis commodi eum ad accusantium labore ut impedit accusamus mollitia vel accusantium fugiat id nihil qui sit neque quia officia et fuga laudantium veritatis et eaque temporibus deleniti consequatur optio inventore porro nesciunt aspernatur illo consequatur sit reprehenderit fugiat voluptates expedita deleniti aut magnam odit eos nam qui modi est aperiam doloribus vel tempore velit sit quaerat rerum doloribus quam magni reprehenderit animi voluptas quod est non ullam ex quos voluptatem eligendi dicta dolor officiis unde iste et eveniet velit laborum sed quisquam soluta ea aut ipsa explicabo ullam qui dolores enim consequatur eveniet distinctio dolorum aut quasi sed occaecati voluptas vitae omnis dolor autem omnis sint ea praesentium rerum numquam beatae corrupti voluptatem excepturi et blanditiis consequatur mollitia voluptatem autem blanditiis dolorem laboriosam adipisci natus molestiae voluptatem corporis ducimus sit et nostrum vitae incidunt vero vel est saepe ipsum possimus corrupti quia nihil rerum beatae labore quia minus odit doloremque ipsam tenetur quisquam error odio voluptatem tempora repellat voluptas ab quaerat ipsa quae ex debitis repudiandae eum voluptatem sequi aut modi non quod deserunt quis nemo veritatis consequatur occaecati eligendi sequi nemo aliquid explicabo animi saepe officiis repellat libero aliquam provident quo maxime adipisci nobis totam nisi nulla minus qui porro voluptas cumque impedit sed maiores rerum qui eius voluptas incidunt dolores aliquid totam sit est cupiditate enim et qui quidem."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 2]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.621637"], ["updated_at", "2022-12-17 06:31:00.621637"], ["title", "Laundry"], ["content", "A aspernatur expedita sapiente non inventore praesentium maxime autem ad nemo vitae deleniti est eum architecto consequatur voluptate aliquam vero et error eaque molestias recusandae ex aut iste velit magnam qui exercitationem est quibusdam at est quasi mollitia earum deserunt est cum placeat nesciunt rem dicta cupiditate atque perspiciatis sed aperiam aut deleniti omnis libero at et aut deserunt minus ut ipsum ratione et culpa dolorem laborum et voluptatem non iusto eveniet et facilis animi rerum maiores architecto illum non asperiores doloribus repellat quia sed est a commodi aut officiis et excepturi distinctio voluptas voluptates tempora nemo quas cupiditate odit et ex voluptate tempora inventore sint modi ducimus possimus voluptatibus sed corrupti nam vero blanditiis repudiandae magni accusantium dolores cumque natus rerum vel omnis alias officia maxime dignissimos quod porro unde pariatur vel voluptates accusamus corporis doloremque officiis sed adipisci consequuntur dolor distinctio et qui eos accusantium voluptatem delectus quibusdam recusandae corrupti aspernatur quo quae veritatis laboriosam molestiae et sunt nostrum ducimus veniam harum amet fugit magnam molestiae autem itaque impedit modi magni harum suscipit ea molestias veniam rerum cum quo porro assumenda consectetur facilis aut mollitia quo dolorum voluptatem necessitatibus vel sunt minima accusamus occaecati est ullam fuga nihil est nihil officia neque vel quos optio quis aliquam quae iure beatae dolor ipsam sit consequatur velit quis iusto quia odio id repellendus in laudantium qui quia voluptas quia rerum sed neque voluptatem quia ab id qui non aperiam velit qui beatae consequuntur ea laborum sunt ut quia est est ut omnis et sint voluptatem labore qui corporis qui est sint suscipit voluptas temporibus sit ut qui dolorem fugit autem totam esse et earum laudantium et dignissimos voluptatum rerum aut repellendus exercitationem numquam sit necessitatibus optio facere debitis ad illum et incidunt omnis eligendi quia explicabo excepturi in sint non."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 10]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.625906"], ["updated_at", "2022-12-17 06:31:00.625906"], ["title", "Laundry"], ["content", "Et rem sunt et voluptatum illum numquam dolorum molestias qui quia perspiciatis corporis quaerat repellat accusamus voluptatem voluptatem in eius aut perspiciatis aut accusamus amet et voluptas sunt nesciunt magnam accusantium illo repellendus consequatur ut dolorem omnis iusto veniam eaque est optio ut maxime est dolor necessitatibus sint esse eligendi sed optio aliquid voluptatem nostrum repudiandae aut mollitia molestias commodi quasi nemo qui architecto rerum non neque voluptate est eum quidem non et nihil alias id deserunt tempore mollitia dolorem ut consectetur dolor quo laborum aliquam dolores cumque cum inventore repellendus dolores ut aut quisquam magni molestiae debitis qui officiis in laudantium culpa unde cum voluptas sed dignissimos qui facilis et sunt quo magni voluptatem tempora non fuga recusandae sunt modi sapiente adipisci aut ea autem adipisci asperiores aut impedit voluptas eius eos voluptates rem quam consequatur enim dolor repudiandae sit qui repellat quia id quas aperiam ut quae deleniti laborum enim ipsum quasi sint veritatis ipsam quia fugit inventore tenetur maiores a quis dolorem odio dignissimos distinctio consequatur totam necessitatibus earum totam quia in ipsa facere ea quod tenetur id vitae iure quam doloribus placeat autem officia quisquam nulla labore sit itaque expedita enim aliquid voluptatum culpa explicabo qui porro sed fugiat nemo qui rerum nesciunt assumenda quo possimus ut eligendi et veritatis omnis voluptatem nulla doloribus ullam dolorem quis id quis minus et sint error molestiae distinctio ut perferendis nam delectus eum vero veniam omnis iste nobis laudantium incidunt sed et unde ad pariatur accusantium autem tempore exercitationem vel illo nihil cupiditate dolor qui aut natus animi eum harum vero porro et sequi laboriosam rerum sequi voluptatibus est et molestiae impedit nisi natus expedita vitae reprehenderit ipsam doloremque recusandae aspernatur eos nostrum ullam soluta vel ea excepturi beatae debitis ducimus molestiae sint corrupti occaecati est reiciendis voluptas aut."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 4]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.630332"], ["updated_at", "2022-12-17 06:31:00.630332"], ["title", "Laundry"], ["content", "Sit expedita facere quia et vitae tenetur sint necessitatibus inventore unde consequatur animi suscipit nostrum eos eum adipisci nulla laboriosam magni corrupti rerum esse nihil est quae voluptates neque est voluptas sequi qui possimus nihil veniam cumque ratione sunt sapiente dolor repellendus dolorum exercitationem inventore et eos provident at molestias provident reprehenderit consequuntur praesentium vel fugit illum ea enim ut expedita distinctio temporibus consectetur reiciendis pariatur sequi quod doloremque officia quia architecto accusamus alias itaque nulla fugiat cumque assumenda dolore iste earum tempore culpa quas dolorem quibusdam ab porro quae asperiores voluptatem sit et tempore eaque optio aut voluptas id sint numquam voluptatem in enim qui velit illo rerum et cum rerum vel autem qui neque quia et quam iste officiis molestiae laudantium dignissimos eligendi molestiae voluptatem itaque deleniti iure maiores maxime est quasi doloribus aut quia sit aut et voluptatem explicabo ut mollitia enim ut modi sunt est minus eum ea debitis est iusto doloremque amet maxime laboriosam nam eos laborum sit et ipsa aspernatur et velit perspiciatis corporis voluptate harum sed aliquid perferendis iure beatae qui repellendus omnis blanditiis dicta eveniet ut rem qui quaerat quisquam placeat dicta incidunt doloribus molestias vero repellat rerum praesentium sed dolores quas voluptas est veritatis at rerum aperiam voluptates facilis sunt aut ut labore cupiditate velit quo autem fugiat dolorem est accusantium ab non atque enim et dolorem voluptatem est exercitationem mollitia impedit sed earum quo est consequuntur similique ut saepe quia eum a eius natus ad sunt culpa modi odio non sed dolores ut et sed corporis vitae non quis necessitatibus est quidem nam odit hic labore placeat in totam dolorum ipsum quam ipsa repudiandae odio non porro laborum dolores maiores in deserunt optio aliquid ut soluta et molestiae rem nesciunt perspiciatis quis impedit omnis possimus in eaque dolores eveniet nisi."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 8]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.634179"], ["updated_at", "2022-12-17 06:31:00.634179"], ["title", "Sport"], ["content", "Maxime tempora laborum laboriosam ut quibusdam optio sed corporis voluptas ab odio et adipisci non ducimus id voluptatem sit ut harum dicta maiores aut molestiae atque harum soluta nesciunt consectetur ab corrupti labore sapiente nam consequatur aut animi soluta distinctio perspiciatis neque ea cum magni perferendis quia voluptatem natus qui voluptas at facere vero necessitatibus facere commodi aliquam minima quis dignissimos ut sit sunt dolore explicabo beatae non assumenda quam nisi non voluptatem placeat ut dolores consequatur quos illo sed enim ex ullam ea omnis autem vitae tenetur ipsa dolorem amet occaecati et dolor et ipsum blanditiis provident reprehenderit veniam fuga sed quia rerum ad ipsum quis sequi praesentium nulla eum dolor ad nesciunt totam rerum vel qui tempora non est eveniet deleniti debitis sint dolor et asperiores consequuntur et temporibus eligendi occaecati id voluptatem aut tenetur similique exercitationem excepturi autem iusto rerum quidem quia vel accusantium voluptate sunt voluptatem voluptatem enim voluptas laborum inventore incidunt rem deleniti quae sed maxime necessitatibus aliquid excepturi commodi asperiores est earum est quia et aperiam sunt itaque consequuntur fugit id aut molestiae enim eaque accusantium est et in cum iste sint eum ea porro nihil cupiditate et aspernatur nemo ex repellat veniam possimus illum repellendus aut natus repudiandae et architecto enim omnis impedit ut corrupti dolores ut distinctio impedit tempore est saepe delectus voluptatum doloremque velit ut magnam suscipit quidem molestiae repudiandae ut nihil velit consequatur rerum illo eveniet neque id et aut aspernatur fuga qui voluptatibus eos qui iusto architecto reprehenderit eius minus libero aperiam modi aliquid repellat exercitationem magnam quis sint et quisquam provident quibusdam velit pariatur vel quisquam ea et rem et odio nisi ut est eius et aut quas sequi nostrum dolores quaerat quia dignissimos quia qui et molestias libero possimus nam deserunt voluptatem voluptates nobis qui quo sit."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 5]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.638271"], ["updated_at", "2022-12-17 06:31:00.638271"], ["title", "Laundry"], ["content", "Laudantium aut reprehenderit neque ex voluptatem quas quidem dolore esse hic et nisi debitis repudiandae totam voluptates expedita non quia ducimus quos sit necessitatibus in pariatur et aut molestiae sed voluptatum eum recusandae dignissimos vero illo et doloremque magnam magnam qui qui dolore in similique eos eum sunt alias odio et voluptatum et perspiciatis maiores quisquam temporibus enim beatae non sapiente ut id ea accusantium delectus doloribus officiis inventore deserunt et quam iusto facilis est error voluptas aut nam dolores voluptas et blanditiis iusto molestiae itaque voluptatem voluptatem natus temporibus debitis veritatis dolorem unde a laborum aliquam ullam qui optio quibusdam ut nam atque officiis doloremque exercitationem non quasi omnis voluptate dolorum consequatur suscipit possimus esse asperiores accusamus aut eveniet modi eos illum fugit assumenda in consequatur commodi fugit distinctio minus aut cum hic fugiat deleniti quo ab porro inventore fugiat aut est ipsam ex veritatis dolorem nulla ut dolores voluptas nobis sed sit facere quaerat excepturi qui sit est dolores modi reiciendis ea tenetur praesentium exercitationem quia consequuntur reiciendis ipsa incidunt nobis adipisci voluptatem neque voluptas aliquid iste nisi quibusdam sint facilis ratione quia deleniti cupiditate quas nihil tenetur repellendus aperiam libero corrupti odit accusamus explicabo possimus earum voluptatem officia harum autem harum repellat minima est velit sequi ipsum voluptates et labore explicabo dicta voluptatibus quisquam qui numquam vitae voluptas quis qui ut voluptatem accusantium officia rerum nemo recusandae sit eaque placeat itaque mollitia odit mollitia ut error est et quis impedit natus quo similique consequatur nulla ut ad eum maxime vero et dolorem et perferendis laudantium at repudiandae excepturi labore adipisci non ut veniam enim et tempora est incidunt dolores earum suscipit consequatur repellendus dolor enim corporis cumque occaecati rerum libero asperiores ratione omnis delectus qui autem eaque reprehenderit omnis amet dolor et quam non nihil illum tempore."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 6]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.642199"], ["updated_at", "2022-12-17 06:31:00.642199"], ["title", "Yoga"], ["content", "Sed velit quia nobis voluptatem corporis pariatur enim quo consequatur sunt facere ab quia et et molestiae nesciunt aut voluptas magnam ut ut est quibusdam consequatur magni molestiae id quidem dolorum et perferendis et autem a rerum provident voluptatem nulla nemo ipsum dolores adipisci et et voluptas earum et qui maiores voluptatem qui dolores itaque aspernatur voluptatem aut tempora sed minima officia temporibus sit impedit repudiandae voluptatem consectetur aspernatur dolorem veritatis repellat aut enim quo sed culpa natus perspiciatis qui quibusdam voluptas sit labore nulla eligendi unde recusandae repellat dolore non est quia a similique quisquam veniam suscipit voluptatibus fugit esse est est fuga quod id cumque sunt ea rem rerum ut odit sit voluptas veniam quia in voluptate qui ea deleniti est eum ipsam tempora quam quos commodi eum nihil eos sunt inventore saepe deserunt eum impedit eum voluptatibus fugiat quis eveniet ut blanditiis consequuntur neque consequatur cum quaerat nostrum aut rerum omnis nam consequatur laboriosam cupiditate vel soluta necessitatibus repellendus sequi possimus ut velit autem et sit illo occaecati aut non ut quisquam aut mollitia maxime tenetur sapiente quidem occaecati reprehenderit quod nam est ea praesentium distinctio sit laboriosam aut ut voluptate harum quia debitis placeat at voluptatum ea quo et ut excepturi aliquid ut soluta accusantium aliquam assumenda voluptatem dicta rerum nesciunt ab est rerum cupiditate vitae iure aut expedita suscipit officiis veritatis sunt repudiandae blanditiis sint velit commodi consequatur incidunt temporibus aut saepe similique laudantium omnis cum sed unde assumenda aut corrupti dolor in dolor hic dolore asperiores nihil possimus iste molestias neque quos laborum qui et ipsam sapiente repellendus est non laudantium architecto illum quis odit non optio sint sint hic reiciendis fuga voluptates consequatur deserunt qui iusto eos omnis exercitationem et quia et non et ex aperiam qui doloribus eos facilis eos aperiam delectus."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 6]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.646165"], ["updated_at", "2022-12-17 06:31:00.646165"], ["title", "Yoga"], ["content", "Dolorem delectus molestias cumque a necessitatibus consequuntur sed eligendi voluptatem qui dolorum odit eum at natus eligendi eum quisquam in magnam ducimus accusantium porro et error modi ratione et rerum et odit ea possimus quos enim earum reprehenderit hic quo qui omnis accusamus vitae quia optio quasi saepe eaque quia repudiandae doloribus aut ab molestiae a minus mollitia voluptatem tempora aut vitae explicabo fuga sit est ex assumenda doloremque aut eveniet et impedit quia sint voluptatum nam et sequi quos quibusdam dolores porro perferendis sed velit qui aspernatur possimus reiciendis voluptas exercitationem aspernatur magni impedit commodi corrupti ratione est natus ut soluta voluptate quis architecto fugiat non est voluptatibus ipsam tempore et iste tempore libero nihil corporis nulla incidunt numquam illo voluptatem rerum laborum quod non consequatur est optio veritatis quisquam voluptatem voluptatem perferendis provident enim in sed ut rerum qui cupiditate commodi ipsum quod itaque debitis repudiandae autem cum dolorum et deleniti ipsum quia ducimus dignissimos eaque voluptas similique voluptas qui ut non dicta nam expedita et quidem et blanditiis consequatur corrupti maxime ea voluptatem eos et ullam quis alias atque nisi quas ad id vel aut laudantium sed nihil culpa consequatur sunt eos beatae recusandae et consectetur omnis veritatis numquam inventore velit dolor minima est earum dolores harum dolorem aliquid debitis aut nemo qui fugiat totam ut qui ipsa praesentium consequatur quaerat vel laboriosam reprehenderit vero est ut adipisci nostrum eius dolores labore harum laudantium culpa nihil enim beatae officiis ab officia ullam facere nostrum fuga facilis quo aut animi tenetur dolore quis sint dolorem rerum adipisci provident quas laborum pariatur reiciendis voluptas officia deserunt excepturi assumenda quidem laboriosam quam recusandae maiores et voluptates omnis nulla animi doloremque sint fugit sit et repellendus qui quasi et facilis rerum perspiciatis magni et dolor asperiores qui sunt maiores dolorem labore."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 10]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.649794"], ["updated_at", "2022-12-17 06:31:00.649794"], ["title", "Laundry"], ["content", "Accusamus earum dolor beatae neque rerum et quia minus eos qui nisi incidunt explicabo sunt nesciunt quae id eaque culpa temporibus est ea a reiciendis ipsum necessitatibus non odio magnam maxime id sit maiores et itaque velit expedita qui qui autem ipsa enim vel repellendus non quia repudiandae vero molestiae reiciendis est atque nihil autem eos error nihil dignissimos optio enim eum aut doloribus ratione repellendus omnis dignissimos molestiae tempora libero qui omnis totam est quis iure aut velit aut quia tempore in suscipit impedit impedit ut in numquam architecto ab fugit deleniti et blanditiis magnam eius dolores commodi consectetur nihil autem soluta deserunt aut itaque sed fugiat cum dolor ut nam exercitationem ut non rem cum cupiditate non velit ut temporibus voluptatem voluptatem voluptatem facilis atque aperiam voluptates id aliquid et accusantium cumque dolores quia vel aut sed modi eos qui consequuntur sunt nam autem animi voluptas voluptas qui at iure ex optio ullam ea sequi iusto dolorem molestiae sit perspiciatis vitae ea deleniti minima quia quidem aspernatur incidunt voluptatem aut esse soluta sed maiores nulla neque sed est asperiores et totam ut et ad quos consequatur qui sunt quae laboriosam saepe cupiditate nihil officia distinctio quod tempora adipisci praesentium corrupti rerum consequatur dolor quis nisi omnis eos pariatur sapiente aut omnis aut excepturi reprehenderit est et fuga mollitia adipisci esse minima voluptate explicabo quam ut illo voluptates reprehenderit sint voluptas rem numquam quis tenetur dolores blanditiis inventore in corporis sint dolor veritatis officiis nostrum doloremque consequatur et iste harum pariatur facere sed ut aliquid hic sit ut maxime illo distinctio assumenda ipsum qui iusto placeat iste animi dicta ut aut voluptatibus enim sunt architecto est et eveniet voluptatem omnis rerum quo fugit qui repellat voluptatibus vitae provident nemo at molestias dolores delectus quo quas non sint veritatis eveniet."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 8]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.653809"], ["updated_at", "2022-12-17 06:31:00.653809"], ["title", "Sport"], ["content", "Et et incidunt vero quasi expedita et quidem praesentium officiis facere deleniti natus blanditiis quia in voluptatem nobis et magni quia quo delectus tenetur perferendis animi quis ut sapiente qui ipsam molestiae aut illo quia assumenda omnis voluptatum autem eos voluptas non est mollitia aut laboriosam velit reprehenderit rem sed quae ut quaerat sint beatae voluptatem et aut esse nam provident deleniti tempore dolorem tempora cum adipisci consequuntur et aut vel at aspernatur voluptate consequatur quisquam adipisci vel sit enim et sint aliquam similique modi sit laborum omnis eveniet dolor in aliquam corrupti neque eos nihil accusamus rem rerum debitis eos occaecati sit dolorem officiis ut harum quibusdam minus maxime et minima est ut aut eum rerum sed impedit qui vitae dolore ex iusto sapiente qui cum suscipit quia optio et excepturi voluptas vero fugit accusamus qui culpa libero consectetur quia ipsam numquam recusandae eaque ad autem molestiae error reiciendis maiores placeat sunt laboriosam quas eum quaerat ex ducimus corporis officia amet consequatur qui illo aut odio culpa voluptates sint quae voluptatem ut et eius nihil odio natus quibusdam sed et ut facilis doloribus rerum necessitatibus provident corrupti repellat nemo eveniet saepe ratione aspernatur consequatur qui alias rerum dolores aut repudiandae ipsum consequatur nesciunt esse atque alias numquam ut amet ullam iure asperiores dolor veritatis ipsa quis itaque velit molestias ea in sequi quas velit ab et dolorem quam at consequuntur molestiae veniam fuga animi eius eum tenetur blanditiis exercitationem temporibus quos tempore perspiciatis fuga rerum enim voluptatibus eum voluptatibus doloremque dicta enim cumque quod et voluptatem ullam vitae non labore omnis id cupiditate sequi in nihil est consectetur deserunt officia ut eos est ad autem distinctio est voluptatum quia aliquid totam soluta nam id cumque cupiditate quod repellendus enim veniam repudiandae est impedit odit debitis consequatur hic accusantium doloremque."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 9]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.657401"], ["updated_at", "2022-12-17 06:31:00.657401"], ["title", "Sport"], ["content", "Dolor quisquam laboriosam et quod dolores in vel et maiores numquam consequatur placeat sunt in voluptatum magnam ipsum est blanditiis qui non rerum ut in inventore qui esse iste expedita ratione sint voluptas ea sit et libero laboriosam ducimus omnis voluptas odio ipsa asperiores dolorem voluptatibus quia aliquam id dolorem nobis et et id voluptatem qui fugiat quo asperiores provident molestiae quam quas nam cumque non sapiente sit molestias ex temporibus quod eos blanditiis autem sed tenetur vero ullam laudantium quibusdam consequatur consequatur repudiandae vitae est soluta aut iusto officiis possimus dolor quia est vero sed repellendus pariatur eius corporis eveniet nemo beatae sit qui voluptatibus accusamus enim recusandae modi quia sint rerum ut dolorum consequatur numquam nisi molestiae qui velit distinctio porro nihil aut facilis earum consequatur quos voluptatem ut repellat sequi labore minima harum magni enim deserunt rem rerum voluptates sed veritatis voluptates eveniet sint officia maiores doloribus iure sed ad totam nobis at veniam suscipit hic amet quis possimus aliquid sed inventore cupiditate error tenetur dolores eum sint aliquid quidem voluptatem quo id atque quibusdam nihil eos natus qui sit dolor consequatur nisi omnis ad neque facere occaecati delectus debitis est dicta quas corrupti dicta omnis ipsa quae occaecati et qui itaque esse est exercitationem placeat quasi autem autem quis est necessitatibus temporibus nulla optio aut molestiae velit aut nemo vel omnis consequuntur saepe natus reiciendis corporis iste reprehenderit quo accusamus debitis laborum explicabo a eum laborum vel aut excepturi adipisci ab excepturi quaerat pariatur voluptatem fugit perferendis nihil vel eos quia aut aut dolores ut quidem enim officiis est non cum sed harum ratione nesciunt voluptatem velit a ut magnam non sit voluptatem ut autem alias architecto perspiciatis adipisci vitae veniam provident eum nihil aperiam minus neque modi est rerum assumenda assumenda velit illo consectetur illum."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 4]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.662650"], ["updated_at", "2022-12-17 06:31:00.662650"], ["title", "Sport"], ["content", "Corporis blanditiis eum facere voluptate dolores accusantium ex omnis voluptatem quidem sint soluta expedita enim voluptates voluptatem aut aspernatur itaque et illo illum quia ut qui quia maxime atque autem veniam soluta qui eos libero aliquid voluptatem numquam a sapiente facere iure quis iste dignissimos vitae ab accusamus at dolorem delectus maiores reiciendis minima ut aut qui quia earum sunt odio dolor amet ad ut qui perferendis illum et incidunt est exercitationem dolorem deleniti eaque natus repellat maiores impedit ratione neque quae nisi consectetur vel molestiae et et nostrum error unde et consequatur ut quibusdam cumque possimus temporibus voluptatem quis nulla ea autem maxime consequatur sunt iure nam saepe culpa reiciendis explicabo dolor ducimus ea veritatis debitis quia consectetur culpa ducimus nulla est aut molestiae quo fuga sunt eos doloribus commodi veniam qui molestiae officiis iste suscipit ipsum ut aspernatur voluptatem est quia voluptas omnis molestias dicta provident accusantium velit ipsa eum dolores officia eius quas et quibusdam sit porro nemo pariatur quos ut voluptatibus tempora et adipisci excepturi laudantium iusto sed et impedit aut id voluptatum aut voluptas perspiciatis corrupti necessitatibus recusandae praesentium omnis cupiditate praesentium qui et quasi earum deserunt nihil rerum hic magni nesciunt sit quo consequuntur ea quidem veritatis modi est dignissimos et repellendus nesciunt distinctio deleniti odit molestiae nemo quam repudiandae consequatur similique nam temporibus eum facilis dolor ut nisi nihil ipsa labore et voluptatibus hic rerum aut dolorum consequatur est aut nihil dolor occaecati sed rem officiis iusto labore et sit facilis ad cum sed id in exercitationem quas itaque repellendus sed corrupti in ex voluptatem qui harum numquam architecto ullam dolorum aut eaque tenetur omnis neque animi voluptates ab sint doloribus consequuntur inventore quod nobis quo quis adipisci quo et blanditiis est est assumenda odio voluptatem id ratione reprehenderit doloremque magni assumenda aut."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 10]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.667160"], ["updated_at", "2022-12-17 06:31:00.667160"], ["title", "Sport"], ["content", "Architecto repellendus blanditiis est exercitationem quibusdam et accusamus et debitis labore omnis occaecati sunt reprehenderit nam in autem consequatur maiores at quibusdam exercitationem eum nobis ad eligendi quos magnam perspiciatis id aperiam quisquam sapiente rerum quisquam porro qui sunt aliquam necessitatibus dolores distinctio qui perferendis est nemo quis eos alias soluta molestiae suscipit sequi et in molestiae sint nihil voluptatem necessitatibus saepe voluptatem similique et illo fuga officia a enim aut est nihil temporibus vel et rerum impedit reiciendis quas et hic adipisci explicabo id provident atque non voluptate itaque magni ab velit totam labore sed dolores aspernatur quaerat sit animi cum iure et dicta et repellat fugiat ut possimus quia voluptas et corporis ut delectus nesciunt vel autem laborum modi enim voluptatibus sunt vero quas dolores praesentium neque voluptatum illum a ea placeat corporis quod unde tempore et accusantium optio veritatis sint quia in perspiciatis dolorem voluptas et non ratione reiciendis libero occaecati qui ullam quam voluptatum vitae accusamus magni tempore aut ipsa eveniet sint libero quia iste laboriosam est modi ratione voluptas sed aperiam molestiae mollitia unde iusto molestias quasi dignissimos eum praesentium doloribus aut minima facere voluptas explicabo dignissimos repudiandae fuga assumenda odit voluptatem nisi perferendis ipsum recusandae officia eum facilis recusandae sit voluptatem qui nam fugit enim sed deserunt aliquid nemo veniam alias omnis ut sequi veritatis autem assumenda itaque eaque et amet eveniet culpa excepturi et et natus omnis voluptates ipsam ut enim aut officiis beatae numquam optio sed et voluptates quia vel quidem nulla eaque odio nobis repudiandae tempora ut qui quae ullam est aut non non voluptas pariatur consequatur rerum velit ut nihil consequatur magnam esse aut temporibus illum velit omnis possimus dolore asperiores culpa cupiditate ex et atque dolor natus eos vel commodi maxime quis rerum ipsum adipisci sit ad eos voluptatem."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 5]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.671031"], ["updated_at", "2022-12-17 06:31:00.671031"], ["title", "Sport"], ["content", "Aut at nesciunt inventore qui magni quam debitis incidunt qui unde voluptatem placeat quis similique itaque quisquam cum molestias ea optio aut perspiciatis voluptas culpa culpa cum est odit expedita impedit voluptas rerum voluptatibus numquam aliquid eum cupiditate consequatur impedit ab sit labore placeat est voluptas excepturi asperiores magni nihil et doloribus dolore accusamus nostrum modi a enim minus ipsa omnis quia accusantium autem consequatur ratione ut officia illo nobis sit nemo corporis ut maxime corporis fuga distinctio id facilis quaerat ut provident fugiat nostrum quae aut natus consectetur est dolor rem aut vitae atque et et consequuntur voluptatum voluptatem ab delectus sunt earum quod ut necessitatibus architecto in quasi occaecati qui sequi in et sapiente et ex ut doloremque reiciendis in error aut qui velit non sed porro nihil pariatur nam quia nam quaerat aut et deserunt fugit ea omnis voluptatem laborum aspernatur tenetur velit autem eveniet sit dolores aut tempore corrupti dignissimos sunt eum et consectetur in consequatur quia molestias odio rerum voluptas nesciunt inventore sint reprehenderit non illum ducimus vitae libero consequatur vero voluptate est sapiente rerum ipsum molestiae at eveniet blanditiis beatae qui cupiditate eaque esse sunt dolores quidem voluptatem odit iure veniam officia et quo quasi deleniti repellendus iusto est eligendi labore quo qui aut perspiciatis dolorum atque quidem nisi omnis aut voluptatem doloremque vel deserunt laudantium sit nemo nihil veritatis fugiat maxime non rerum vel amet voluptas molestiae repellendus magnam odio quos laudantium eum dolores officiis aut commodi autem ratione ipsam minus accusantium eius blanditiis quibusdam tempore voluptates dolor iusto sit expedita doloribus similique molestiae sunt dolorem occaecati ipsa ut esse omnis veritatis optio sed dicta dolor et dolorem praesentium ea repellat aut voluptates numquam suscipit excepturi quisquam corrupti ea assumenda asperiores quia a sed iste hic veniam vero consequatur accusamus quo repudiandae enim."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 3]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.674832"], ["updated_at", "2022-12-17 06:31:00.674832"], ["title", "Yoga"], ["content", "Unde et debitis doloremque molestiae ut sunt dolorum repellat non nihil assumenda quis saepe commodi officia excepturi nemo voluptate sed nam tempora id aliquam adipisci veniam sint corrupti fuga quia impedit totam architecto voluptas optio aliquid ut similique qui sint possimus officiis voluptatum libero modi porro non tenetur molestiae illum et magni temporibus assumenda accusamus quis in id voluptatem quisquam enim maiores vel aperiam nulla delectus esse nisi animi est quasi ducimus quaerat vel aut ratione eligendi nobis ut odio dolor et earum nesciunt libero nobis et sint labore autem vero illo expedita dolorem neque pariatur exercitationem quod voluptas ut officiis ea dolores consequatur debitis sequi hic qui sit quaerat dolorum autem alias eaque consequuntur voluptas magnam est omnis deleniti error aliquam dolorem minus quod eaque optio rerum sed laudantium ut minima et quasi qui quia id quae quo sapiente velit laborum quis cupiditate ut quia et ut atque incidunt cupiditate suscipit et et rerum accusantium repellendus eveniet totam est dignissimos pariatur laudantium fugit qui ab non distinctio a sit repellendus itaque non molestiae voluptatem reiciendis velit quia ipsa ipsum ex et delectus facere dolores ducimus modi et vero fugit praesentium asperiores repellat qui in sunt voluptates qui porro molestias et commodi dicta tempore eos eos quo culpa eius corporis nam explicabo repudiandae quam praesentium fugiat ullam dolor facilis quas esse soluta quos dolorem et aut consequatur ut quae similique hic magnam veritatis iure natus quos perferendis numquam quidem odit aut dolore et voluptatem est numquam labore necessitatibus sed reprehenderit ut et animi ullam accusamus quibusdam vel facilis quo ea omnis consequatur est rerum velit voluptatibus id suscipit inventore eius eum atque cumque provident facere occaecati odit distinctio maxime non aut deserunt cumque nostrum ratione possimus dolor sapiente amet et voluptatum iste mollitia aspernatur harum tempore non iusto et ipsam."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 7]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.678994"], ["updated_at", "2022-12-17 06:31:00.678994"], ["title", "Yoga"], ["content", "Et voluptas aut corrupti deserunt vero eaque quos cupiditate qui iure non nesciunt fugit excepturi est velit sunt vero laudantium eos neque sunt voluptatem error enim mollitia sed quia assumenda ipsam maxime culpa sit optio nihil labore non molestiae aut animi a debitis dicta asperiores eligendi sint impedit repellendus eaque tempore natus molestiae libero ut in adipisci ex aperiam est ad perspiciatis corporis dolor ratione quo saepe magnam quia non fuga nulla quae voluptatem delectus maxime quaerat et beatae quas quae sed dicta et reprehenderit culpa aut rerum autem est exercitationem atque nobis non deleniti at et eos blanditiis quaerat nihil est molestiae laboriosam harum est quis voluptates quam voluptatibus aut qui dignissimos dolorum tenetur earum consequuntur nisi distinctio consequatur eum placeat vel doloribus totam et soluta consectetur voluptatem commodi esse et animi qui assumenda odit enim totam minima sed odio cum nulla suscipit facere libero occaecati impedit veniam quidem aut mollitia voluptatem voluptas sunt asperiores quia necessitatibus quo porro et sit officia doloremque nostrum itaque repudiandae sequi aliquid voluptatibus sunt quibusdam nostrum hic delectus rerum praesentium adipisci eveniet explicabo harum unde voluptas sit illum quasi et quo inventore amet nam doloremque consectetur accusamus odio autem et id praesentium autem fugiat veritatis maiores rerum ut iste soluta nam est officia perferendis aliquam pariatur eum in dolor aspernatur pariatur sapiente aperiam inventore ducimus qui esse omnis eveniet velit officiis omnis ea ut sint ut ut modi repellat repellat quo enim veniam quis et aut expedita quam a ut alias ea laudantium est natus in quos illo vel magni ut dolor voluptatem eius consequuntur est blanditiis tempora tempora earum beatae dolor reiciendis corrupti placeat aut sit non et dolore iusto excepturi eum vitae qui rerum aut eos iure officiis et ut occaecati deleniti facilis dolorum quia molestiae aliquid et ipsa consequatur rerum."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 6]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.683629"], ["updated_at", "2022-12-17 06:31:00.683629"], ["title", "Sport"], ["content", "Sint necessitatibus vel debitis eos et non tenetur et officia repudiandae et in et assumenda earum enim porro impedit sequi fugiat aut ut saepe aut dolorum dolorem quia consequatur optio aspernatur dolorem non harum corporis natus sed non enim ratione aliquam earum id tempore ut dolores quisquam nam voluptatem suscipit neque voluptatibus rem assumenda quia dolores optio odio voluptas alias sunt rerum molestias quis sit nisi et mollitia enim officia ut doloremque ut magni voluptatum itaque et fugit magni accusantium sed vitae fuga iste porro exercitationem eveniet beatae saepe et qui quae suscipit distinctio velit et iste qui quia nihil ut culpa quis et quia eum repellat illum distinctio placeat quibusdam autem explicabo eius et repudiandae quasi quis adipisci qui qui aperiam ea dolore eum beatae pariatur quaerat veritatis similique cum accusantium hic quas dolor reiciendis neque laborum ut minus deserunt nemo omnis veniam aspernatur in ipsa ducimus similique odio ratione facilis maxime velit omnis quae commodi et illum voluptas hic voluptatem ipsam quo dignissimos dolores omnis officiis accusamus voluptas ullam consequatur est excepturi nihil corporis velit ut quam harum nobis ad qui incidunt odit sapiente sint id rerum aliquid autem inventore sunt dolor quos voluptates et cum non voluptatem dignissimos omnis aut et est eum qui eligendi veniam error laborum et aperiam aut rerum voluptatem natus ea error occaecati repellendus sint voluptas expedita ab amet totam ea dolorum autem doloribus dolorem amet quia ex in maiores unde iure ducimus pariatur fugit nam nostrum ut voluptatum sit a at cupiditate aut et non sed dicta ab illo iure qui eveniet vero libero nulla nesciunt exercitationem recusandae est placeat voluptatibus laudantium reiciendis necessitatibus ut recusandae excepturi sed consequatur adipisci voluptatem praesentium aut voluptas quibusdam fugiat corrupti ea minus modi a labore est molestiae magnam fuga nihil quidem sit est delectus eius."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 2]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.688167"], ["updated_at", "2022-12-17 06:31:00.688167"], ["title", "Laundry"], ["content", "Totam commodi fugit ut harum nemo vitae et ratione quidem qui non debitis velit ipsam molestiae similique dolor expedita enim cum perferendis magni ut quos sequi quis enim beatae amet sit natus eaque quam et minima voluptatem quas temporibus error sed quaerat consequatur dolore ipsa magni neque molestiae aliquam dicta voluptatem eaque doloribus asperiores numquam consequuntur ducimus aut sit reprehenderit qui neque eos rerum recusandae accusantium omnis consequatur aut nihil facilis officiis odio at suscipit nam ipsum a voluptatem nesciunt omnis ut enim natus omnis quia dolorem quae et voluptate sunt qui numquam fugiat porro quisquam eos labore deserunt ea quisquam minus veniam aliquid aut nobis placeat tenetur qui omnis repudiandae animi eius nulla aliquid qui facere commodi cupiditate autem pariatur aspernatur iste culpa doloremque sit est quasi dolor pariatur eligendi architecto beatae accusamus est placeat nihil dolores esse est voluptatum labore autem cum quia earum quis expedita sint sint illum dignissimos distinctio aperiam est repellat provident et dolore omnis quia quo reprehenderit ut qui molestiae eius temporibus et dolorum non exercitationem in unde rerum rerum dolorem culpa est laborum autem mollitia possimus aut nam minima tempore ea harum rerum et et laudantium quasi similique quibusdam accusantium et totam officiis soluta quidem optio nesciunt deleniti reiciendis voluptatum voluptas nihil architecto ducimus iusto molestias esse illo ut doloremque quam quod velit vero quia aperiam nemo repellendus sint modi qui non et omnis ut dolorem laborum vel error dolorem corporis blanditiis vero maiores debitis corporis et saepe libero ipsa occaecati quaerat rem velit ut quia consequatur nostrum nobis reiciendis soluta delectus nihil assumenda et voluptas itaque suscipit doloribus nostrum ut maxime eos facilis et dolores id ab in eos et blanditiis quia aut quo ea et et ipsam eum explicabo fuga iste id et est repellendus fugiat ut odit consequuntur asperiores sapiente."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 7]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.692481"], ["updated_at", "2022-12-17 06:31:00.692481"], ["title", "Yoga"], ["content", "Pariatur est accusamus sapiente ut minus vel quod iure voluptatem eos ut in at distinctio ea consectetur fuga aspernatur earum recusandae eius reiciendis atque et enim expedita error ipsum ut et numquam et laborum facilis sapiente qui veniam nulla quas architecto delectus et minima nobis magnam quae qui ullam similique assumenda animi sint quaerat quia aut dolor optio nostrum non et et eos numquam dicta ducimus amet dolor aut sed voluptatem quos culpa voluptatem consequatur ut neque vero saepe quis velit deleniti dolores impedit quia quis qui nulla omnis id voluptas perferendis qui consequatur et atque ex asperiores illum asperiores doloremque sit id aut et voluptas similique rem eum voluptatibus quo eius omnis dolores cumque nesciunt labore ipsa voluptas dolor quam accusantium consequuntur facere fugiat unde aspernatur in molestiae quisquam voluptates ut sit voluptatum perspiciatis minus est id iusto et iure fugiat ut ullam consequatur velit impedit consequatur odio quas sequi laudantium suscipit corporis sit sed ea consequuntur eveniet quis ut molestiae fuga ipsam dolore adipisci accusantium iste quo dolorem ad vitae in vero sit praesentium culpa ad sed porro sunt placeat aut et quia est corrupti et temporibus quia non omnis a dolorum totam tenetur totam earum voluptatem dicta cum est rerum quo autem quasi corrupti repudiandae sint ut ut saepe minima cupiditate provident sunt officiis possimus alias voluptate vel quod inventore quibusdam dolores eos eaque in fugit aut nihil harum maxime suscipit exercitationem dignissimos tenetur sit sed dolorem et architecto quia qui et libero delectus non nemo autem laborum ab magni provident modi sunt sed quidem et laboriosam recusandae tempore doloribus enim molestiae soluta voluptatibus accusamus voluptate ut hic cupiditate eaque nihil quis quos voluptatem dolore natus odit nisi eveniet nihil et et corporis sint sint doloribus est nihil ipsa maiores quaerat harum aperiam eum molestias quam aut."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 3]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.696560"], ["updated_at", "2022-12-17 06:31:00.696560"], ["title", "Sport"], ["content", "Sunt ab autem architecto et eum fugit consequuntur occaecati saepe delectus corrupti esse aut ea consequatur ut dicta cum iusto nam sequi eveniet error alias voluptatibus dolorem et veniam qui in at ea commodi sint neque non numquam enim nemo voluptatem dicta magni non voluptatem voluptatem accusamus veniam fugiat atque amet quia quia enim et facere ad accusantium eum et quibusdam ducimus aliquid ut rerum quaerat maxime qui qui porro et reprehenderit libero officia dolor dolor consequatur qui libero voluptatum quos mollitia sit quae asperiores aspernatur est autem at sit aut sint eos aut expedita soluta quia fuga recusandae ut exercitationem nobis velit voluptas deserunt officiis ratione maiores ducimus fugit qui cum voluptas consequatur molestiae dolor possimus ab placeat est excepturi praesentium magnam doloremque sed odit voluptas aut quibusdam ut vel totam sed sunt quod laborum tenetur molestiae repudiandae et est est porro aut nulla nihil dolor omnis quia molestias consectetur explicabo omnis ea molestiae magnam temporibus velit ipsum voluptates esse quaerat sunt quasi aut numquam quis quia doloribus voluptatem dolore eaque provident non eius ut provident rerum eum itaque est incidunt eveniet explicabo adipisci corporis laudantium animi repudiandae nostrum in qui adipisci eum perspiciatis id aut harum aperiam occaecati inventore aut itaque et et reiciendis cupiditate vero sapiente cupiditate non blanditiis dolores et beatae quia tempora dignissimos ut aspernatur ipsam aliquam quia minima omnis aliquam voluptas molestiae quidem odio qui perspiciatis labore sed quam sint saepe doloremque et doloribus qui quis dolores et ad illum et debitis blanditiis dolorem similique omnis quo consequuntur placeat sunt qui omnis fuga hic voluptatum ipsam omnis necessitatibus mollitia voluptates nostrum commodi sit ut tempore inventore suscipit dolorem necessitatibus illo impedit a est incidunt et eaque ullam dolorem sed id repellendus expedita consequatur dignissimos nobis consectetur labore voluptatem pariatur fugiat culpa eius neque quisquam."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 9]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.701021"], ["updated_at", "2022-12-17 06:31:00.701021"], ["title", "Sport"], ["content", "Quis odit aspernatur debitis alias doloremque sunt aut est sed corporis earum ut aut aut fugit et est velit rerum libero consequatur deleniti quisquam eveniet reprehenderit qui ea quis et perspiciatis est pariatur saepe eligendi ut cum sequi dolore exercitationem consequatur qui qui ex minus ullam harum quasi quaerat vel optio voluptatum numquam rerum iste suscipit rem minus quis aperiam nobis et dolor iste commodi officiis aspernatur consequuntur velit facilis laborum voluptatem tempora excepturi in totam magni vero doloremque sint dignissimos cumque labore nisi distinctio veniam sit repellat ea et sunt laudantium ipsum sint beatae quisquam nostrum qui consequatur voluptatibus omnis ratione perferendis odio molestias non itaque illo qui animi ratione quos neque velit dolores ducimus enim maxime ut quo corrupti quae rerum aliquam expedita tempora sit sed et quas et sint iure dolorem facere quia eum doloribus nam unde excepturi ipsa dignissimos molestiae nam voluptatem eos ut amet sed voluptas blanditiis ea commodi error fuga alias officia aliquid qui quia inventore ut consequatur labore assumenda illum voluptatem aut omnis nostrum eaque id et quaerat magni ut maiores exercitationem in nihil cumque reiciendis velit dolor blanditiis occaecati qui et porro vitae aut ipsa sequi id mollitia quam repudiandae reiciendis illum sed dolores nulla aut similique amet facilis consequatur aut accusantium quae aut laborum nihil harum veniam omnis iusto recusandae ea autem ut aliquam magnam fuga eligendi enim accusantium necessitatibus nemo quod in eius fugiat et quidem cum ducimus dicta est sed earum ab ipsam et vero quidem non explicabo rerum incidunt adipisci omnis rem soluta id est sunt possimus possimus esse laboriosam quia facere nisi vitae molestiae consequuntur nihil tenetur eos libero enim voluptas voluptas et consequatur dolore et nihil sapiente doloribus et voluptatem sit a eum quod omnis reprehenderit aut nulla ipsum modi assumenda eveniet eos quia praesentium quia."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.704970"], ["updated_at", "2022-12-17 06:31:00.704970"], ["title", "Sport"], ["content", "Eum dolor et eos porro ducimus ut nesciunt aut consequuntur minima nemo quia reiciendis et sunt recusandae voluptatem esse quo est placeat repellat commodi enim nulla placeat est earum quas nihil impedit asperiores et error voluptas qui et recusandae rerum accusantium aspernatur velit ea delectus qui vitae officiis dolor autem et deserunt in unde tempore dolorum delectus suscipit expedita iste occaecati ex esse mollitia molestiae aut maxime provident est ad corporis et dolor quibusdam aspernatur blanditiis minima nulla accusamus expedita ex molestiae autem dolore deleniti incidunt et excepturi labore nam optio cumque est aut ab voluptates eos sunt eos sit voluptatibus voluptas aliquid veniam saepe maiores quia sequi at ipsa dignissimos reprehenderit rerum omnis itaque quia inventore totam iste voluptas facilis assumenda amet totam quo quidem veritatis a ut illum dolorem ratione dicta ab vitae quis praesentium sint occaecati voluptates nihil molestias facere nesciunt iusto inventore harum sit consequatur fuga a soluta perferendis ea eum quo et aliquid repellendus possimus qui quo nostrum consequuntur rerum distinctio voluptatem tenetur aliquam quasi libero nostrum non quidem voluptate quos voluptas qui dolorem quia earum est deserunt ipsam et quasi doloribus voluptatem necessitatibus tempora quod ut nisi nemo voluptatem officiis eveniet non adipisci accusamus consequatur quia odit sit omnis at doloremque sit fugit eligendi quam voluptate velit unde accusantium quisquam ut veritatis qui explicabo ut qui ipsa voluptas atque explicabo magni architecto est iure laboriosam numquam et nihil quis enim quia repellendus possimus ea nisi est molestiae quis eaque eaque debitis minus aut exercitationem autem hic ipsum laudantium voluptatem quod natus omnis corrupti laboriosam ipsum voluptatum ut doloremque dolores non numquam sint dicta tenetur sint rerum quaerat voluptatem atque quia tempora provident perspiciatis praesentium sed est qui aperiam harum velit aut in sit mollitia aut et rem sapiente suscipit qui vel quos commodi ut."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 2]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.709685"], ["updated_at", "2022-12-17 06:31:00.709685"], ["title", "Laundry"], ["content", "Officiis sunt quo explicabo eius enim aut est cumque sit enim ea laboriosam et dolores nam nostrum sed eum doloribus harum dicta eum suscipit asperiores minima sint quis alias tenetur illo dicta placeat est molestiae sit autem reprehenderit non soluta voluptatem sequi qui qui tempore amet aspernatur id et nisi ducimus et earum voluptate eius non cum omnis ut perferendis dolorum dolor est id molestias deserunt maxime voluptatem amet sed alias inventore ut aut non facere nulla impedit officia quis tempora minus fugit voluptas voluptatibus in fuga quasi ut maxime velit enim magni perspiciatis dolor repellat nihil velit possimus et qui perspiciatis beatae excepturi fuga vero eaque officia qui nobis nihil suscipit similique expedita id at nemo voluptatem rem voluptatem repudiandae doloribus quia nemo velit sit aut nobis et quisquam eos provident odit omnis omnis accusantium tempore nisi exercitationem repellendus ipsum dolor ut nesciunt qui voluptas adipisci quidem qui atque corporis saepe aut sed quis omnis quibusdam vel sapiente et assumenda totam recusandae quod labore rerum maiores molestias saepe iste reprehenderit quia accusamus consequuntur labore animi omnis molestiae magni voluptatum aut ratione placeat et porro rerum magnam id et accusantium totam ea quos explicabo ipsum pariatur voluptatem tenetur similique numquam molestiae culpa architecto dolores et rerum dolores esse ipsa sint distinctio voluptatibus vitae est eveniet maiores rerum laborum natus cupiditate laborum cumque est voluptas facilis est repellendus quaerat distinctio excepturi veritatis blanditiis animi eos aliquid unde facere modi qui nostrum illo dolorem et omnis commodi ullam voluptas quia asperiores ipsa sit et qui quo reiciendis in et praesentium aperiam in iure doloremque eaque est necessitatibus rem itaque ab repellat nam et quam commodi iusto dolorum ut earum culpa aut molestiae tempora aspernatur temporibus incidunt et minus optio quia aut ut ipsam non consectetur dolores possimus et autem mollitia sit quisquam."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 4]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.715403"], ["updated_at", "2022-12-17 06:31:00.715403"], ["title", "Laundry"], ["content", "Reiciendis ut ut sed atque maxime dolorum alias cumque id dicta ratione voluptatem voluptas sed sit sequi quos dolore tenetur dolorum sit repellendus autem et est quia ipsa error cupiditate soluta exercitationem qui non id deleniti mollitia alias nulla voluptate veritatis est qui enim sequi esse perspiciatis culpa maxime est reprehenderit rerum corporis ullam dolor temporibus quo est explicabo dolorem quaerat nobis et non tempore ut at et earum qui fugit occaecati aliquam minus corrupti nesciunt laborum quia totam architecto qui et optio inventore asperiores maiores consequatur voluptatem doloremque odit facilis ut itaque aut est labore autem ut quidem sed qui iure libero magni nostrum omnis dolorem pariatur ut quisquam deserunt quia aliquam totam rerum et voluptatem molestiae ipsa animi consequatur blanditiis quod et possimus unde sint eaque cum aperiam odio officia ipsum tempora placeat eum quae officiis veniam distinctio qui ratione temporibus consequuntur similique et ab cumque voluptatem nam corporis et harum dolore quis magnam qui et quisquam dolor voluptas consequatur tempora aut impedit itaque voluptatibus occaecati consequuntur nihil velit illum commodi omnis asperiores laudantium sed omnis rerum provident deleniti voluptate ad adipisci voluptas et libero sunt molestiae reprehenderit sunt rerum magnam expedita ducimus pariatur delectus architecto consequatur incidunt iusto omnis non recusandae tenetur iusto repellat ut inventore velit dolores consectetur adipisci labore voluptates quia beatae aut neque autem voluptatem voluptas culpa odio quam reiciendis aspernatur eius hic et accusamus sunt enim sed dolores accusamus nobis beatae est aliquid est molestias vero illum ullam similique hic vel animi dolorem placeat mollitia amet quo consectetur a tempore aut est omnis delectus eaque magni optio aspernatur qui rerum aut maiores enim accusantium harum dolores voluptatem fugit vitae iste necessitatibus voluptates aut et dicta molestiae quasi blanditiis aut facere nisi facilis velit eveniet neque excepturi porro illo ex in dolores distinctio fuga."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 8]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.719242"], ["updated_at", "2022-12-17 06:31:00.719242"], ["title", "Laundry"], ["content", "Quia unde possimus in perferendis maxime ex veritatis quae iste quaerat aut aut non blanditiis et tempore excepturi qui voluptates et et molestiae eos assumenda dolores molestiae sit magni quaerat totam repellat perspiciatis nisi qui aut officiis consectetur eaque quo quam molestiae est dolorum dolores vero omnis asperiores harum ut occaecati officiis dicta amet aperiam ea suscipit expedita numquam illum quod non sint voluptates nulla laborum laudantium eum quasi quas nostrum vero dignissimos voluptatem odio ullam velit iste dolorem voluptas minus sit quis consequatur nobis non tempora a eum maiores vitae qui saepe alias architecto omnis praesentium sequi nihil quos commodi id quia modi sit voluptatem sapiente sunt amet neque id ut voluptatum sunt porro commodi adipisci fugiat expedita beatae quis et error soluta ut qui ut molestias quia placeat tenetur dolorum culpa delectus doloribus asperiores et numquam distinctio reiciendis sapiente et eligendi quisquam sint hic quia quas cupiditate reiciendis voluptatem facere aliquid aliquam facilis distinctio aperiam enim incidunt sint enim dolor ratione excepturi deleniti debitis possimus consequatur exercitationem voluptatibus sed fugit libero quia quos qui sed et optio deserunt laboriosam adipisci laboriosam qui veniam aut nisi nemo voluptate ratione facilis voluptas necessitatibus at blanditiis in itaque magnam qui est sunt autem eaque aut sed architecto sequi pariatur nihil qui quia tempore voluptate at et similique saepe minima et ab officia aliquid eius autem est recusandae voluptas eveniet beatae in et quibusdam autem voluptas earum praesentium repudiandae omnis aut deleniti neque impedit vitae ut ex iure quae vel ad mollitia temporibus eveniet inventore placeat earum labore ut quod animi occaecati quis libero doloribus atque et dolorem magni velit repellendus aut voluptas rerum consequatur illo accusamus in qui voluptatibus dignissimos nihil officia aut eos recusandae explicabo natus mollitia dolore nulla facere est et eius est voluptatem voluptatem sunt tempora ipsa ullam."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.722781"], ["updated_at", "2022-12-17 06:31:00.722781"], ["title", "Laundry"], ["content", "Culpa illo inventore asperiores cum ut est necessitatibus doloribus maxime odit porro deserunt nesciunt architecto cumque dolores numquam quisquam et blanditiis modi qui sint ut iusto velit quidem doloremque et nemo molestiae et laborum perspiciatis qui praesentium commodi consequatur nam quae mollitia esse commodi quae officia dignissimos sunt cum similique nostrum aliquam hic eum eos omnis est expedita sequi dolor tenetur et veritatis adipisci quam est voluptatem cumque minima tempora quia quis repellendus voluptas officiis ut molestias et soluta libero quis labore sit aut pariatur quisquam explicabo non natus dolorem dolore et ipsum voluptatem quos vero magnam fugiat qui voluptatem quas ratione beatae alias rerum aut earum quidem ipsa voluptates at quis in minus eos veritatis aut repellat exercitationem eius dolores amet sit voluptas ut voluptatum saepe facere aspernatur aliquid voluptates ut magni est possimus veniam saepe corporis vel velit et maiores consectetur magnam ea maxime atque labore aut dolores sit consequatur sint accusantium molestiae nihil esse quia perferendis ducimus consectetur ea sit error doloribus omnis quia nihil neque excepturi fugit sit consequuntur harum et aut corrupti tempora aperiam voluptas est suscipit omnis in autem quia et ut in vero non facere quaerat voluptatem a repudiandae officiis reprehenderit dolores et quibusdam neque tempore consequatur praesentium repellat ut libero temporibus qui ut et soluta rerum optio occaecati nesciunt mollitia id facilis tempore non deleniti laudantium culpa adipisci qui aut asperiores consequatur omnis sunt harum rerum ipsam ab nihil distinctio rerum et aut eaque velit expedita aperiam odio reiciendis molestiae et sed molestiae animi voluptate id sed recusandae nobis quod assumenda deserunt deleniti animi quis eos dolorem laborum voluptas at natus rem ipsam illum vitae sunt amet totam aut porro iusto est et et delectus et dicta qui minima ipsa aspernatur consequatur enim eveniet sapiente aut nemo error fugit aliquid quas perspiciatis."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 8]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.726615"], ["updated_at", "2022-12-17 06:31:00.726615"], ["title", "Sport"], ["content", "Eos et nostrum est autem aut debitis eum est sapiente maiores ipsam aut voluptatem sit ex dolore quia debitis et tempore aut qui est aliquid sit explicabo animi eaque nihil dolores numquam tempora nulla dolores et neque officia voluptatem perferendis facere pariatur quasi facilis eaque quia totam expedita non ea repellendus id consectetur quisquam dolores eum aperiam rerum saepe in nesciunt molestiae porro voluptatem sit doloribus sed vel et cum non impedit similique facilis qui ut at voluptates aut voluptate unde soluta qui consequatur rem et tempore ducimus inventore atque nihil vitae est fugit molestias ut unde doloremque ut ea et et sint suscipit voluptatum itaque alias dicta omnis modi quo in neque quia accusamus quam esse consequuntur non quidem velit et ut amet laborum consequuntur nulla ea sed rerum veniam eum provident qui beatae molestias minus vel et quas ad consequatur est dolore possimus omnis ipsum architecto ea nam ut est natus nobis commodi repudiandae iste in rem incidunt saepe non aut veritatis quibusdam ut ut ut atque sequi et fuga qui ad aut fugiat voluptatem sunt assumenda dolorum quas enim tenetur dolorum ratione harum natus magnam sunt perspiciatis eos praesentium reprehenderit aliquam consequatur libero officia enim fugiat minus illum deserunt praesentium ut voluptatem doloremque eum illo fuga placeat voluptas hic sit dolor modi expedita dolorem itaque aut et omnis excepturi autem cupiditate cumque dolores pariatur odit optio rerum libero suscipit reiciendis repudiandae consequatur sed quaerat distinctio sapiente reprehenderit omnis eveniet voluptate tempora ut at placeat et nemo voluptatibus voluptas eos eius ullam a molestiae dolor qui dolorem id maiores ex consequatur quia et sit quidem aut necessitatibus ipsum asperiores est voluptas corrupti quaerat occaecati voluptatibus iure porro nihil officiis eos magnam et consequatur id accusantium dignissimos deleniti delectus mollitia perferendis vel ab autem repellat dolor ab asperiores aut."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 2]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.730475"], ["updated_at", "2022-12-17 06:31:00.730475"], ["title", "Laundry"], ["content", "Quidem labore quaerat temporibus aperiam atque dolor ut qui ipsum quibusdam et et reiciendis nostrum sit vitae aut architecto magnam non est facilis et veritatis consectetur quaerat incidunt aut eum laborum explicabo accusamus iusto debitis doloremque libero tenetur omnis tempore qui eveniet quo alias ut id autem nesciunt pariatur voluptas quisquam et voluptates accusantium repellendus vitae omnis esse sunt excepturi reiciendis debitis tempore consequatur nihil et labore quo sunt expedita voluptatum et omnis reprehenderit ab molestiae impedit aut aliquam exercitationem sit hic officia quod ipsum culpa eius quia maiores praesentium similique est non occaecati corporis enim voluptatem quas amet repellendus inventore nesciunt magni iure et optio beatae eos nihil et ut illo autem minima qui maxime nulla ab at dolorem odit rerum vero molestiae est sed non architecto ut quis amet sapiente qui qui suscipit earum et dolor esse perferendis rerum et et sit ratione corrupti et voluptate natus perspiciatis nostrum odit est deleniti sint eum id commodi possimus ducimus repudiandae sequi quam rerum perspiciatis doloribus dicta quo delectus rem quia ipsam in dolorum libero aut illo dolorem mollitia ullam pariatur ea blanditiis itaque voluptas officiis molestiae minima voluptatem qui voluptatem vel facere ratione laboriosam cum est placeat ut cumque quam dignissimos nemo quasi sit error consectetur a est necessitatibus suscipit rem velit voluptatem qui provident laboriosam quod dolores blanditiis quae culpa natus dolores consequatur quia ipsam optio praesentium enim neque adipisci nulla ea nam voluptas asperiores recusandae illum voluptate consequuntur eos occaecati voluptas quia non porro aut voluptatibus aliquam ut quasi officiis et qui doloremque quos id cum aut laudantium incidunt magni dolore illum similique facilis necessitatibus et sequi cupiditate deserunt sint veniam est assumenda aliquid ut ad dolorem sint commodi beatae enim minus repellat animi minus aspernatur dicta voluptas officia quis quo recusandae sed voluptas qui aut unde."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 6]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.734513"], ["updated_at", "2022-12-17 06:31:00.734513"], ["title", "Sport"], ["content", "Voluptas sit architecto voluptatibus dolorem nesciunt consequuntur eos et quas autem ab itaque incidunt culpa ut quo eveniet laborum vero distinctio ad autem totam sint occaecati quos ducimus nobis id ut fugit sit non tempora voluptatem vitae et et est vel velit quia hic vitae excepturi error aliquid exercitationem cumque maxime adipisci non expedita commodi provident et eum repudiandae sunt eius et natus voluptatem qui et doloribus est est mollitia et repudiandae vel eveniet magnam amet id dolores animi enim sint inventore autem nobis asperiores aliquam debitis natus officiis corrupti possimus ipsum et quis quibusdam rerum tempore unde minima voluptatem reiciendis et aut nostrum expedita iusto pariatur sit magni consequatur dolores et qui quod at odit placeat quae quia neque ut placeat consectetur enim corrupti laboriosam repellat aperiam maiores et iste numquam molestiae suscipit et repellat ex ut facilis numquam facere quidem nulla debitis minus dolorem a tenetur ut omnis iure nisi a aliquid quaerat maxime qui in enim qui ratione consequatur doloremque ex consequatur optio tenetur occaecati omnis deserunt eum sed cupiditate sed molestiae et quae omnis sed rerum velit nihil ipsam deleniti voluptatibus nihil amet esse non aspernatur facere labore ut quia ullam qui sed doloremque iste quam pariatur necessitatibus eaque et qui eos veritatis et molestiae praesentium officiis asperiores non voluptatum corporis modi illo laborum aut et rem sit odit voluptas doloribus quidem qui libero dolore possimus similique sapiente quisquam facilis ut est perferendis explicabo dolorem voluptas autem aut tempora optio commodi aut accusamus rerum ea necessitatibus aut illo quia inventore magni voluptates eligendi esse aut in qui aperiam consectetur vel eaque est aut omnis magnam maiores dolor at dolor rerum illum ut sit explicabo sed reprehenderit cum harum dolor nam quis non aut sequi perspiciatis voluptas id id fugit sapiente omnis officia odio ut eos laudantium."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 9]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.738828"], ["updated_at", "2022-12-17 06:31:00.738828"], ["title", "Laundry"], ["content", "Blanditiis optio velit sed praesentium quibusdam placeat quos amet nihil dignissimos aliquid culpa inventore vitae ut nihil perspiciatis molestiae occaecati rerum nostrum enim corrupti rem in laudantium est quasi modi cumque iste eveniet quos earum omnis id dolores excepturi et aliquam consequatur corporis quas qui nobis mollitia qui eius mollitia sed ea a et dolores tempore ut sit cupiditate quae iusto repudiandae cumque corporis qui voluptatum numquam dolorem qui quaerat repellendus qui ex ipsum est qui et omnis voluptatem incidunt molestias eum dolor deserunt tempora labore est totam et sapiente fuga praesentium maiores ea eos quam eveniet ex est voluptates nesciunt rerum eos et neque ut et est qui debitis est pariatur tempora sapiente hic distinctio facere et asperiores magni repellat necessitatibus quis alias vel doloremque et voluptatem voluptas harum sed molestiae quo aspernatur omnis consequuntur eos optio atque veritatis ut facere deleniti repellendus laborum eligendi vel at quo et reiciendis minus dolorem aut voluptatibus illo et expedita quo perferendis dolore aspernatur officia odit dolorem exercitationem sunt consequatur quis modi ipsam quod accusamus architecto accusantium quia ullam in quasi odio accusamus temporibus maxime quibusdam amet unde provident aperiam doloribus non reiciendis ut repellat odit qui et sit ducimus saepe dolor eum dignissimos velit sequi fuga fugit minima autem vero et itaque autem aut harum autem quidem quod dicta aut tempore sint voluptate similique cum provident ut perspiciatis id occaecati earum sint eum enim perferendis inventore sed suscipit velit iure sit ut dolor beatae accusantium veniam qui quia nam aliquam eligendi labore non aperiam maxime rem placeat quis et facilis nihil voluptatem ipsam sit omnis consequatur quae quaerat id quia dolorem illum fugiat minima commodi sint et asperiores cupiditate recusandae autem aut vel nihil odio et nisi voluptatem laboriosam assumenda qui qui a consectetur est et sed consequatur unde deleniti vel."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 7]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.743264"], ["updated_at", "2022-12-17 06:31:00.743264"], ["title", "Yoga"], ["content", "Voluptatem voluptatem laudantium culpa odio porro voluptatibus distinctio quisquam velit iste neque nisi omnis sunt ut hic atque nostrum vel vero veniam repellendus quam eum quo et corporis ut nihil id alias rerum rem consequatur voluptas incidunt totam ut modi magnam corrupti at aliquam et odit nihil maxime qui nam magni animi iure ea perspiciatis itaque ratione velit laboriosam officiis aut ab recusandae laboriosam aut rerum at ad minima perferendis impedit eaque reiciendis est asperiores facilis veritatis est aut id qui qui aspernatur ipsum sunt et non ut quo aut molestiae qui qui voluptas et eos et atque delectus sequi id laborum voluptate voluptas nulla ex beatae tempore quae numquam explicabo ipsam eum dolorum et temporibus quidem est quia aut vero hic alias sit non dolorem provident possimus omnis ipsum facilis assumenda esse ex rerum ut exercitationem excepturi consequatur asperiores modi voluptates ut incidunt fugiat ratione deserunt dolore temporibus eligendi mollitia quis nesciunt cumque ut unde voluptate quas dolor quia cum rerum non distinctio in sed facere saepe non eius cupiditate totam ut sapiente corrupti aliquid et aut quis tempore aliquam similique tenetur adipisci nobis harum ullam illo architecto molestiae omnis esse nihil eum voluptas pariatur quo inventore voluptatum qui beatae sint odio aut saepe porro repudiandae voluptatem magnam aperiam sit ea quos molestias dicta aut perferendis omnis maiores nisi sed facere accusantium nulla eum vel perspiciatis consequuntur ea explicabo reprehenderit cupiditate officiis qui quia animi iusto labore in placeat repellat enim vel aut quasi consequuntur et sint et et recusandae assumenda ea quos illo nam delectus ut earum quidem et et aut repellendus debitis quae itaque soluta vitae officia nemo aperiam est odit voluptates corporis culpa pariatur velit occaecati eveniet unde fugiat aut quod sunt dolor accusamus et ipsam quia quo doloribus neque et qui eveniet autem fuga maiores."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 5]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.747529"], ["updated_at", "2022-12-17 06:31:00.747529"], ["title", "Yoga"], ["content", "Quae similique qui distinctio pariatur optio ipsa dolor asperiores occaecati voluptatem aut reiciendis nihil ut maiores rerum inventore nemo praesentium est non assumenda nobis nostrum illo id voluptatibus ipsum id eum vel voluptas minus laborum perspiciatis hic tempore excepturi eum officiis aut ea modi rem nihil nulla alias sint facilis maxime iste voluptas porro dolorem deserunt reprehenderit repudiandae eaque ut aperiam soluta harum neque corporis nihil consequatur sint ut unde voluptatem itaque inventore illum provident dolor sunt nesciunt ut qui et facilis vitae quia ab facere nam voluptas officiis odio dolores aspernatur impedit sunt omnis vel excepturi vero aut voluptatem atque sit sed enim voluptas qui sed eos enim molestias placeat repellendus mollitia sapiente dignissimos autem est sunt consectetur quia quos reiciendis totam consequuntur omnis quo rerum eum cumque sit dolorem est adipisci libero labore architecto consequatur et qui voluptatibus debitis natus corrupti quisquam dolorem ut quas commodi praesentium ea suscipit perspiciatis et aut sequi porro magni tenetur qui temporibus cumque pariatur vel quod iure animi fuga architecto explicabo aperiam maiores expedita placeat ut occaecati rerum qui illum aut doloribus harum est modi voluptatum aut sapiente deleniti rerum quibusdam commodi cupiditate omnis sit quam temporibus perferendis et et ea necessitatibus provident quo veniam nemo voluptatem perferendis dicta et doloremque iusto omnis dolores dolor recusandae quis et in saepe eum quasi repellat unde fugiat possimus voluptates at quis cum omnis delectus ex nesciunt officia quia saepe et ducimus recusandae laudantium dignissimos libero aut sed maxime minus atque quas quidem et a repellendus et necessitatibus voluptate labore veritatis minima qui aspernatur ut quasi earum repellat ipsam ratione est consectetur ut tempore et beatae incidunt nobis voluptatem sit rerum ea eos sed velit laboriosam aut esse accusamus magni corporis odio qui est repudiandae ex eius eveniet autem amet iste dolore in iure magnam."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 2]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.751528"], ["updated_at", "2022-12-17 06:31:00.751528"], ["title", "Sport"], ["content", "Cumque cumque molestiae voluptatem qui fugit placeat enim veritatis aut est similique voluptatem voluptate sit dignissimos assumenda quibusdam sint aliquid consequatur dolores aut enim enim nihil sequi laudantium laboriosam maiores est est odio rerum minima eligendi ea aspernatur deleniti nulla vitae doloremque laboriosam est deleniti iste voluptates quos atque ut possimus repellat labore eos commodi ut quidem saepe tenetur consequatur vitae inventore quae est suscipit illo aut quo quae ab sit aut fugit et qui eum impedit ut at unde beatae eos consequatur voluptatum dolorem autem numquam rem nemo aut facilis nostrum quisquam eligendi eveniet quod quo et quaerat incidunt laudantium accusantium reprehenderit aut assumenda quam repudiandae accusantium sed voluptas facere ut ea natus earum sunt tempore et magnam maxime et et incidunt id vel voluptate cupiditate veniam quasi aspernatur nostrum id distinctio repellendus non praesentium autem ipsam aperiam neque maxime maiores dolores ut ullam occaecati qui recusandae dicta illum ipsa molestiae saepe voluptas est itaque ratione quis dolorem porro corrupti enim reiciendis et mollitia corrupti ad voluptates iure quia quibusdam qui magni eaque harum aliquid repudiandae necessitatibus sint quo deserunt tempora qui excepturi a sunt quia nihil consequuntur ullam molestias quod quia impedit id ut qui perferendis omnis animi voluptas eum officiis omnis quaerat commodi minus possimus expedita in quia qui nam mollitia in laborum tempore accusamus exercitationem perferendis ipsam ea doloremque iste amet odit consequuntur libero suscipit tenetur et velit voluptatem perspiciatis et quis asperiores occaecati cum voluptas hic tempora sit temporibus est dolore necessitatibus vel sed rerum fuga asperiores et illo nam minus voluptas ducimus at eos sint alias explicabo in dolorum beatae quas nobis iure eos deserunt doloribus consequatur adipisci hic porro pariatur rerum reiciendis eius officia provident et aut non et consectetur fugiat non eius earum in distinctio expedita aut natus veritatis officia sunt fugiat."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 5]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "title", "content", "start_date", "end_date", "todo", "difficulty") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2022-12-17 06:31:00.755640"], ["updated_at", "2022-12-17 06:31:00.755640"], ["title", "Laundry"], ["content", "Omnis amet eum accusantium rerum possimus voluptas dolorem nulla accusantium ullam labore totam illo fugiat animi ipsum reprehenderit porro voluptatem dolorem et explicabo sapiente quod quia ex qui nam minus iusto quisquam fuga delectus cumque ea quia eius optio velit qui eos consequatur vel omnis dignissimos vitae est enim eum dolores est quia qui consequuntur et dolor aliquid doloribus unde omnis esse architecto dolores quis qui est repellat in aut adipisci minus et et quos et debitis corrupti sunt veniam velit omnis reiciendis sequi odit accusamus voluptatum dolores necessitatibus tenetur et nobis mollitia recusandae laborum modi sunt dolorem qui et quia tenetur quis debitis ea maxime non voluptas provident ratione velit eveniet voluptas laborum enim veritatis ratione molestias quis unde odio iusto aut ut ex quo sint assumenda quibusdam ea consequatur voluptatem voluptas quo autem perferendis a vel aliquam ut culpa libero sit assumenda dolore non consectetur repudiandae nisi non et et rerum est asperiores tempora alias commodi nisi ut est aut fugit atque maxime doloremque doloribus non quia mollitia aut nihil expedita quis sit nostrum rerum odio facere sint perspiciatis iste expedita totam beatae rem et dicta quaerat illum qui excepturi aut nesciunt corporis deserunt ducimus magni aut et quae atque est voluptatem officia numquam voluptatem impedit quo velit est minima numquam eos libero eos sed distinctio voluptas quidem sed error nam hic aliquid nobis dolor nulla suscipit quia harum praesentium incidunt quaerat quam deleniti et fugit sit ullam modi tempore cum necessitatibus quasi distinctio eaque commodi id sit dolores nostrum earum asperiores eaque excepturi eos officia qui corrupti maiores magni consequuntur earum iure dolor accusamus sint et molestias ut qui aut soluta porro id sunt sit perspiciatis magnam repellendus enim facilis similique hic itaque vero molestiae occaecati ad molestiae quibusdam iste quod voluptates quas nemo vitae ab voluptatum."], ["start_date", "2022-10-10"], ["end_date", "2022-12-21"], ["todo", "---\n- Task 1\n- Task 2\n- Task 3\n"], ["difficulty", 2]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2022-12-17 14:31:02 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 1.3ms | Allocations: 95)
+  [1m[36mTask Load (0.9ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:27
+  Rendered shared/_all-tasks.html.erb (Duration: 9.4ms | Allocations: 4857)
+  Rendered pages/index.html.erb within layouts/application (Duration: 12.7ms | Allocations: 5337)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 54)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 7784)
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.9ms | Allocations: 8524)
+
+
+Started GET "/tasks/465" for ::1 at 2022-12-17 14:31:04 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"465"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 465], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 221)
+  Rendered shared/_navar.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 2416)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.2ms | Allocations: 3234)
+
+
+Started GET "/" for ::1 at 2022-12-17 14:31:30 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.1ms | Allocations: 9)
+  [1m[36mTask Load (2.9ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:27
+  Rendered shared/_all-tasks.html.erb (Duration: 13.3ms | Allocations: 4363)
+  Rendered pages/index.html.erb within layouts/application (Duration: 15.3ms | Allocations: 4491)
+  Rendered shared/_navar.html.erb (Duration: 0.4ms | Allocations: 42)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 25.4ms | Allocations: 6675)
+Completed 200 OK in 26ms (Views: 23.2ms | ActiveRecord: 2.9ms | Allocations: 6930)
+
+
+Started GET "/tasks/466" for ::1 at 2022-12-17 14:35:38 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"466"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 466], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 4.3ms | Allocations: 197)
+  Rendered shared/_navar.html.erb (Duration: 0.2ms | Allocations: 43)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 2371)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.3ms | Allocations: 3140)
+
+
+Started GET "/tasks/466" for ::1 at 2022-12-17 14:38:40 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"466"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 466], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 688)
+  Rendered shared/_navar.html.erb (Duration: 1.1ms | Allocations: 221)
+  Rendered shared/_footer.html.erb (Duration: 0.7ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 3727)
+Completed 200 OK in 14ms (Views: 11.8ms | ActiveRecord: 0.2ms | Allocations: 5050)
+
+
+Started GET "/tasks/466" for ::1 at 2022-12-17 14:38:48 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"466"}
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 466], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 685)
+  Rendered shared/_navar.html.erb (Duration: 1.0ms | Allocations: 221)
+  Rendered shared/_footer.html.erb (Duration: 0.8ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 3701)
+Completed 200 OK in 16ms (Views: 12.0ms | ActiveRecord: 0.6ms | Allocations: 5110)
+
+
+Started GET "/tasks/466" for ::1 at 2022-12-17 14:38:55 +0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"466"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 466], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 685)
+  Rendered shared/_navar.html.erb (Duration: 0.5ms | Allocations: 221)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 3713)
+Completed 200 OK in 11ms (Views: 8.5ms | ActiveRecord: 0.2ms | Allocations: 5122)
+
+

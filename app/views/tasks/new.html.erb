@@ -14,10 +14,13 @@
       </div>
       <div id="todo-fields">
         <%= f.label :todo ,class:"text-white"%>
-        <%= f.hidden_field :todo_size, value: 0 %>
-        <%= f.text_field :todo, class:"w-full px-2 py-2 text-gray-700 bg-gray-200 rounded my-1" %>
+        <% @task.todo.each_with_index do |todo_item, index| %>
+          <div>
+            <%= f.text_field "todo[#{index}]", value: todo_item, class:"w-full px-2 py-2 text-gray-700 bg-gray-200 rounded my-1" %>
+          </div>
+        <% end %>
       </div>
-        <button class=" justify-center flex px-4 py-2  text-base font-semibold text-white transition-all duration-200 bg-[#FF4C29] border border-transparent rounded-md  hover:bg-[#ff5e3e]" type="button" onclick="addTodoField()">Add new to-do</button>
+        <button class="justify-center p-2 text-base font-semibold text-white transition-all duration-200 bg-[#FF4C29] border border-transparent rounded-md  hover:bg-[#ff5e3e]" type="button" onclick="addTodoField()">Add new to-do</button>
       <div>
         <%= f.label :difficulty, class:"text-white"%>
         <%= f.range_field :difficulty, in: 1..10 , class:"w-full px-2 py-2 bg-red-200 rounded my-1"%>
@@ -43,13 +46,9 @@ function addTodoField() {
   newField.name = "model[todo][]";
   newField.className = "w-full px-2 py-2 text-gray-700 bg-gray-200 rounded my-1";
 
-  // Update the value of the todo_size field
-  var todoSizeField = document.getElementById("task_todo_size");
-  todoSizeField.value++;
 
   // Add the new field to the form
   var todoFields = document.getElementById("todo-fields");
   todoFields.appendChild(newField);
 }
-
 </script>
