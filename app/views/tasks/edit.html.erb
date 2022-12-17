@@ -23,7 +23,7 @@
         <button class="justify-center p-2 text-base font-semibold text-white transition-all duration-200 bg-[#FF4C29] border border-transparent rounded-md  hover:bg-[#ff5e3e]" type="button" onclick="addTodoField()">Add new to-do</button>
       <div>
         <%= f.label :difficulty, class:"text-white"%>
-        <%= f.range_field :difficulty, in: 1..10 , class:"w-full px-2 py-2 bg-red-200 rounded my-1"%>
+        <%= f.range_field :difficulty, in: 1..10, class:"w-full px-2 py-2 rounded my-1"%>
       </div>
       <div>
         <%= f.label :start_date ,class:"text-white"%>

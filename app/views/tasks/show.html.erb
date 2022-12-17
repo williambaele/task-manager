@@ -62,21 +62,23 @@
   </div>
   <!-- TO DO LIST PART-->
   <div class="my-10">
-  <div class="mb-6 bg-[#2C394B] rounded p-2 flex justify-between">
-    <h2 class="text-white text-3xl">To do list</h2>
-    <h2 class="text-[#FF4C29] text-3xl">70%</h2>
-  </div>
-    <% @task.todo.each do |todo_item| %>
-    <div class="flex items-center mb-4">
-        <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-[#FF4C29] bg-gray-100 rounded border-gray-300">
-        <label for="default-checkbox" class="ml-2 text-md font-medium text-white"><%= todo_item %></label>
+    <div class="mb-6 bg-[#2C394B] rounded p-2 flex justify-between items-center">
+      <h2 class="text-white text-3xl">To do list</h2>
+      <h2 class="text-[#FF4C29] text-xl">70%</h2>
     </div>
-    <% end %>
+    <div class="px-4">
+      <% @task.todo.each do |todo_item| %>
+      <div class="flex items-center mb-4">
+          <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-[#FF4C29] bg-gray-100 rounded border-gray-300">
+          <label for="default-checkbox" class="ml-2 text-md font-medium text-white"><%= todo_item %></label>
+      </div>
+      <% end %>
+    </div>
   </div>
   <!-- CONTENT PART -->
   <div class="py-10">
     <h2 class="text-white text-3xl mb-6 bg-[#2C394B] rounded p-2">Comment</h2>
-    <p style="word-wrap: break-word">
+    <p class="px-4" style="word-wrap: break-word">
       <%= @task.content %>
     </p>
   </div>
