@@ -2,9 +2,11 @@
     <div class="mx-auto max-w-7xl ">
         <!-- lg+ -->
         <nav class="flex items-center justify-between h-16 lg:h-20">
+          <%= link_to root_path do %>
             <div class="flex-shrink-0">
               <p class="text-3xl text-white">Manager<span class="text-4xl text-[#FF4C29]">.</span></p>
             </div>
+          <% end %>
 
             <button type="button" class="inline-flex p-2 text-black transition-all duration-200 rounded-md lg:hidden focus:bg-gray-100 hover:bg-gray-100">
                 <!-- Menu open: "hidden", Menu closed: "block" -->

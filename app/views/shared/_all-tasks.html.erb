@@ -27,7 +27,15 @@
             <% @tasks.each do |task| %>
               <td class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap"><%= task.title.truncate(20) %></td>
               <td class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap"><%= task.content.truncate(80) %></td>
-              <td class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap"><%= (task.end_date - DateTime.now ).to_i%> days left</td>
+              <td class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap">
+              <% if (task.end_date - DateTime.now).to_i >= 3 %>
+                <span class="text-gray-500"><%= (task.end_date - DateTime.now).to_i %> days left</span>
+              <% elsif (task.end_date - DateTime.now).to_i >= 2%>
+                <span class="text-orange-500 font-bold" font-bold><%= (task.end_date - DateTime.now).to_i %> days left</span>
+              <% else %>
+                <span class="text-red-500 font-bold"><%= (task.end_date - DateTime.now).to_i %> days left</span>
+              <% end %>
+              </td>
               <td class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap"><%= link_to "Check", task_path(task), class:"text-[#FF4C29] hover:text-[#ff5e3e]" %></td>
           </tr>
             <% end %>
