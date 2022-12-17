@@ -20,7 +20,10 @@
     <!-- END -->
     </div>
   </div>
+  <div class="grid">
+  <span>Task lenght: <%= (@task.end_date - @task.start_date).to_i %> days</span>
   <%= @remaining_time %> days left before end
+  </div>
   <div>
     <span>
       <%= @task.content %>
