@@ -20,16 +20,47 @@
     <!-- END -->
     </div>
   </div>
-  <div class="grid">
-<div class="range-field">
-  <div class="difficulty-range">
-    <% (1..10).each do |i| %>
-      <div class="difficulty-circle <%= 'difficulty-orange' if i <= @task.difficulty %>"></div>
-    <% end %>
-  </div>
-</div>
-<span>Task lenght: <%= (@task.end_date - @task.start_date).to_i %> days</span>
-  <%= @remaining_time %> days left before end
+  <div class="grid sm:grid-cols-1 lg:grid-cols-3 gap-4">
+    <!-- CARD 1 -->
+    <div class="bg-[#2C394B] rounded p-4 flex justify-center">
+      <div class="grid my-4">
+        <div class="mb-6">
+        <h2 class="text-center text-white text-2xl font-medium">Difficulty</h2>
+        </div>
+        <div>
+          <div class="range-field">
+            <div class="difficulty-range">
+              <% (1..10).each do |i| %>
+                <div class="difficulty-circle <%= 'difficulty-orange' if i <= @task.difficulty %>"></div>
+              <% end %>
+            </div>
+        </div>
+          </div>
+        </div>
+    </div>
+    <!-- CARD 2 -->
+    <div class="bg-[#2C394B] rounded p-4 flex justify-center">
+      <div class="grid my-4">
+        <div class="mb-6">
+          <h2 class="text-center text-white text-2xl font-medium">Task length</h2>
+        </div>
+        <div>
+          <h3 class="text-center text-lg text-white"><%= (@task.end_date - @task.start_date).to_i %> days</h3>
+        </div>
+      </div>
+    </div>
+    <!-- CARD 3 -->
+     <div class="bg-[#2C394B] rounded p-4 flex justify-center">
+      <div class="grid my-4">
+        <div class="mb-6">
+          <h2 class="text-center text-white text-2xl font-medium">Remaining time</h2>
+        </div>
+        <div>
+          <h3 class="text-center text-lg text-white"><%= @remaining_time %> days left</h3>
+        </div>
+      </div>
+    </div>
+
   </div>
   <div>
     <span>

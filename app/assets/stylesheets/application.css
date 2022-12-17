@@ -17,11 +17,9 @@
 
  /* DD Button **/
 
-/* Dans votre fichier CSS */
 .range-field {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
 }
 
 .range-field .difficulty-indicator {
@@ -38,7 +36,7 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: #ddd;
+  background: #F5F5F5;
   margin-right: 5px;
 }
 
