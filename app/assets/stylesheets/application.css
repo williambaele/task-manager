@@ -16,4 +16,32 @@
 
 
  /* DD Button **/
- 
+
+/* Dans votre fichier CSS */
+.range-field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.range-field .difficulty-indicator {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.range-field .difficulty-range {
+  display: flex;
+}
+
+.range-field .difficulty-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ddd;
+  margin-right: 5px;
+}
+
+.range-field .difficulty-orange {
+  background: #FF4C29;
+}

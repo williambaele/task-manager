@@ -9,6 +9,6 @@ puts "Destroying data"
 Task.destroy_all
 title = ["Laundry", "Yoga", "Sport"]
 40.times do
-  task = Task.create!(title: title.sample, content: Faker::Lorem.sentence(word_count: 16),start_date: "2022-10-10", end_date: "2022-12-21")
+  task = Task.create!(title: title.sample, content: Faker::Lorem.sentence(word_count: 16),start_date: "2022-10-10", end_date: "2022-12-21", difficulty: rand(1..10))
   puts task.title
 end

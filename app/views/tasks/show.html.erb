@@ -1,5 +1,5 @@
 <div>
-  <div class="flex justify-between inline-block align-text-bottom mb-10">
+  <div class="flex justify-between inline-block align-text-bottom mb-5">
     <div>
       <h1 class="text-white text-3xl"><%= @task.title %></h1>
     </div>
@@ -21,7 +21,14 @@
     </div>
   </div>
   <div class="grid">
-  <span>Task lenght: <%= (@task.end_date - @task.start_date).to_i %> days</span>
+<div class="range-field">
+  <div class="difficulty-range">
+    <% (1..10).each do |i| %>
+      <div class="difficulty-circle <%= 'difficulty-orange' if i <= @task.difficulty %>"></div>
+    <% end %>
+  </div>
+</div>
+<span>Task lenght: <%= (@task.end_date - @task.start_date).to_i %> days</span>
   <%= @remaining_time %> days left before end
   </div>
   <div>

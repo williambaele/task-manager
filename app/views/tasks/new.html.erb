@@ -12,6 +12,10 @@
         <%= f.text_area :content, class:"w-full px-2 py-2 text-gray-700 bg-gray-200 rounded", rows: "10" %>
       </div>
       <div>
+        <%= f.label :difficulty, class:"text-white"%>
+        <%= f.range_field :difficulty, in: 1..10 , class:"w-full px-2 py-2 bg-red-200 rounded"%>
+      </div>
+      <div>
         <%= f.label :start_date ,class:"text-white"%>
         <%= f.date_field :start_date, class:"w-full px-2 py-2 text-gray-700 bg-gray-200 rounded"%>
       </div>
