@@ -7493,3 +7493,395 @@ Processing by TasksController#show as HTML
 Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.2ms | Allocations: 4517)
 
 
+Started GET "/tasks/96/edit" for ::1 at 2022-12-17 09:47:15 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1608)
+  Rendered shared/_navar.html.erb (Duration: 0.7ms | Allocations: 131)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 3985)
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.2ms | Allocations: 5373)
+
+
+Started GET "/tasks/96/edit" for ::1 at 2022-12-17 09:47:32 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1595)
+  Rendered shared/_navar.html.erb (Duration: 1.1ms | Allocations: 131)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 3972)
+Completed 200 OK in 15ms (Views: 12.7ms | ActiveRecord: 0.3ms | Allocations: 5358)
+
+
+Started GET "/tasks/96/edit" for ::1 at 2022-12-17 09:48:02 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1577)
+  Rendered shared/_navar.html.erb (Duration: 0.7ms | Allocations: 131)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 3954)
+Completed 200 OK in 13ms (Views: 10.2ms | ActiveRecord: 0.2ms | Allocations: 5340)
+
+
+Started GET "/tasks/96/edit" for ::1 at 2022-12-17 09:48:04 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1613)
+  Rendered shared/_navar.html.erb (Duration: 0.3ms | Allocations: 131)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 3990)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.2ms | Allocations: 5376)
+
+
+Started GET "/tasks/96/edit" for ::1 at 2022-12-17 09:48:05 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1092)
+  Rendered shared/_navar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 2923)
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.3ms | Allocations: 3754)
+
+
+Started GET "/tasks/96/edit" for ::1 at 2022-12-17 09:48:07 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1110)
+  Rendered shared/_navar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 2941)
+Completed 200 OK in 22ms (Views: 10.3ms | ActiveRecord: 0.2ms | Allocations: 3686)
+
+
+Started GET "/tasks/96/edit" for ::1 at 2022-12-17 09:48:17 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1606)
+  Rendered shared/_navar.html.erb (Duration: 0.5ms | Allocations: 131)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 3990)
+Completed 200 OK in 20ms (Views: 15.0ms | ActiveRecord: 0.7ms | Allocations: 5291)
+
+
+Started GET "/tasks/96/edit" for ::1 at 2022-12-17 09:48:28 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1264)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1353)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms | Allocations: 2715)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div>
+  <span class="text-white text-3xl">Edit your task</span>
+</div>
+<%= form_for @task do |f| %>
+    <div class="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-1">
+      <div>
+        <%= f.label :title ,class:"text-white"%>
+        <%= f.text_field :title, class:"w-full px-2 py-2 text-red-700 bg-gray-200 rounded" %>
+      </div>
+       <div>
+        <%= f.label :content ,class:"text-white"%>
+        <%= f.text_area :content, class:"w-full px-2 py-2 text-gray-700 bg-gray-200 rounded", rows: "10" %>
+      </div>
+    <div class="flex justify-center mt-6">
+      <%= f.submit "Submit", class:"px-4 py-2 text-gray-200 bg-[#2C394B] rounded-md hover:bg-[#414d5d] focus:outline-none focus:bg-gray-700" role="button"%>
+    </div>
+  <% end %>
+
+):
+1:    <div>
+2:      <span class="text-white text-3xl">Edit your task</span>
+3:    </div>
+4:    <%= form_for @task do |f| %>
+5:        <div class="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-1">
+6:          <div>
+7:            <%= f.label :title ,class:"text-white"%>
+8:            <%= f.text_field :title, class:"w-full px-2 py-2 text-red-700 bg-gray-200 rounded" %>
+9:          </div>
+10:           <div>
+11:            <%= f.label :content ,class:"text-white"%>
+12:            <%= f.text_area :content, class:"w-full px-2 py-2 text-gray-700 bg-gray-200 rounded", rows: "10" %>
+13:          </div>
+14:        <div class="flex justify-center mt-6">
+15:          <%= f.submit "Submit", class:"px-4 py-2 text-gray-200 bg-[#2C394B] rounded-md hover:bg-[#414d5d] focus:outline-none focus:bg-gray-700" role="button"%>
+16:        </div>
+17:      <% end %>
+  
+app/views/tasks/edit.html.erb:15: syntax error, unexpected local variable or method, expecting ')'
+app/views/tasks/edit.html.erb:15: syntax error, unexpected local variable or method, expecting ')'
+app/views/tasks/edit.html.erb:15: syntax error, unexpected local variable or method, expecting ')'
+app/views/tasks/edit.html.erb:15: syntax error, unexpected local variable or method, expecting ')'
+app/views/tasks/edit.html.erb:15: syntax error, unexpected local variable or method, expecting ')'
+app/views/tasks/edit.html.erb:15: syntax error, unexpected local variable or method, expecting ')'
+Started GET "/tasks/96/edit" for ::1 at 2022-12-17 09:48:29 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1208)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1288)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms | Allocations: 2093)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div>
+  <span class="text-white text-3xl">Edit your task</span>
+</div>
+<%= form_for @task do |f| %>
+    <div class="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-1">
+      <div>
+        <%= f.label :title ,class:"text-white"%>
+        <%= f.text_field :title, class:"w-full px-2 py-2 text-red-700 bg-gray-200 rounded" %>
+      </div>
+       <div>
+        <%= f.label :content ,class:"text-white"%>
+        <%= f.text_area :content, class:"w-full px-2 py-2 text-gray-700 bg-gray-200 rounded", rows: "10" %>
+      </div>
+    <div class="flex justify-center mt-6">
+      <%= f.submit "Submit", class:"px-4 py-2 text-gray-200 bg-[#2C394B] rounded-md hover:bg-[#414d5d] focus:outline-none focus:bg-gray-700" role="button"%>
+    </div>
+  <% end %>
+
+):
+1:    <div>
+2:      <span class="text-white text-3xl">Edit your task</span>
+3:    </div>
+4:    <%= form_for @task do |f| %>
+5:        <div class="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-1">
+6:          <div>
+7:            <%= f.label :title ,class:"text-white"%>
+8:            <%= f.text_field :title, class:"w-full px-2 py-2 text-red-700 bg-gray-200 rounded" %>
+9:          </div>
+10:           <div>
+11:            <%= f.label :content ,class:"text-white"%>
+12:            <%= f.text_area :content, class:"w-full px-2 py-2 text-gray-700 bg-gray-200 rounded", rows: "10" %>
+13:          </div>
+14:        <div class="flex justify-center mt-6">
+15:          <%= f.submit "Submit", class:"px-4 py-2 text-gray-200 bg-[#2C394B] rounded-md hover:bg-[#414d5d] focus:outline-none focus:bg-gray-700" role="button"%>
+16:        </div>
+17:      <% end %>
+  
+app/views/tasks/edit.html.erb:15: syntax error, unexpected local variable or method, expecting ')'
+app/views/tasks/edit.html.erb:15: syntax error, unexpected local variable or method, expecting ')'
+app/views/tasks/edit.html.erb:15: syntax error, unexpected local variable or method, expecting ')'
+app/views/tasks/edit.html.erb:15: syntax error, unexpected local variable or method, expecting ')'
+app/views/tasks/edit.html.erb:15: syntax error, unexpected local variable or method, expecting ')'
+app/views/tasks/edit.html.erb:15: syntax error, unexpected local variable or method, expecting ')'
+Started GET "/tasks/96/edit" for ::1 at 2022-12-17 09:48:37 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1252)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1341)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms | Allocations: 2607)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div>
+  <span class="text-white text-3xl">Edit your task</span>
+</div>
+<%= form_for @task do |f| %>
+    <div class="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-1">
+      <div>
+        <%= f.label :title ,class:"text-white"%>
+        <%= f.text_field :title, class:"w-full px-2 py-2 text-red-700 bg-gray-200 rounded" %>
+      </div>
+       <div>
+        <%= f.label :content ,class:"text-white"%>
+        <%= f.text_area :content, class:"w-full px-2 py-2 text-gray-700 bg-gray-200 rounded", rows: "10" %>
+      </div>
+    <div class="flex justify-center mt-6">
+      <%= f.submit "Submit", class:"px-4 py-2 text-gray-200 bg-[#2C394B] rounded-md hover:bg-[#414d5d] focus:outline-none focus:bg-gray-700", role="button"%>
+    </div>
+  <% end %>
+
+):
+1:    <div>
+2:      <span class="text-white text-3xl">Edit your task</span>
+3:    </div>
+4:    <%= form_for @task do |f| %>
+5:        <div class="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-1">
+6:          <div>
+7:            <%= f.label :title ,class:"text-white"%>
+8:            <%= f.text_field :title, class:"w-full px-2 py-2 text-red-700 bg-gray-200 rounded" %>
+9:          </div>
+10:           <div>
+11:            <%= f.label :content ,class:"text-white"%>
+12:            <%= f.text_area :content, class:"w-full px-2 py-2 text-gray-700 bg-gray-200 rounded", rows: "10" %>
+13:          </div>
+14:        <div class="flex justify-center mt-6">
+15:          <%= f.submit "Submit", class:"px-4 py-2 text-gray-200 bg-[#2C394B] rounded-md hover:bg-[#414d5d] focus:outline-none focus:bg-gray-700", role="button"%>
+16:        </div>
+17:      <% end %>
+  
+app/views/tasks/edit.html.erb:15: syntax error, unexpected ')', expecting =>
+app/views/tasks/edit.html.erb:17: syntax error, unexpected `end', expecting ')'
+app/views/tasks/edit.html.erb:19: syntax error, unexpected `end', expecting ')'
+app/views/tasks/edit.html.erb:15: syntax error, unexpected ')', expecting =>
+app/views/tasks/edit.html.erb:17: syntax error, unexpected `end', expecting ')'
+app/views/tasks/edit.html.erb:19: syntax error, unexpected `end', expecting ')'
+app/views/tasks/edit.html.erb:15: syntax error, unexpected ')', expecting =>
+app/views/tasks/edit.html.erb:17: syntax error, unexpected `end', expecting ')'
+app/views/tasks/edit.html.erb:19: syntax error, unexpected `end', expecting ')'
+app/views/tasks/edit.html.erb:15: syntax error, unexpected ')', expecting =>
+app/views/tasks/edit.html.erb:17: syntax error, unexpected `end', expecting ')'
+app/views/tasks/edit.html.erb:19: syntax error, unexpected `end', expecting ')'
+app/views/tasks/edit.html.erb:15: syntax error, unexpected ')', expecting =>
+app/views/tasks/edit.html.erb:17: syntax error, unexpected `end', expecting ')'
+app/views/tasks/edit.html.erb:19: syntax error, unexpected `end', expecting ')'
+app/views/tasks/edit.html.erb:15: syntax error, unexpected ')', expecting =>
+app/views/tasks/edit.html.erb:17: syntax error, unexpected `end', expecting ')'
+app/views/tasks/edit.html.erb:19: syntax error, unexpected `end', expecting ')'
+Started GET "/tasks/96/edit" for ::1 at 2022-12-17 09:48:55 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1605)
+  Rendered shared/_navar.html.erb (Duration: 0.7ms | Allocations: 131)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 3992)
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.2ms | Allocations: 5370)
+
+
+Started GET "/tasks/96/edit" for ::1 at 2022-12-17 09:48:56 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1098)
+  Rendered shared/_navar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 2929)
+Completed 200 OK in 9ms (Views: 6.7ms | ActiveRecord: 0.3ms | Allocations: 3760)
+
+
+Started GET "/tasks/96/edit" for ::1 at 2022-12-17 09:49:49 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1600)
+  Rendered shared/_navar.html.erb (Duration: 0.7ms | Allocations: 131)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3977)
+Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 0.2ms | Allocations: 5277)
+
+
+Started GET "/tasks/96/edit" for ::1 at 2022-12-17 09:49:50 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1118)
+  Rendered shared/_navar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 2949)
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 0.4ms | Allocations: 3780)
+
+
+Started GET "/tasks/96/edit" for ::1 at 2022-12-17 09:49:59 +0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1614)
+  Rendered shared/_navar.html.erb (Duration: 0.5ms | Allocations: 131)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 3991)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.2ms | Allocations: 5291)
+
+
+Started GET "/" for ::1 at 2022-12-17 09:50:31 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.9ms | Allocations: 95)
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:27
+  Rendered shared/_all-tasks.html.erb (Duration: 8.4ms | Allocations: 3497)
+  Rendered pages/index.html.erb within layouts/application (Duration: 11.6ms | Allocations: 3964)
+  Rendered shared/_navar.html.erb (Duration: 0.6ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 6658)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.3ms | Allocations: 7477)
+
+
+Started GET "/" for ::1 at 2022-12-17 09:51:32 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 1.1ms | Allocations: 95)
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:27
+  Rendered shared/_all-tasks.html.erb (Duration: 7.3ms | Allocations: 4301)
+  Rendered pages/index.html.erb within layouts/application (Duration: 10.3ms | Allocations: 4771)
+  Rendered shared/_navar.html.erb (Duration: 1.1ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 7462)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.3ms | Allocations: 8281)
+
+
+Started GET "/" for ::1 at 2022-12-17 09:51:43 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.3ms | Allocations: 95)
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:27
+  Rendered shared/_all-tasks.html.erb (Duration: 7.3ms | Allocations: 4245)
+  Rendered pages/index.html.erb within layouts/application (Duration: 9.7ms | Allocations: 4710)
+  Rendered shared/_navar.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 7398)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.4ms | Allocations: 8217)
+
+
+Started GET "/" for ::1 at 2022-12-17 09:51:52 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.2ms | Allocations: 95)
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:27
+  Rendered shared/_all-tasks.html.erb (Duration: 6.4ms | Allocations: 4246)
+  Rendered pages/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 4711)
+  Rendered shared/_navar.html.erb (Duration: 0.3ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 7402)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.3ms | Allocations: 8221)
+
+
