@@ -11,10 +11,10 @@
         </div>
         <div>
           <% if user_signed_in? %>
-          <div class="flex  items-center">
+          <div class="flex items-center justify-between gap-4">
             <a href="/new-task" title="" class="items-center justify-center hidden px-4 py-2 text-base font-semibold text-white transition-all duration-200 bg-[#FF4C29] border border-transparent rounded-md lg:inline-flex hover:bg-[#ff5e3e]" role="button"> New task </a>
             <!-- DD MENU -->
-            <div class="p-10">
+            <div>
               <div class="dropdown inline-block relative">
                 <button class="duration-200 bg-gray-200 border border-transparent rounded-md lg:inline-flex hover:bg-[#ff5e3e] py-2 px-4 rounded inline-flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
