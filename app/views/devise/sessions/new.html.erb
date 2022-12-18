@@ -1,0 +1,29 @@
+<div class="py-20" >
+  <div class="place-items-center grid">
+  <div class="my-3 text-center">
+    <h2 class="text-white text-3xl">Sign in</h2>
+  </div>
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="grid grid-cols-1 gap-5 mt-4 ">
+    <div class="field">
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder:"Email", class:"text-gray-800 w-full px-2 py-2 bg-gray-200 rounded" %>
+    </div>
+    <div class="field">
+      <%= f.password_field :password, autocomplete: "current-password", placeholder:"Password", class:"text-gray-800 w-full px-2 py-2 bg-gray-200 rounded" %>
+    </div>
+    <% if devise_mapping.rememberable? %>
+      <div class="field text-white items-center flex">
+        <%= f.check_box :remember_me, class:"mr-1 checkedbox-color" %>
+        <%= f.label :remember_me %>
+      </div>
+    <% end %>
+    <div class="actions grid mb-3">
+      <%= f.submit "Log in", class:"px-4 py-2 text-white bg-[#FF4C29] rounded-sm hover:bg-[#ff5e3e]", role:"button" %>
+    </div>
+    <% end %>
+  <div class="mt-4 mb-10 grid grid-cols-1">
+    <%= link_to "Don't have an account ? Create one", new_user_registration_path, class:"text-white"%>
+    <%= link_to "Forgot your password?", root_path, class:"text-white"%>
+  </div>
+  </div>
+</div>
