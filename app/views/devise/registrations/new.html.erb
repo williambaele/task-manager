@@ -1,0 +1,35 @@
+<div class="py-20" >
+  <div class="place-items-center grid">
+  <div class="my-5 text-center">
+    <h2 class="text-white text-3xl">Welcome to your new favorite task manager 👋🏼</h2>
+    <h3 class="text-white text-xl mt-5">Please signup for using your application</h3>
+  </div>
+
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= render "devise/shared/error_messages", resource: resource %>
+      <div class="grid grid-cols-1 gap-5 mt-4 sm:grid-cols-2">
+        <div class="field">
+          <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder:"Email", class:"text-gray-800 w-full px-2 py-2 bg-gray-200 rounded" %>
+        </div>
+        <div class="field">
+          <%= f.text_field :username, autofocus: true, placeholder:"Username", class:"text-gray-800 w-full px-2 py-2 bg-gray-200 rounded"  %>
+        </div>
+        <div class="field">
+          <%= f.password_field :password, autocomplete: "new-password", placeholder:"Password", class:"text-gray-800 w-full px-2 py-2 bg-gray-200 rounded" %>
+          <% if @minimum_password_length %>
+          <em class="text-white">(<%= @minimum_password_length %> characters minimum)</em>
+          <% end %><br />
+        </div>
+        <div class="field">
+          <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder:"Repeat your password", class:"text-gray-800 w-full px-2 py-2 bg-gray-200 rounded" %>
+        </div>
+      </div>
+      <div class="actions grid my-6">
+        <%= f.submit "Sign up", class:"px-4 py-2 text-white bg-[#FF4C29] rounded-sm hover:bg-[#ff5e3e]", role:"button" %>
+      </div>
+    <% end %>
+    <div class="mb-10">
+      <%= link_to "Already registered ? Login", new_user_session_path, class:"text-white"%>
+    </div>
+  </div>
+</div>

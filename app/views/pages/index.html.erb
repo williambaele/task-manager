@@ -1,2 +1,6 @@
-<%= render "shared/hero" %>
+<% if user_signed_in? %>
+  <%= render "shared/hero" %>
+<% else %>
+  <%= render "shared/hero-not-logged" %>
+<% end %>
 <%= render "shared/all-tasks" %>

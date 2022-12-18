@@ -95,3 +95,6 @@ input[type="range"]::-ms-fill-upper {
 input[type="range"]::-ms-fill-lower {
   background-color: #666;
 }
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
