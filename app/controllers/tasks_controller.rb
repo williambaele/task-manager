@@ -1,6 +1,7 @@
 class TasksController < ApplicationController
   require 'date'
 
+
   def index
     @tasks = Task.all
     @remaining_time = (@task.end_date - DateTime.now).to_i
@@ -10,6 +11,7 @@ class TasksController < ApplicationController
     @task = Task.find(params[:id])
     @remaining_time = (@task.end_date - DateTime.now).to_i
   end
+
   # CREATE
   def new
     @task = Task.new
@@ -17,10 +19,13 @@ class TasksController < ApplicationController
 
   def create
     @task = Task.new(task_params)
+    @task.user_id = current_user.id
     if @task.save!
       redirect_to task_path(@task)
     end
   end
+
+
   # UPDATE
 
   def edit
@@ -42,6 +47,9 @@ class TasksController < ApplicationController
   end
 
   private
+  def set_task
+    @task = Task.find(params[:id])
+  end
 
   def task_params
     params.require(:task).permit(:title, :content, :start_date, :end_date, :difficulty, todo: [])

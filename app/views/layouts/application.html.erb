@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css" />
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
-  </head>
 
+  </head>
   <body>
   <%= render "shared/navar" %>
   <div class="bg-[#334756] pt-10">
     <div class="container mx-auto">
-      <%= yield %>
+    <%= yield %>
     </div>
   </div>
   <%= render "shared/footer" %>

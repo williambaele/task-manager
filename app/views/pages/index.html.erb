@@ -1,6 +1,13 @@
+<!-- HERO PART-->
 <% if user_signed_in? %>
   <%= render "shared/hero" %>
 <% else %>
   <%= render "shared/hero-not-logged" %>
 <% end %>
-<%= render "shared/all-tasks" %>
+
+<!-- TASK PART -->
+<% if user_signed_in? %>
+  <%= render "shared/my-tasks" %>
+<% else %>
+  <%= render "shared/no-tasks" %>
+<% end %>
