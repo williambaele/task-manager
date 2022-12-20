@@ -10,10 +10,11 @@
           <circle cx="12" cy="12" r="9"></circle>
         </svg>
         <% else %>
-        <svg title="test" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="yellow" fill="yellow" stroke-linecap="round" stroke-linejoin="round">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-          <circle cx="12" cy="12" r="9"></circle>
-        </svg>        <% end %>
+          <svg title="test" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="yellow" fill="yellow" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <circle cx="12" cy="12" r="9"></circle>
+          </svg>
+        <% end %>
       </div>
     </div>
     <div>
@@ -24,6 +25,9 @@
           <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
             <li>
               <%= link_to "Edit", edit_task_path(@task), class:"block py-2 px-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" %>
+            </li>
+            <li>
+              <%= link_to "Mark as done", task_path(@task, task_done: true), method: :patch, class:"block py-2 px-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" %>
             </li>
             <li>
               <%= link_to "Delete", task_path(@task), data: { turbo_method: :delete}, class:"block py-2 px-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" %>

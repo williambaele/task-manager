@@ -1,5 +1,6 @@
 class TasksController < ApplicationController
   require 'date'
+  before_action :set_task, only: %i[show edit update destroy put patch]
 
 
   def index
@@ -11,6 +12,7 @@ class TasksController < ApplicationController
     @task = Task.find(params[:id])
     @remaining_time = (@task.end_date - DateTime.now).to_i
   end
+
 
   # CREATE
   def new
@@ -25,7 +27,6 @@ class TasksController < ApplicationController
     end
   end
 
-
   # UPDATE
 
   def edit
@@ -36,6 +37,8 @@ class TasksController < ApplicationController
     @task = Task.find(params[:id])
     if @task.update(task_params)
       redirect_to task_path(@task)
+    else
+      redirect_to root_path
     end
   end
 
@@ -52,6 +55,6 @@ class TasksController < ApplicationController
   end
 
   def task_params
-    params.require(:task).permit(:title, :content, :start_date, :end_date, :difficulty, todo: [])
+    params.require(:task).permit(:title, :content, :start_date, :end_date, :difficulty, :task_done, todo: [])
   end
 end
