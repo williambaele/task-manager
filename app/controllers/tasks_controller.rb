@@ -12,7 +12,7 @@ class TasksController < ApplicationController
     @remaining_time = (@task.end_date - DateTime.now).to_i
   end
 
-
+  
 
   def mark_as_finished
     @task = Task.find(params[:id])
