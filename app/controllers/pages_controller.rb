@@ -5,8 +5,8 @@ class PagesController < ApplicationController
     @tasks = Task.all
 
 
-    @my_tasks = Task.all.order('updated_at DESC').select do |task|
-      task.user_id == current_user.id
+    @my_tasks = Task.all.order('updated_at ASC').select do |task|
+      task.user_id == (current_user&.id)
     end
 
     today = Date.today
