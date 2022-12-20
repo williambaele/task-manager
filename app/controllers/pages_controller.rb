@@ -8,6 +8,11 @@ class PagesController < ApplicationController
       task.user_id == (current_user&.id)
     end
 
+    @done_tasks = @my_tasks.select do |task|
+      task.status == "finished"
+    end
+    @done_tasks = @done_tasks.count
+
     today = Date.today
     @urgent_tasks = @my_tasks.select do |task|
       task.end_date <= today + 3.days

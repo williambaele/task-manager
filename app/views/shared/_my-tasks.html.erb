@@ -19,6 +19,9 @@
               Deadline
             </th>
             <th class="px-6 py-4 text-xs font-medium leading-4 tracking-wider text-left text-white uppercase border-b border-[#FF4C29]">
+              Status
+            </th>
+            <th class="px-6 py-4 text-xs font-medium leading-4 tracking-wider text-left text-white uppercase border-b border-[#FF4C29]">
             </th>
           </tr>
         </thead>
@@ -36,6 +39,14 @@
                       <span class="text-red-500 font-bold"><%= (task.end_date - DateTime.now).to_i %> days left</span>
                     <% end %>
                     </td>
+                    <td class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap text-center">
+                      <% if task.status == "process" %>
+                        <p class="text-[#FF4C29] bg-orange-200 rounded py-0.5" >Process</p>
+                      <% else %>
+                        <p class="text-green-500 bg-green-200 rounded py-0.5">Done</p>
+                      <%end%>
+                    </td>
+                         </td>
                     <td class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap"><%= link_to "Check", task_path(task), class:"text-[#FF4C29] hover:text-[#ff5e3e]" %></td>
                 </tr>
                   <% end %>
