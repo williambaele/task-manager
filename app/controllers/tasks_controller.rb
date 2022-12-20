@@ -1,6 +1,5 @@
 class TasksController < ApplicationController
   require 'date'
-  before_action :set_task, only: %i[show edit update destroy put patch]
 
 
   def index
@@ -13,6 +12,14 @@ class TasksController < ApplicationController
     @remaining_time = (@task.end_date - DateTime.now).to_i
   end
 
+  def mark_as_finished
+    @task = Task.find(params[:id])
+    if @task.update(status: "finished")
+      redirect_to task_path(@task)
+    else
+      redirect_to task_path(@task)
+    end
+  end
 
   # CREATE
   def new
@@ -50,11 +57,7 @@ class TasksController < ApplicationController
   end
 
   private
-  def set_task
-    @task = Task.find(params[:id])
-  end
-
   def task_params
-    params.require(:task).permit(:title, :content, :start_date, :end_date, :difficulty, :task_done, todo: [])
+    params.require(:task).permit(:title, :content, :start_date, :end_date, :difficulty, :status)
   end
 end

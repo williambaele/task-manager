@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  patch "tasks/:id/mark_as_finished", to: "tasks#mark_as_finished", as: :mark_as_finished
   resources :tasks
 
   get '/new-task', to: "tasks#new"
