@@ -1,6 +1,20 @@
   <div class="flex justify-between inline-block align-text-bottom mb-5">
-    <div class="mb-4">
-      <h1 class="text-white text-5xl"><%= @task.title %></h1>
+    <div class="flex mb-4 items-center	inline-block gap-3">
+      <div>
+        <h1 class="text-white text-5xl"><%= @task.title %></h1>
+      </div>
+      <div>
+        <% if @task.task_done == true %>
+        <svg title="test" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="green" fill="green" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <circle cx="12" cy="12" r="9"></circle>
+        </svg>
+        <% else %>
+        <svg title="test" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="yellow" fill="yellow" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <circle cx="12" cy="12" r="9"></circle>
+        </svg>        <% end %>
+      </div>
     </div>
     <div>
     <!-- DD Button -->
@@ -21,7 +35,7 @@
   </div>
   <div class="grid sm:grid-cols-1 lg:grid-cols-3 gap-4">
     <!-- CARD 1 -->
-    <div class="bg-[#2C394B] rounded p-4 flex justify-center shadow">
+    <div class="bg-[#2C394B] rounded p-4 flex justify-center shadow-lg">
       <div class="grid my-4">
         <div class="mb-6">
         <h2 class="text-center text-white text-2xl font-medium">Difficulty</h2>
@@ -38,7 +52,7 @@
         </div>
     </div>
     <!-- CARD 2 -->
-    <div class="bg-[#2C394B] rounded p-4 flex justify-center shadow">
+    <div class="bg-[#2C394B] rounded p-4 flex justify-center shadow-lg">
       <div class="grid my-4">
         <div class="mb-6">
           <h2 class="text-center text-white text-2xl font-medium">Task length</h2>
@@ -49,7 +63,7 @@
       </div>
     </div>
     <!-- CARD 3 -->
-     <div class="bg-[#2C394B] rounded p-4 flex justify-center shadow">
+     <div class="bg-[#2C394B] rounded p-4 flex justify-center shadow-lg">
       <div class="grid my-4">
         <div class="mb-6">
           <h2 class="text-center text-white text-2xl font-medium">Remaining time</h2>
