@@ -15999,3 +15999,211 @@ Processing by PagesController#tasks as HTML
 Completed 200 OK in 23ms (Views: 15.5ms | ActiveRecord: 1.5ms | Allocations: 11876)
 
 
+Started GET "/all-tasks" for ::1 at 2022-12-22 09:16:28 +0800
+Processing by PagesController#tasks as HTML
+  [1m[36mTask Load (1.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY end_date ASC[0m
+  ↳ app/controllers/pages_controller.rb:33:in `tasks'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:34:in `block in tasks'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/tasks.html.erb within layouts/application
+  [1m[36mTask Load (0.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:24
+  Rendered shared/_all-tasks.html.erb (Duration: 7.6ms | Allocations: 4862)
+  Rendered pages/tasks.html.erb within layouts/application (Duration: 9.2ms | Allocations: 5112)
+  Rendered shared/_navar.html.erb (Duration: 1.1ms | Allocations: 424)
+  Rendered shared/_footer.html.erb (Duration: 0.7ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 8031)
+Completed 200 OK in 27ms (Views: 18.7ms | ActiveRecord: 2.4ms | Allocations: 11889)
+
+
+Started GET "/all-tasks" for ::1 at 2022-12-22 09:16:45 +0800
+Processing by PagesController#tasks as HTML
+  [1m[36mTask Load (0.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY end_date ASC[0m
+  ↳ app/controllers/pages_controller.rb:33:in `tasks'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:34:in `block in tasks'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/tasks.html.erb within layouts/application
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:24
+  Rendered shared/_all-tasks.html.erb (Duration: 6.6ms | Allocations: 4862)
+  Rendered pages/tasks.html.erb within layouts/application (Duration: 8.2ms | Allocations: 5112)
+  Rendered shared/_navar.html.erb (Duration: 1.0ms | Allocations: 424)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 8031)
+Completed 200 OK in 23ms (Views: 14.7ms | ActiveRecord: 1.6ms | Allocations: 11886)
+
+
+Started GET "/all-tasks" for ::1 at 2022-12-22 09:16:46 +0800
+Processing by PagesController#tasks as HTML
+  [1m[36mTask Load (0.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY end_date ASC[0m
+  ↳ app/controllers/pages_controller.rb:33:in `tasks'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:34:in `block in tasks'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/tasks.html.erb within layouts/application
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:24
+  Rendered shared/_all-tasks.html.erb (Duration: 5.5ms | Allocations: 4392)
+  Rendered pages/tasks.html.erb within layouts/application (Duration: 5.9ms | Allocations: 4456)
+  Rendered shared/_navar.html.erb (Duration: 0.4ms | Allocations: 123)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 6478)
+Completed 200 OK in 16ms (Views: 9.5ms | ActiveRecord: 1.7ms | Allocations: 9754)
+
+
+Started GET "/all-tasks" for ::1 at 2022-12-22 09:16:53 +0800
+Processing by PagesController#tasks as HTML
+  [1m[36mTask Load (0.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY end_date ASC[0m
+  ↳ app/controllers/pages_controller.rb:33:in `tasks'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:34:in `block in tasks'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/tasks.html.erb within layouts/application
+  [1m[36mTask Load (0.9ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:24
+  Rendered shared/_all-tasks.html.erb (Duration: 7.3ms | Allocations: 4862)
+  Rendered pages/tasks.html.erb within layouts/application (Duration: 8.2ms | Allocations: 5112)
+  Rendered shared/_navar.html.erb (Duration: 0.9ms | Allocations: 424)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 8031)
+Completed 200 OK in 26ms (Views: 18.1ms | ActiveRecord: 1.9ms | Allocations: 11723)
+
+
+Started GET "/all-tasks" for ::1 at 2022-12-22 09:16:57 +0800
+Processing by PagesController#tasks as HTML
+  [1m[36mTask Load (0.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY end_date ASC[0m
+  ↳ app/controllers/pages_controller.rb:33:in `tasks'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:34:in `block in tasks'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/tasks.html.erb within layouts/application
+  [1m[36mTask Load (0.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:24
+  Rendered shared/_all-tasks.html.erb (Duration: 9.8ms | Allocations: 4862)
+  Rendered pages/tasks.html.erb within layouts/application (Duration: 10.9ms | Allocations: 5112)
+  Rendered shared/_navar.html.erb (Duration: 1.4ms | Allocations: 424)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 8031)
+Completed 200 OK in 30ms (Views: 21.0ms | ActiveRecord: 1.8ms | Allocations: 11865)
+
+
+Started GET "/all-tasks" for ::1 at 2022-12-22 09:17:02 +0800
+Processing by PagesController#tasks as HTML
+  [1m[36mTask Load (0.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY end_date ASC[0m
+  ↳ app/controllers/pages_controller.rb:33:in `tasks'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:34:in `block in tasks'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/tasks.html.erb within layouts/application
+  [1m[36mTask Load (0.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:24
+  Rendered shared/_all-tasks.html.erb (Duration: 8.6ms | Allocations: 4862)
+  Rendered pages/tasks.html.erb within layouts/application (Duration: 9.7ms | Allocations: 5112)
+  Rendered shared/_navar.html.erb (Duration: 0.7ms | Allocations: 424)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 8031)
+Completed 200 OK in 25ms (Views: 17.1ms | ActiveRecord: 1.8ms | Allocations: 11862)
+
+
+Started GET "/" for ::1 at 2022-12-22 09:17:08 +0800
+Processing by PagesController#index as HTML
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY end_date ASC[0m
+  ↳ app/controllers/pages_controller.rb:7:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:8:in `block in index'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero.html.erb (Duration: 0.7ms | Allocations: 137)
+  Rendered shared/_done-tasks.html.erb (Duration: 1.8ms | Allocations: 1101)
+  Rendered shared/_my-tasks.html.erb (Duration: 4.3ms | Allocations: 3309)
+  Rendered pages/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 5192)
+  Rendered shared/_navar.html.erb (Duration: 1.0ms | Allocations: 422)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 8109)
+Completed 200 OK in 23ms (Views: 16.3ms | ActiveRecord: 0.9ms | Allocations: 11954)
+
+
+Started GET "/all-tasks" for ::1 at 2022-12-22 09:17:21 +0800
+Processing by PagesController#tasks as HTML
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY end_date ASC[0m
+  ↳ app/controllers/pages_controller.rb:33:in `tasks'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:34:in `block in tasks'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/tasks.html.erb within layouts/application
+  [1m[36mTask Load (0.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/shared/_all-tasks.html.erb:24
+  Rendered shared/_all-tasks.html.erb (Duration: 8.0ms | Allocations: 4706)
+  Rendered pages/tasks.html.erb within layouts/application (Duration: 8.9ms | Allocations: 4921)
+  Rendered shared/_navar.html.erb (Duration: 0.2ms | Allocations: 123)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 6943)
+Completed 200 OK in 21ms (Views: 12.6ms | ActiveRecord: 1.7ms | Allocations: 10347)
+
+
+Started GET "/all-tasks" for ::1 at 2022-12-22 09:17:41 +0800
+Processing by PagesController#tasks as HTML
+  [1m[36mTask Load (0.9ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY end_date ASC[0m
+  ↳ app/controllers/pages_controller.rb:33:in `tasks'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:34:in `block in tasks'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/tasks.html.erb within layouts/application
+  Rendered shared/_my-tasks.html.erb (Duration: 5.1ms | Allocations: 3402)
+  Rendered pages/tasks.html.erb within layouts/application (Duration: 8.1ms | Allocations: 3655)
+  Rendered shared/_navar.html.erb (Duration: 1.4ms | Allocations: 424)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 6574)
+Completed 200 OK in 31ms (Views: 20.8ms | ActiveRecord: 1.2ms | Allocations: 10278)
+
+
+Started GET "/all-tasks" for ::1 at 2022-12-22 09:17:49 +0800
+Processing by PagesController#tasks as HTML
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY end_date ASC[0m
+  ↳ app/controllers/pages_controller.rb:33:in `tasks'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:34:in `block in tasks'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/tasks.html.erb within layouts/application
+  Rendered shared/_my-tasks.html.erb (Duration: 3.6ms | Allocations: 3402)
+  Rendered pages/tasks.html.erb within layouts/application (Duration: 4.5ms | Allocations: 3654)
+  Rendered shared/_navar.html.erb (Duration: 0.6ms | Allocations: 424)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 6573)
+Completed 200 OK in 18ms (Views: 11.1ms | ActiveRecord: 0.8ms | Allocations: 10475)
+
+
+Started GET "/all-tasks" for ::1 at 2022-12-22 09:17:54 +0800
+Processing by PagesController#tasks as HTML
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY end_date ASC[0m
+  ↳ app/controllers/pages_controller.rb:33:in `tasks'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:34:in `block in tasks'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/tasks.html.erb within layouts/application
+  Rendered shared/_my-tasks.html.erb (Duration: 4.8ms | Allocations: 3402)
+  Rendered pages/tasks.html.erb within layouts/application (Duration: 5.9ms | Allocations: 3650)
+  Rendered shared/_navar.html.erb (Duration: 0.7ms | Allocations: 424)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 6569)
+Completed 200 OK in 20ms (Views: 13.5ms | ActiveRecord: 0.9ms | Allocations: 10483)
+
+
+Started GET "/all-tasks" for ::1 at 2022-12-22 09:18:03 +0800
+Processing by PagesController#tasks as HTML
+  [1m[36mTask Load (0.9ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY end_date ASC[0m
+  ↳ app/controllers/pages_controller.rb:33:in `tasks'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:34:in `block in tasks'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/tasks.html.erb within layouts/application
+  Rendered shared/_my-tasks.html.erb (Duration: 3.9ms | Allocations: 3403)
+  Rendered pages/tasks.html.erb within layouts/application (Duration: 4.6ms | Allocations: 3646)
+  Rendered shared/_navar.html.erb (Duration: 0.6ms | Allocations: 424)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 6565)
+Completed 200 OK in 20ms (Views: 11.9ms | ActiveRecord: 1.2ms | Allocations: 10467)
+
+
