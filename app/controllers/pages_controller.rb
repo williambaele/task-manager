@@ -18,7 +18,7 @@ class PagesController < ApplicationController
     @done_tasks = @my_tasks.select do |task|
       task.status == "finished"
     end
-    @done_tasks
+
 
     today = Date.today
     @urgent_tasks = @my_tasks.select do |task|
