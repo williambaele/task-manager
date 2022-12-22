@@ -19,7 +19,6 @@ class PagesController < ApplicationController
       task.status == "finished"
     end
 
-
     today = Date.today
     @urgent_tasks = @my_tasks.select do |task|
       task.end_date <= today + 3.days

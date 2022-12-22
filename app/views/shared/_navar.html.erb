@@ -10,9 +10,11 @@
           <% end %>
         </div>
         <div class="flex gap-6 items-center">
-          <div>
-          <a href="/tasks"><p class="text-lg text-white hover:text-[#ff5e3e] font-semibold ">All tasks</p></a>
-          </div>
+          <% if user_signed_in? %>
+            <div>
+            <a href="/tasks"><p class="text-lg text-white hover:text-[#ff5e3e] font-semibold ">All tasks</p></a>
+            </div>
+          <% end %>
           <div>
             <% if user_signed_in? %>
             <div class="flex items-center justify-between gap-4">

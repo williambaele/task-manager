@@ -11,7 +11,7 @@
 <% else %>
   <%= render "shared/no-tasks" %>
 <% end %>
-<div class="my-10 bg-white rounded-md p-6">
-  <h2 class="text-center text-[#082032] text-3xl py-10">How far have you been productive ?</h2>
-  <%= area_chart Task.group_by_day(:start_date).count, colors: ["#FF4C29", "#F5F5F5"], xtitle: "Time", ytitle: "Task done", loading: "Loading...", empty: "No data", dataset: {borderWidth: 3}  %>
-</div>
+  <div class="my-6 bg-white rounded-md p-6">
+    <h2 class="text-center text-[#082032] text-3xl py-10">How far have you been productive ?</h2>
+    <%= area_chart Task.group_by_day(:start_date).count, colors: ["#FF4C29", "#F5F5F5"], xtitle: "Time", ytitle: "Task done", loading: "Loading...", empty: "No data", dataset: {borderWidth: 3}  %>
+  </div>
