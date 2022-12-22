@@ -18,9 +18,11 @@ gem 'devise'
 #Search PG
 gem "pg_search"
 
+#Chart
+gem "chartkick"
+
 #Faker
 gem 'faker'
-
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
