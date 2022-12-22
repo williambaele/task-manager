@@ -15,6 +15,9 @@ gem "pg", "~> 1.1"
 # Devise
 gem 'devise'
 
+#Search PG
+gem "pg_search"
+
 #Faker
 gem 'faker'
 

@@ -1,0 +1,63 @@
+    <div class="pb-10">
+  <div>
+    <span class="text-white text-4xl">
+      My tasks
+    </span>
+  </div>
+  <div class="relative my-6">
+  <%= form_with url: tasks_path, method: :get do %>
+    <%= text_field_tag :query, params[:query], class: "items-center inset-y-0 left-0 form-control w-full p-3 pl-4 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-slate-700 focus:border-slate-700  dark:placeholder-gray-400 dark:text-white dark:focus:ring-slate-700 dark:focus:border-slate-700", placeholder: "Search by tilte or content"%>
+    <%= submit_tag "Search", class: "absolute right-1 bottom-1.5 text-white bg-[#082032] hover:bg-slate-700 font-medium rounded-lg text-sm px-4 py-2" %>
+  <% end %>
+</div>
+    <div class="py-10 overflow-hidden sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8 ">
+    <div class="inline-block min-w-full overflow-hidden align-middle border-b border-gray-200 shadow sm:rounded-lg rounded">
+      <table class="min-w-full table-auto">
+        <thead class="bg-[#082032]">
+          <tr>
+            <th class="px-6 py-4 text-xs font-medium leading-4 tracking-wider text-left text-white uppercase border-b border-[#FF4C29]">
+              Title
+            </th>
+            <th class="px-6 py-4 text-xs font-medium leading-4 tracking-wider text-left text-white uppercase border-b border-[#FF4C29]">
+              Content
+            </th>
+            <th class="px-6 py-4 text-xs font-medium leading-4 tracking-wider text-left text-white uppercase border-b border-[#FF4C29]">
+              Deadline
+            </th>
+            <th class="px-6 py-4 text-xs font-medium leading-4 tracking-wider text-left text-white uppercase border-b border-[#FF4C29]">
+              Status
+            </th>
+            <th class="px-6 py-4 text-xs font-medium leading-4 tracking-wider text-left text-white uppercase border-b border-[#FF4C29]">
+            </th>
+          </tr>
+        </thead>
+        <tbody class="bg-white">
+          <tr>
+    <% @my_tasks.each do |task| %>
+      <td class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap"><%= task.title.truncate(20) %></td>
+                    <td class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap"><%= task.content.truncate(80) %></td>
+                    <td class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap">
+                    <% if (task.end_date - DateTime.now).to_i >= 3 %>
+                      <span class="text-gray-500"><%= (task.end_date - DateTime.now).to_i %> days left</span>
+                    <% elsif (task.end_date - DateTime.now).to_i >= 2%>
+                      <span class="text-orange-500 font-bold" font-bold><%= (task.end_date - DateTime.now).to_i %> days left</span>
+                    <% else %>
+                      <span class="text-red-500 font-bold"><%= (task.end_date - DateTime.now).to_i %> days left</span>
+                    <% end %>
+                    </td>
+                    <td class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap text-center">
+                      <% if task.status == "process" %>
+                        <p class="text-orange-500 bg-orange-200 rounded py-0.5" >Process</p>
+                      <% else %>
+                        <p class="text-green-500 bg-green-200 rounded py-0.5">Done</p>
+                      <%end%>
+                    </td>
+                         </td>
+                    <td class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap"><%= link_to "Check", task_path(task), class:"text-[#FF4C29] hover:text-[#ff5e3e]" %></td>
+                </tr>
+                  <% end %>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>

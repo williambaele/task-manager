@@ -3,8 +3,17 @@ class TasksController < ApplicationController
 
 
   def index
-    @tasks = Task.all
-    @remaining_time = (@task.end_date - DateTime.now).to_i
+    @my_tasks = Task.all.order('end_date ASC').select do |task|
+      task.user_id == (current_user&.id)
+    end
+
+    if params[:query].present?
+      @my_tasks = Task.search_by_title_content(params[:query])
+    else
+      @my_tasks
+    end
+
+
   end
 
   def show
@@ -12,7 +21,7 @@ class TasksController < ApplicationController
     @remaining_time = (@task.end_date - DateTime.now).to_i
   end
 
-  
+
 
   def mark_as_finished
     @task = Task.find(params[:id])
